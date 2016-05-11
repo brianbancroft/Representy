@@ -28,11 +28,28 @@ end
 def getRidingInfo(page)
   doc = Nokogiri::HTML(open(page))
 
-  mpinfo = {
-    :name => doc.css('.mp.wrap')[0].text,
-    :link => doc.css('.mp.wrap a')[0].attributes["href"].value,
-    :mpid => PARL_ID_REGEXP.match(doc.css('.mp.wrap a')[0].attributes["href"].value)[1]
-  }
+  begin
+    if doc.css('.caucus')[0].text == "(Vacant)"
+      mpinfo = {
+        :name => "vacant",
+        :link => "N/A",
+        :mpid => "N/A"
+      }
+
+    else
+      mpinfo = {
+        :name => doc.css('.mp.wrap')[0].text,
+        :link => doc.css('.mp.wrap a')[0].attributes["href"].value,
+        :mpid => PARL_ID_REGEXP.match(doc.css('.mp.wrap a')[0].attributes["href"].value)[1]
+      }
+    end
+  rescue NoMethodError => e
+    binding.pry
+    print "this botched up." + doc
+    $stderr.print "IO failed: " + e
+
+    raise
+  end
 end
 
 def getMPInfo(page)
@@ -89,9 +106,19 @@ mp_info = []
 all_constituencies_info.each do |constituency|
   url = base_constituency_page + constituency[:riding_id]
   riding_info.push(getRidingInfo(url))
-  url = base_single_mp + riding_info[riding_info.length - 1][:mpid]
-  binding.pry
-  mp_info.push(getMPInfo(url))
+  if [riding_info.length - 1][:mpid] != "N/A"
+    url = base_single_mp + riding_info[riding_info.length - 1][:mpid]
+    mp_info.push(getMPInfo(url))
+  end
+end
 
 
+File.open("mp_info.json","w") do |f|
+  f.write(mp_info.to_json)
+end
+File.open("constituencies_info.json","w") do |f|
+  f.write(all_constituencies_info.to_json)
+end
+File.open("riding_info.json","w") do |f|
+  f.write(riding_info.to_json)
 end
