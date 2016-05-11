@@ -22,7 +22,6 @@ ActiveRecord::Schema.define(version: 20160511194524) do
     t.string   "cons_phone"
     t.string   "email"
     t.string   "photo"
-    t.integer  "riding_id"
   end
 
   create_table "ridings", force: true do |t|

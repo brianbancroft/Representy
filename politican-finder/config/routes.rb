@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
   resources :mp
   
-  root to: 'movies#index'
+  root to: 'mp#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
