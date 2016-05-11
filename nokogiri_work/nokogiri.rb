@@ -7,6 +7,9 @@ require 'pry'
 
 PARL_ID_REGEXP = /(\d+)\)$/
 
+base_constituency_page = "http://www.parl.gc.ca/Parliamentarians/en/constituencies/"
+base_single_mp = "http://www.parl.gc.ca/Parliamentarians/en/members/"
+
 def getConstitInfo(page)
 
   constituencies = []
@@ -89,7 +92,7 @@ all_constituencies_info = getConstitInfo(allconstitpage)
 riding_info = []
 mp_info = []
 all_constituencies_info.each do |constituency|
-   
+
 
 
 end
