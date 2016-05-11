@@ -2,6 +2,8 @@
 #Web Pages
 require 'nokogiri'
 require 'open-uri'
+require 'json'
+require 'pry'
 
 def getConstitInfo(page)
 
@@ -25,24 +27,50 @@ def getConstitInfo(page)
 end
 
 def getMPInfo(page)
-doc = Nokogiri::HTML(open(mpdoc))
-pictureURL = doc.css('.profile img')[0]
+  phoneCaptureRegex = /Telephone: (\d\d\d-\d\d\d-\d\d\d\d)/
+  faxExcludeRegex = /Fax:/
+  phoneNumber = ""
+  constitAddress = []
+
+  doc = Nokogiri::HTML(open(page))
+
+  pictureURL = doc.css('.profile img')[0]["src"]
+  partyName = doc.css('.caucus a')[0].text
+  email = doc.css('.caucus a')[1].text
+  mpName = doc.css('.profile h2')[0].text
+  ridingName = doc.search('.profile.overview.header div div .constituency')[0].text
+
+  mpLang = doc.search('.profile.overview.header div div .constituency')[1].text
+
+  if doc.search('.profile.overview.header div div .constituency').length == 3
+    mpLang += doc.search('.profile.overview.header div div .constituency')[2].text
+  end
+  binding.pry
+
+  phoneNumber = ""
+  constitAddress = []
+
+  doc.search('.constituencyoffices ul li span').each do |line|
+    if line.text =~ phoneCaptureRegex
+      phoneNumber = phoneCaptureRegex.match(line.text)[1]
+    elsif not (line.text =~ faxExcludeRegex )|| (line.text == "")
+      constitAddress.push(line.text)
+    end
+
+  end
+
+  returnHash = {
+    :name => mpName,
+    :party => partyName,
+    :riding => ridingName,
+    :languages => mpLang,
+    :photo => pictureURL,
+    :phone => phoneNumber,
+    :address => constitAddress
+  }
 
 end
 
-
-# page = "http://www.parl.gc.ca/Parliamentarians/en/constituencies/"
-#
-#
-# local_directory = "constit.html"
-# local_mp = "single_constit.html"
-#
-# #For production, this will require a different approach
-# doc = Nokogiri::HTML(open(local_mp))
-
-
  mpdoc = "sample_mp.html"
-
-
-  htmlDOC = "constit.html"
-  getConstitInfo(htmlDoc)
+ mphash = getMPInfo(mpdoc)
+ binding.pry
