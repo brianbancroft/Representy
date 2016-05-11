@@ -1,9 +1,42 @@
 
 #Web Pages
 require 'nokogiri'
-
-page = "http://www.parl.gc.ca/Parliamentarians/en/constituencies/"
-local_directory = "constit.html"
-
 require 'open-uri'
-doc = Nokogiri::HTML(open(local_directory))
+
+
+# page = "http://www.parl.gc.ca/Parliamentarians/en/constituencies/"
+#
+#
+# local_directory = "constit.html"
+# local_mp = "single_constit.html"
+#
+# #For production, this will require a different approach
+# doc = Nokogiri::HTML(open(local_mp))
+
+
+def getConstitInfo(page)
+
+  doc = Nokogiri::HTML(open(htmlDOC))
+  regexp = /(\d+)\)$/
+  ridingsList = []
+  constitList = doc.css('.constituency a')
+  constitList.each do |constit|
+    ridingsList.push({:name => constit.text, :riding_id =>
+     regexp.match(constit.attributes["href"])[1]})
+    end
+
+  index = 0
+  mpList = []
+  memberList = doc.css('.personName a')
+  memberList.each do |person|
+    index += 1
+    mpList.push({:name => person.text, :mp_id =>
+     regexp.match(person.attributes["href"])[1]})
+
+  end
+
+  end
+
+
+  htmlDOC = "constit.html"
+  getConstitInfo(htmlDoc)

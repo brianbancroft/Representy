@@ -24,15 +24,23 @@ The following snippers help us get the information from the main consituency pag
 Namely, it gets us the name of the riding (in English) and the riding id which can be used when looking up candidates.
 
 ```ruby
+htmlDOC = "constit.html"
+
+doc = Nokogiri::HTML(open(htmlDOC))
 regexp = /(\d\d\d)\)$/
 ridingsList = []
 constitList = doc.css('.constituency a')
 constitList.each do |constit|
-  ridingsList.push({:name => constit.text, :riding_id =>
+  ridingsList.push({:name => constit.text, :mp_id =>
    regexp.match(constit.attributes["href"])[1]})
   end
 ```
 
-## Constituency Page
+## MP Page
+
+This is a page that contains all the critical information about that mp.
 
 The following snippets aim to get us both the name and ID of the current MP for a given riding.
+
+right = doc.css('.fright')[0]
+left = doc.css('.fleft')[1]
