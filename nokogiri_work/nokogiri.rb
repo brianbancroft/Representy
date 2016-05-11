@@ -106,7 +106,7 @@ mp_info = []
 all_constituencies_info.each do |constituency|
   url = base_constituency_page + constituency[:riding_id]
   riding_info.push(getRidingInfo(url))
-  if [riding_info.length - 1][:mpid] != "N/A"
+  if riding_info[riding_info.length - 1][:mpid] != "N/A"
     url = base_single_mp + riding_info[riding_info.length - 1][:mpid]
     mp_info.push(getMPInfo(url))
   end
