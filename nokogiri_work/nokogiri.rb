@@ -15,12 +15,11 @@ def getConstitInfo(page)
   constituencies = []
 
   doc = Nokogiri::HTML(open(page))
-  PARL_ID_REGEXP = /(\d+)\)$/
   ridingsList = []
   constitList = doc.css('.constituency a')
   constitList.each do |constit|
     ridingsList.push({:name => constit.text, :riding_id =>
-    #  PARL_ID_REGEXP.match(constit.attributes["href"])[1]})
+     PARL_ID_REGEXP.match(constit.attributes["href"])[1]})
     end
   ridingsList
 end
@@ -28,13 +27,11 @@ end
 
 def getRidingInfo(page)
   doc = Nokogiri::HTML(open(page))
-  binding.pry
-
 
   mpinfo = {
-    :name => doc.css('.mp.wrap')[0].text
-    :link => doc.css('.mp.wrap a')[0].attributes["href"].value
-    :mpid => regexp.match(doc.css('.mp.wrap a')[0].attributes["href"].value)[1]
+    :name => doc.css('.mp.wrap')[0].text,
+    :link => doc.css('.mp.wrap a')[0].attributes["href"].value,
+    :mpid => PARL_ID_REGEXP.match(doc.css('.mp.wrap a')[0].attributes["href"].value)[1]
   }
 end
 
@@ -57,7 +54,6 @@ def getMPInfo(page)
   if doc.search('.profile.overview.header div div .constituency').length == 3
     mpLang += doc.search('.profile.overview.header div div .constituency')[2].text
   end
-  binding.pry
 
   phoneNumber = ""
   constitAddress = []
@@ -85,27 +81,17 @@ end
 
 
 
-allconstitpage = "constit.html"
-all_constituencies_info = getConstitInfo(allconstitpage)
+all_constituencies_info = getConstitInfo(base_constituency_page)
 
 
 riding_info = []
 mp_info = []
 all_constituencies_info.each do |constituency|
-
+  url = base_constituency_page + constituency[:riding_id]
+  riding_info.push(getRidingInfo(url))
+  url = base_single_mp + riding_info[riding_info.length - 1][:mpid]
+  binding.pry
+  mp_info.push(getMPInfo(url))
 
 
 end
-
-
-
- mpdoc = "sample_mp.html"
- mphash = getMPInfo(mpdoc)
-
-
-
-
-
-
-constitpage = "single_constit.html"
-getRidingInfo(constitpage)
