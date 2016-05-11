@@ -7,6 +7,7 @@ class EditMpTable < ActiveRecord::Migration
       t.string :cons_phone
       t.string :email
       t.string :photo
+      t.integer :riding_id
     end
   end
 end
