@@ -5,25 +5,34 @@ require 'open-uri'
 require 'json'
 require 'pry'
 
+PARL_ID_REGEXP = /(\d+)\)$/
+
 def getConstitInfo(page)
 
-  doc = Nokogiri::HTML(open(htmlDOC))
-  regexp = /(\d+)\)$/
+  constituencies = []
+
+  doc = Nokogiri::HTML(open(page))
+  PARL_ID_REGEXP = /(\d+)\)$/
   ridingsList = []
   constitList = doc.css('.constituency a')
   constitList.each do |constit|
     ridingsList.push({:name => constit.text, :riding_id =>
-     regexp.match(constit.attributes["href"])[1]})
+    #  PARL_ID_REGEXP.match(constit.attributes["href"])[1]})
     end
+  ridingsList
+end
 
-  index = 0
-  mpList = []
-  memberList = doc.css('.personName a')
-  memberList.each do |person|
-    index += 1
-    mpList.push({:name => person.text, :mp_id =>
-     regexp.match(person.attributes["href"])[1]})
-  end
+
+def getRidingInfo(page)
+  doc = Nokogiri::HTML(open(page))
+  binding.pry
+
+
+  mpinfo = {
+    :name => doc.css('.mp.wrap')[0].text
+    :link => doc.css('.mp.wrap a')[0].attributes["href"].value
+    :mpid => regexp.match(doc.css('.mp.wrap a')[0].attributes["href"].value)[1]
+  }
 end
 
 def getMPInfo(page)
@@ -71,6 +80,29 @@ def getMPInfo(page)
 
 end
 
+
+
+allconstitpage = "constit.html"
+all_constituencies_info = getConstitInfo(allconstitpage)
+
+
+riding_info = []
+mp_info = []
+all_constituencies_info.each do |constituency|
+   
+
+
+end
+
+
+
  mpdoc = "sample_mp.html"
  mphash = getMPInfo(mpdoc)
- binding.pry
+
+
+
+
+
+
+constitpage = "single_constit.html"
+getRidingInfo(constitpage)
