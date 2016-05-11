@@ -6,3 +6,8 @@ class CreateMps < ActiveRecord::Migration
     end
   end
 end
+
+
+
+
+
