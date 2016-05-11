@@ -11,9 +11,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160511152045) do
+ActiveRecord::Schema.define(version: 20160511170812) do
 
   create_table "mps", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "name"
+    t.string   "party"
+    t.string   "cons_address"
+    t.string   "cons_phone"
+    t.string   "email"
+    t.string   "photo"
+  end
+
+  create_table "ridings", force: true do |t|
+    t.string   "name"
+    t.integer  "mp_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
