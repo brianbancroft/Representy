@@ -101,3 +101,21 @@ section {
   }
 }
 
+
+#mp-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: top;
+
+  .image-crop {
+    height:142px;
+    border-bottom: 0;
+  }
+}
+
+
+.mp-index-tag {
+  padding-top: 5px;
+  background-color:grey;
+}
