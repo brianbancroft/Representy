@@ -12,47 +12,44 @@ base_single_mp = "http://www.parl.gc.ca/Parliamentarians/en/members/"
 
 def getConstitInfo(page)
 
-  constituencies = []
+  constituenciesHash = []
 
   doc = Nokogiri::HTML(open(page))
-  ridingsList = []
-  constitList = doc.css('.constituency a')
+  constitList = doc.css('.list tbody tr')
   constitList.each do |constit|
-    ridingsList.push({:name => constit.text, :riding_id =>
-     PARL_ID_REGEXP.match(constit.attributes["href"])[1]})
+    ridingName = constit.children[1].children[1].text
+    ridingID = PARL_ID_REGEXP.match(constit .children[1].css("a")[0].attributes["href"].value)[1]
+
+    #dependent on non-vacancy
+    begin
+      if constit.children[5].css('a').empty?
+        mpName = "Vacant"
+        partyName = "N/A"
+        mpID = "N/A"
+      else
+        mpName = constit.children[5].css('a')[0].text
+        partyName = constit.children[7].children[1].children[0].text
+        mpID = PARL_ID_REGEXP.match(constit.children[5].css('a')[0].attributes["href"].value)[1]
+      end
+    rescue
+      binding.pry
     end
-  ridingsList
-end
 
-
-def getRidingInfo(page)
-  doc = Nokogiri::HTML(open(page))
-
-  begin
-    if doc.css('.caucus')[0].text == "(Vacant)"
-      mpinfo = {
-        :name => "vacant",
-        :link => "N/A",
-        :mpid => "N/A"
-      }
-
-    else
-      mpinfo = {
-        :name => doc.css('.mp.wrap')[0].text,
-        :link => doc.css('.mp.wrap a')[0].attributes["href"].value,
-        :mpid => PARL_ID_REGEXP.match(doc.css('.mp.wrap a')[0].attributes["href"].value)[1]
-      }
+    constituenciesHash.push({
+      :ridingName => ridingName,
+      :ridingID => ridingID,
+      :mpName => mpName,
+      :mpID => mpID,
+      :party => partyName
+      })
     end
-  rescue NoMethodError => e
-    binding.pry
-    print "this botched up." + doc
-    $stderr.print "IO failed: " + e
 
-    raise
-  end
+    constituenciesHash.map { |o| Hash[o.each_pair.to_a] }.to_json
+
 end
 
 def getMPInfo(page)
+  mpID = page.split('/')[page.split('/').length - 1]
   phoneCaptureRegex = /Telephone: (\d\d\d-\d\d\d-\d\d\d\d)/
   faxExcludeRegex = /Fax:/
   phoneNumber = ""
@@ -65,7 +62,7 @@ def getMPInfo(page)
   email = doc.css('.caucus a')[1].text
   mpName = doc.css('.profile h2')[0].text
   ridingName = doc.search('.profile.overview.header div div .constituency')[0].text
-
+  ridingID = PARL_ID_REGEXP.match(doc.search('.profile.overview.header div div .constituency a')[0].attributes["href"].value)[1]
   mpLang = doc.search('.profile.overview.header div div .constituency')[1].text
 
   if doc.search('.profile.overview.header div div .constituency').length == 3
@@ -86,39 +83,49 @@ def getMPInfo(page)
 
   returnHash = {
     :name => mpName,
+    :id => mpID,
     :party => partyName,
     :riding => ridingName,
+    :riding_id => ridingID,
     :languages => mpLang,
     :photo => pictureURL,
     :phone => phoneNumber,
-    :address => constitAddress
+    :address => constitAddress,
+    :email => email
   }
 
 end
 
+# constituenciesHash = getConstitInfo(base_constituency_page)
+# File.open("constituencies_info.json","w") do |f|
+#   f.write(constituenciesHash)
+# end
+file1 = File.read("constituencies_info.json")
+constituenciesHash = JSON.parse(file1)
+#
+# file2 = File.read("mpsHash.json")
+# mpsHash = JSON.parse(file2)
+mpsHash = []
 
 
-all_constituencies_info = getConstitInfo(base_constituency_page)
-
-
-riding_info = []
-mp_info = []
-all_constituencies_info.each do |constituency|
-  url = base_constituency_page + constituency[:riding_id]
-  riding_info.push(getRidingInfo(url))
-  if riding_info[riding_info.length - 1][:mpid] != "N/A"
-    url = base_single_mp + riding_info[riding_info.length - 1][:mpid]
-    mp_info.push(getMPInfo(url))
+begin
+  constituenciesHash.each do |constituency|
+    if constituency[:mpID] != "N/A"
+      url = base_single_mp + constituency["mpID"]
+      mpsHash.push(getMPInfo(url))
+    end
   end
+rescue
+  binding.pry
+  File.open("mpsHash.json","w") do |f|
+    f.write(mpsHash.map { |o| Hash[o.each_pair.to_a] }.to_json)
+  end
+  print "It timed out.."
 end
 
 
-File.open("mp_info.json","w") do |f|
-  f.write(mp_info.to_json)
-end
-File.open("constituencies_info.json","w") do |f|
-  f.write(all_constituencies_info.to_json)
-end
-File.open("riding_info.json","w") do |f|
-  f.write(riding_info.to_json)
+
+
+File.open("mpsHash.json","w") do |f|
+  f.write(mpsHash.map { |o| Hash[o.each_pair.to_a] }.to_json)
 end

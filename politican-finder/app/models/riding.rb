@@ -5,3 +5,5 @@ class Riding < ActiveRecord::Base
   validates :name, presence: true
 
 end
+
+

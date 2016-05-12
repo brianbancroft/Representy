@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160511194524) do
+ActiveRecord::Schema.define(version: 20160512172915) do
 
   create_table "mps", force: true do |t|
     t.datetime "created_at"
@@ -22,12 +22,16 @@ ActiveRecord::Schema.define(version: 20160511194524) do
     t.string   "cons_phone"
     t.string   "email"
     t.string   "photo"
+    t.integer  "riding_id"
+    t.string   "languages"
   end
 
   create_table "ridings", force: true do |t|
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "special_riding_id"
+    t.string   "special_mp_id"
   end
 
 end
