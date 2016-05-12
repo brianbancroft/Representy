@@ -101,31 +101,32 @@ end
 #   f.write(constituenciesHash)
 # end
 file1 = File.read("constituencies_info.json")
-constituenciesHash = JSON.parse(file1)
+constHash = JSON.parse(file1)
 #
-# file2 = File.read("mpsHash.json")
-# mpsHash = JSON.parse(file2)
-mpsHash = []
+file2 = File.read("mpsHash.json")
+mpsHash = JSON.parse(file2)
 
+lastMP = mpsHash[mpsHash.length-1]["id"]
 
-begin
-  constituenciesHash.each do |constituency|
-    if constituency[:mpID] != "N/A"
-      url = base_single_mp + constituency["mpID"]
+first_unread = constHash.index{|element| element["mpID"] == lastMP } + 1
+
+# begin
+   (first_unread..(constHash.length - 1)).each do |i|
+    if constHash[i]["mpID"] != "N/A"
+      url = base_single_mp + constHash[i]["mpID"]
       mpsHash.push(getMPInfo(url))
     end
   end
-rescue
-  binding.pry
-  File.open("mpsHash.json","w") do |f|
-    f.write(mpsHash.map { |o| Hash[o.each_pair.to_a] }.to_json)
-  end
-  print "It timed out.."
-end
+# rescue
+#   binding.pry
+#   File.open("mpsHash.json","w") do |f|
+#     f.write(mpsHash.map { |o| Hash[o.each_pair.to_a] }.to_json)
+#   end
+#   print "It timed out.."
+# end
 
 
 
-
-File.open("mpsHash.json","w") do |f|
-  f.write(mpsHash.map { |o| Hash[o.each_pair.to_a] }.to_json)
-end
+ File.open("mpsHash.json","w") do |f|
+   f.write(mpsHash.map { |o| Hash[o.each_pair.to_a] }.to_json)
+ end
