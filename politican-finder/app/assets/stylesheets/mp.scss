@@ -66,7 +66,7 @@
   position: relative;
   height:100vh;
   border-left: 3px solid #333;
-  padding:0px 20px;
+  padding:0px 40px;
 }
 
 .main-body:before {
@@ -106,8 +106,10 @@ section {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  align-items: top;
-
+  .mp-index {
+    position: relative;
+    top: -20px;
+  }
   .image-crop {
     height:142px;
     border-bottom: 0;
@@ -116,6 +118,40 @@ section {
 
 
 .mp-index-tag {
-  padding-top: 5px;
+  position: absolute;
+  bottom: 0px;
+  width:142px;
+  padding: 5px;
   background-color:grey;
+  color: white;
+  font-size: 12px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .6s ease-in-out;
+  span:first-child {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  span {
+    display: block;
+  }
+}
+
+.lib {
+  background-color: rgba( $libColour, .8 )
+}
+.con {
+  background-color: rgba( $conColour, .8 )
+
+}
+.bloc {
+  background-color: rgba( $blocColour, .8 )
+
+}
+.green {
+  background-color: rgba( $greenColour, .8 )
+
+}
+.ndp {
+  background-color: rgba( $ndpColour, .8 )
 }
