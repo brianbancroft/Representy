@@ -43,10 +43,13 @@ def getConstitInfo(page)
       :party => partyName
       })
     end
-  constituenciesHash
+
+    constituenciesHash.map { |o| Hash[o.each_pair.to_a] }.to_json
+
 end
 
 def getMPInfo(page)
+  mpID = page.split('/')[page.split('/').length - 1]
   phoneCaptureRegex = /Telephone: (\d\d\d-\d\d\d-\d\d\d\d)/
   faxExcludeRegex = /Fax:/
   phoneNumber = ""
@@ -80,6 +83,7 @@ def getMPInfo(page)
 
   returnHash = {
     :name => mpName,
+    :id => mpID,
     :party => partyName,
     :riding => ridingName,
     :riding_id => ridingID,
@@ -92,28 +96,36 @@ def getMPInfo(page)
 
 end
 
-constituenciesHash = getConstitInfo(base_constituency_page)
-File.open("constituencies_info.json","w") do |f|
-  f.write(constituenciesHash.to_json)
-end
+# constituenciesHash = getConstitInfo(base_constituency_page)
+# File.open("constituencies_info.json","w") do |f|
+#   f.write(constituenciesHash)
+# end
+file1 = File.read("constituencies_info.json")
+constituenciesHash = JSON.parse(file1)
+#
+# file2 = File.read("mpsHash.json")
+# mpsHash = JSON.parse(file2)
 mpsHash = []
+
 
 begin
   constituenciesHash.each do |constituency|
     if constituency[:mpID] != "N/A"
-      url = base_single_mp + constituency[:mpID]
+      url = base_single_mp + constituency["mpID"]
       mpsHash.push(getMPInfo(url))
     end
   end
 rescue
   binding.pry
   File.open("mpsHash.json","w") do |f|
-    f.write(mp_info.to_json)
+    f.write(mpsHash.map { |o| Hash[o.each_pair.to_a] }.to_json)
   end
+  print "It timed out.."
 end
 
 
 
+
 File.open("mpsHash.json","w") do |f|
-  f.write(mp_info.to_json)
+  f.write(mpsHash.map { |o| Hash[o.each_pair.to_a] }.to_json)
 end
