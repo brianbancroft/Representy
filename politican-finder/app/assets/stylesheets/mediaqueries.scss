@@ -1,0 +1,35 @@
+@media(max-width:767px){
+  .contact-foot {
+    font-size: 40px;
+  }
+
+  .body {
+    padding-top:10px;
+  }
+  .main-body {
+    border-left:0px solid transparent;
+    padding:0px 10px;
+  }
+
+  .main-body:before {
+    border-top: 0px solid transparent;
+  }
+
+  .navbar-mp {
+    padding-left: 10px;
+  }
+  .mp-lead {
+    font-size: 30px;
+    letter-spacing: -1px;
+  }
+}
+@media(min-width:768px){
+
+
+}
+@media(min-width:992px){
+
+}
+@media(min-width:1200px){
+  
+}

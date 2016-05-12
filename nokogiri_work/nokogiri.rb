@@ -7,17 +7,19 @@ require 'pry'
 
 PARL_ID_REGEXP = /(\d+)\)$/
 
+base_constituency_page = "http://www.parl.gc.ca/Parliamentarians/en/constituencies/"
+base_single_mp = "http://www.parl.gc.ca/Parliamentarians/en/members/"
+
 def getConstitInfo(page)
 
   constituencies = []
 
   doc = Nokogiri::HTML(open(page))
-  PARL_ID_REGEXP = /(\d+)\)$/
   ridingsList = []
   constitList = doc.css('.constituency a')
   constitList.each do |constit|
     ridingsList.push({:name => constit.text, :riding_id =>
-    #  PARL_ID_REGEXP.match(constit.attributes["href"])[1]})
+     PARL_ID_REGEXP.match(constit.attributes["href"])[1]})
     end
   ridingsList
 end
@@ -25,14 +27,29 @@ end
 
 def getRidingInfo(page)
   doc = Nokogiri::HTML(open(page))
-  binding.pry
 
+  begin
+    if doc.css('.caucus')[0].text == "(Vacant)"
+      mpinfo = {
+        :name => "vacant",
+        :link => "N/A",
+        :mpid => "N/A"
+      }
 
-  mpinfo = {
-    :name => doc.css('.mp.wrap')[0].text
-    :link => doc.css('.mp.wrap a')[0].attributes["href"].value
-    :mpid => regexp.match(doc.css('.mp.wrap a')[0].attributes["href"].value)[1]
-  }
+    else
+      mpinfo = {
+        :name => doc.css('.mp.wrap')[0].text,
+        :link => doc.css('.mp.wrap a')[0].attributes["href"].value,
+        :mpid => PARL_ID_REGEXP.match(doc.css('.mp.wrap a')[0].attributes["href"].value)[1]
+      }
+    end
+  rescue NoMethodError => e
+    binding.pry
+    print "this botched up." + doc
+    $stderr.print "IO failed: " + e
+
+    raise
+  end
 end
 
 def getMPInfo(page)
@@ -54,7 +71,6 @@ def getMPInfo(page)
   if doc.search('.profile.overview.header div div .constituency').length == 3
     mpLang += doc.search('.profile.overview.header div div .constituency')[2].text
   end
-  binding.pry
 
   phoneNumber = ""
   constitAddress = []
@@ -82,27 +98,27 @@ end
 
 
 
-allconstitpage = "constit.html"
-all_constituencies_info = getConstitInfo(allconstitpage)
+all_constituencies_info = getConstitInfo(base_constituency_page)
 
 
 riding_info = []
 mp_info = []
 all_constituencies_info.each do |constituency|
-   
-
-
+  url = base_constituency_page + constituency[:riding_id]
+  riding_info.push(getRidingInfo(url))
+  if riding_info[riding_info.length - 1][:mpid] != "N/A"
+    url = base_single_mp + riding_info[riding_info.length - 1][:mpid]
+    mp_info.push(getMPInfo(url))
+  end
 end
 
 
-
- mpdoc = "sample_mp.html"
- mphash = getMPInfo(mpdoc)
-
-
-
-
-
-
-constitpage = "single_constit.html"
-getRidingInfo(constitpage)
+File.open("mp_info.json","w") do |f|
+  f.write(mp_info.to_json)
+end
+File.open("constituencies_info.json","w") do |f|
+  f.write(all_constituencies_info.to_json)
+end
+File.open("riding_info.json","w") do |f|
+  f.write(riding_info.to_json)
+end
