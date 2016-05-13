@@ -17,11 +17,15 @@ def write_riding_seed()
 end
 
 
-file = File.read('file-name-to-be-read.json')
+file = File.read('mpsHash.json')
 mp_hash = JSON.parse(file)
 
-open('mp_seeds.txt', 'w') { |f|
+open('mp_seeds.rb', 'w') { |f|
+  f << "module Mp_seed "
+  f << "  def seed"
   mp_hash.each do |mp|
-    f << write_mp_seed(mp[:name], mp[:party], mp[:address],mp[:phone],mp[:email], mp[:photo], mp[:riding_id])
+    f << "  " + write_mp_seed(mp[:name], mp[:party], mp[:address],mp[:phone],mp[:email], mp[:photo], mp[:riding_id])
   end
+  f<< "  end"
+  f << "end"
 }
