@@ -7,7 +7,7 @@ require 'json'
 
 
 def write_mp_seed(name, party, address, phone, email, photourl, ridingID)
-  string_ouput = "Mp.seed(name:#{name}, party: #{party}, cons_address: #{address}, cons_phone: #{phone}, email: #{email}, photo: #{photourl}, riding_id: #{ridingID})"
+  string_ouput = "Mp.seed(name: \'#{name}\', party: \'#{party}\', cons_address: \'#{address}\', cons_phone: \'#{phone}\', email: \'#{email}\', photo: \'#{photourl}\', riding_id: \'#{ridingID}\')"
 end
 
 
@@ -20,12 +20,12 @@ end
 file = File.read('mpsHash.json')
 mp_hash = JSON.parse(file)
 
-open('mp_seeds.rb', 'w') { |f|
-  f << "module Mp_seed "
-  f << "  def seed"
+open('mp_seed.rb', 'w') { |f|
+  f << "module Mp_seed \n"
+  f << "  def seed \n"
   mp_hash.each do |mp|
-    f << "  " + write_mp_seed(mp[:name], mp[:party], mp[:address],mp[:phone],mp[:email], mp[:photo], mp[:riding_id])
+    f << "    " + write_mp_seed(mp["name"], mp["party"], mp["address"],mp["phone"],mp["email"], mp["photo"], mp["riding_id"]) + "\n"
   end
-  f<< "  end"
+  f<< "  end\n"
   f << "end"
 }
