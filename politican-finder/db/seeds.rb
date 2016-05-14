@@ -7,3 +7,6 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 Mp_seed.seed
+
+Riding_seed.seed
+
