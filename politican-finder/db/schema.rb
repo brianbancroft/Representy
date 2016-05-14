@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(version: 20160512172915) do
     t.string   "cons_phone"
     t.string   "email"
     t.string   "photo"
+    t.integer  "riding_id"
     t.string   "languages"
   end
 

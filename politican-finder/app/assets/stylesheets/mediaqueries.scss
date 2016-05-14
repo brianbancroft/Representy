@@ -1,3 +1,11 @@
+@media(max-width:1100px) {
+  #mp-container {
+    .mp-index {
+      flex-basis:25%;
+    }
+  }
+}
+
 @media(max-width:890px) {
   .body {
     padding-top:10px;
@@ -32,6 +40,11 @@
   .mp-lead {
     font-size: 30px;
   }
+  #mp-container {
+    .mp-index {
+      flex-basis:33.33%;
+    }
+  }
 }
 
 @media(max-width:767px){
@@ -48,7 +61,11 @@
 
 }
 @media(max-width:600px){
-
+  #mp-container {
+    .mp-index {
+      flex-basis:50%;
+    }
+  }
 
 }
 @media(min-width:992px){
@@ -58,4 +75,14 @@
 @media(min-width:1200px){
 
   
+}
+
+@media(max-width:410px){
+    #mp-container {
+      flex-direction:column;
+      justify-content:center;
+    .mp-index {
+      flex-basis:auto;
+    }
+  }
 }

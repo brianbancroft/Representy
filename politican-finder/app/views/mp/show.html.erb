@@ -6,15 +6,51 @@
           <section>
             <div class="row-container mp-head">
               <div class="row-item">
-                <div class="image-crop">
-                  <img src = "http://www.parl.gc.ca/Parliamentarians/Images/OfficialMPPhotos/42/CaseySean_Lib.jpg"/>
+              <% if @mp.party == "Conservative" %>
+                <div class="image-crop con">
+                  <img src = "<%= @mp.photo %>"/>
                 </div>
+              <% elsif @mp.party == "Liberal" %>
+                <div class="image-crop lib">
+                  <img src = "<%= @mp.photo %>"/>
+                </div>
+              <% elsif @mp.party == "NDP" %>
+                <div class="image-crop ndp">
+                  <img src = "<%= @mp.photo %>"/>
+                </div>
+              <% elsif @mp.party == "Bloc Québécois" %>
+                <div class="image-crop bloc">
+                  <img src = "<%= @mp.photo %>"/>
+                </div>
+              <% elsif @mp.party == "Green Party" %>
+                <div class="image-crop green">
+                  <img src = "<%= @mp.photo %>"/>
+                </div>
+              <% end %>
               </div>
               <div class="row-item">
                 <p class="mp-lead">
-                <span class="underline">SEAN CASEY</span> is the 
-                <span class="underline">LIBERAL</span> MP for the riding of 
-                <span class="underline">CHARLOTTETOWN</span>
+                <% if @mp.party == "Conservative" %>
+                  <span class="underline con"><%= @mp.name %></span> is the 
+                  <span class="underline con"><%= @mp.party %></span> MP for the riding of 
+                  <span class="underline con"><%= @mp.riding_id %></span>
+                <% elsif @mp.party == "Liberal" %>
+                  <span class="underline lib"><%= @mp.name %></span> is the 
+                  <span class="underline lib"><%= @mp.party %></span> MP for the riding of 
+                  <span class="underline lib"><%= @mp.riding_id %></span>
+                <% elsif @mp.party == "NDP" %>
+                  <span class="underline ndp"><%= @mp.name %></span> is the 
+                  <span class="underline ndp"><%= @mp.party %></span> MP for the riding of 
+                  <span class="underline ndp"><%= @mp.riding_id %></span>
+                <% elsif @mp.party == "Bloc Québécois" %>
+                  <span class="underline bloc"><%= @mp.name %></span> is the 
+                  <span class="underline bloc"><%= @mp.party %></span> MP for the riding of 
+                  <span class="underline bloc"><%= @mp.riding_id %></span>
+                <% elsif @mp.party == "Green Party" %>
+                  <span class="underline green"><%= @mp.name %></span> is the 
+                  <span class="underline green"><%= @mp.party %></span> MP for the riding of 
+                  <span class="underline green"><%= @mp.riding_id %></span>
+                <% end %> 
                 </p>
               </div>
             </div>
@@ -23,15 +59,13 @@
               <div class="row-item">
                 <div class="address">
                   <h2>Constituency Office</h2>
-                  <span>75 Fitzroy Road (Main Office)</span>
-                  <span>Suite 201</span>
-                  <span>Charlottetown, Prince Edward Island</span>
-                  <span>C1A 1R6</span>
+                  <%=  @mp.cons_address %>
                 </div>
               </div>
               <div class="row-item">
-              <a class="twitter-timeline" href="https://twitter.com/SeanCaseyLPC" data-widget-id="730472412710580224" data-chrome="noheader">Tweets by @SeanCaseyLPC</a>
-              <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+              Twitter here
+              <!--a class="twitter-timeline" href="https://twitter.com/SeanCaseyLPC" data-widget-id="730472412710580224" data-chrome="noheader">Tweets by @SeanCaseyLPC</a>
+              <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>-->
               </div>
             </div>
           </section>
@@ -44,15 +78,15 @@
 
 <div class="contact-foot">
   <div>
-    <a href="tel:1-902-566-7770">
+    <a href="tel:<%=@mp.cons_phone%>">
     <span class="icon-phone"></span>
-    <span class="mobile-hide">1-902-566-7770</span>
+    <span class="mobile-hide"><%=@mp.cons_phone%></span>
     </a>
   </div>
   <div>
-    <a href="mailto:sean.casey@parl.gc.ca">
+    <a href="mailto:<%=@mp.email%>">
       <span class="icon-mail"></span>
-      <span class="mobile-hide">sean.casey@parl.gc.ca</span>
+      <span class="mobile-hide"><%=@mp.email%></span>
     </a>
   </div>      
 </div>

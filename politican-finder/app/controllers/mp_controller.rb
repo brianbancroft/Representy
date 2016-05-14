@@ -1,7 +1,7 @@
 class MpController < ApplicationController
  
   def index
-    @mps = Mp.all
+    @mps = Mp.all.shuffle
   end
 
   def show

@@ -4,129 +4,48 @@
       <main class="main">
         <div class="main-body">
           <section>
-
-
+          <form>
+            <input type="text" placeholder="search...">
+            <button type="submit">search</button>
+          </form>
           <div id="mp-container">
 
+          <% @mps.each do |mp| %>
           <div class="mp-index">
-            <a class="mp-hover" href="#">
+            <a class="mp-hover" href="mp/<%=mp.id%>">
               <div class="image-crop">
-                <img src = "http://www.parl.gc.ca/Parliamentarians/Images/OfficialMPPhotos/42/AboultaifZiad_CPC.jpg"/>
+                <img src = "<%=mp.photo%>"/>
               </div>
             </a>
-            <div class="mp-index-tag con">
-              <span>Ziad Aboultaif</span>
-              <span>Edmonton Manning</span>
-            </div> 
-          </div>
-
-          <div class="mp-index">
-            <a class="mp-hover" href="#">
-              <div class="image-crop">
-                <img src = "http://www.parl.gc.ca/Parliamentarians/Images/OfficialMPPhotos/42/BarsalouDuvalXavier_BQ.jpg"/>
-              </div>
-            </a>
-            <div class="mp-index-tag bloc">
-              <span>Xavier Barsalou-Duval</span>
-              <span>Pierre-Boucher — Les Patriotes — Verchères</span>
-            </div> 
-          </div>
-
-          <div class="mp-index">
-            <a class="mp-hover" href="#">
-              <div class="image-crop">
-                <img src = "http://www.parl.gc.ca/Parliamentarians/Images/OfficialMPPhotos/42/AldagJohn_Lib.jpg"/>
-              </div>
-            </a>
+            <% if mp.party == "Liberal" %>
             <div class="mp-index-tag lib">
-              <span>John Aldag</span>
-              <span>Cloverdale — Langley City</span>
+              <span><%=mp.name%></span>
+              <span><%=mp.riding_id%></span>
             </div> 
-          </div>
-
-          <div class="mp-index">
-            <a class="mp-hover" href="#">
-              <div class="image-crop">
-                <img src = "http://www.parl.gc.ca/Parliamentarians/Images/OfficialMPPhotos/42/AngusCharlie_NDP.jpg"/>
-              </div>
-            </a>
+            <% elsif mp.party == "Conservative" %>
+            <div class="mp-index-tag con">
+              <span><%=mp.name%></span>
+              <span><%=mp.riding_id%></span>
+            </div> 
+            <% elsif mp.party == "NDP" %>
             <div class="mp-index-tag ndp">
-              <span>Charlie Angus</span>
-              <span>Timmins — James Bay</span>
+              <span><%=mp.name%></span>
+              <span><%=mp.riding_id%></span>
             </div> 
-          </div>
-
-          <div class="mp-index">
-            <a class="mp-hover" href="#">
-              <div class="image-crop">
-                <img src = "http://www.parl.gc.ca/Parliamentarians/Images/OfficialMPPhotos/42/MayElizabeth_GP.jpg"/>
-              </div>
-            </a>
+            <% elsif mp.party == "Bloc Québécois" %>
+            <div class="mp-index-tag bloc">
+              <span><%=mp.name%></span>
+              <span><%=mp.riding_id%></span>
+            </div> 
+            <% elsif mp.party == "Green Party" %>
             <div class="mp-index-tag green">
-              <span>Elizabeth May</span>
-              <span>Saanich — Gulf Islands</span>
+              <span><%=mp.name%></span>
+              <span><%=mp.riding_id%></span>
             </div> 
+            <% end %>
           </div>
+          <% end %>
           
-            <div class="mp-index">
-              <a class="mp-hover" href="#">
-                <div class="image-crop">
-                  <img src = "http://www.parl.gc.ca/Parliamentarians/Images/OfficialMPPhotos/42/AboultaifZiad_CPC.jpg"/>
-                </div>
-              </a>
-              <div class="mp-index-tag con">
-                <span>Ziad Aboultaif</span>
-                <span>Edmonton Manning</span>
-              </div> 
-            </div>
-
-            <div class="mp-index">
-              <a class="mp-hover" href="#">
-                <div class="image-crop">
-                  <img src = "http://www.parl.gc.ca/Parliamentarians/Images/OfficialMPPhotos/42/BarsalouDuvalXavier_BQ.jpg"/>
-                </div>
-              </a>
-              <div class="mp-index-tag bloc">
-                <span>Xavier Barsalou-Duval</span>
-                <span>Pierre-Boucher — Les Patriotes — Verchères</span>
-              </div> 
-            </div>
-
-            <div class="mp-index">
-              <a class="mp-hover" href="#">
-                <div class="image-crop">
-                  <img src = "http://www.parl.gc.ca/Parliamentarians/Images/OfficialMPPhotos/42/AldagJohn_Lib.jpg"/>
-                </div>
-              </a>
-              <div class="mp-index-tag lib">
-                <span>John Aldag</span>
-                <span>Cloverdale — Langley City</span>
-              </div> 
-            </div>
-
-            <div class="mp-index">
-              <a class="mp-hover" href="#">
-                <div class="image-crop">
-                  <img src = "http://www.parl.gc.ca/Parliamentarians/Images/OfficialMPPhotos/42/AngusCharlie_NDP.jpg"/>
-                </div>
-              </a>
-              <div class="mp-index-tag ndp">
-                <span>Charlie Angus</span>
-                <span>Timmins — James Bay</span>
-              </div> 
-            </div>
-
-            <div class="mp-index">
-              <a class="mp-hover" href="#">
-                <div class="image-crop">
-                  <img src = "http://www.parl.gc.ca/Parliamentarians/Images/OfficialMPPhotos/42/MayElizabeth_GP.jpg"/>
-                </div>
-              </a>
-              <div class="mp-index-tag green">
-                <span>Elizabeth May</span>
-                <span>Saanich — Gulf Islands</span>
-              </div> 
-            </div>
 
           </div>
 
