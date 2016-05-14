@@ -19,7 +19,6 @@
   padding-top: 20px;
   font-size: 40px;
   font-weight: 400;
-
   margin:0;
   letter-spacing: -1.5px;
 
@@ -57,7 +56,9 @@
   }
 }
 
-
+.main {
+  width:75%;
+}
 .body {
   padding-top: 40px;
   display: flex;
@@ -65,7 +66,6 @@
 }
 
 .main-body {
-  width: 800px;
   position: relative;
   height:100vh;
   border-left: 3px solid #333;
@@ -107,14 +107,16 @@ section {
 
 #mp-container {
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
+
+  flex-wrap: wrap;
+
   .mp-index {
     position: relative;
     top: -20px;
+    flex-basis:20%;
   }
   .image-crop {
-    height:142px;
     border-bottom: 0;
   }
 }
@@ -136,7 +138,7 @@ section {
     font-weight: bold;
   }
   span {
-    display: block;
+    visibility: hidden;
   }
 }
 

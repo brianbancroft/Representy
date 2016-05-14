@@ -15,9 +15,14 @@
  */
 /*@import "bootstrap-sprockets";
 @import "bootstrap";*/
-@import "mediaqueries";
 @import "icons";
 
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 
 body {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -33,7 +38,7 @@ a {
 
 
 .width {
-  width:800px;
+  width:75%;
 }
 
 .light {
@@ -60,7 +65,11 @@ h2 {
   padding: 10px 0px;
 }
 
-
+.skew {
+  width:100%;
+  justify-content: center;
+  display: flex;
+}
 .navbar-mp .skew:before {
   content: '';
   position: absolute;
@@ -69,6 +78,7 @@ h2 {
   overflow: visible;
   width: 100%;
   height: 250px;
+  margin-bottom: 20px;
   background-color: #333;
   z-index: -1;
   -webkit-transform: skewY(-3deg);
@@ -111,11 +121,11 @@ h2 {
 }
 
 
-.mp-index-tag {
-}
-    
 .mp-hover:hover + .mp-index-tag {
     max-height:100px;
+    span {
+      visibility: visible;
+    }
 }
 
 .contact-foot {
@@ -132,5 +142,17 @@ h2 {
 
 .row-container {
   display: flex;
-  
+  margin-bottom: 20px;
+  justify-content:space-between;
+
 }
+
+.row-container.mp-head {
+  align-items:center;
+  .row-item:last-child {
+    width: 75%;
+  }
+}
+
+@import "mediaqueries";
+
