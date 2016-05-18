@@ -1,0 +1,211 @@
+// Place all the styles related to the mp controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.image-crop {
+  width:142px;
+  height:152px;
+  overflow: hidden;
+  border-bottom:10px solid grey;
+  margin-top:35px;
+  img {
+    position: relative;
+    top: -15px;
+  }
+}
+
+.icon.lib {
+  color:$libColour;
+}
+.icon.con {
+  color:$conColour;
+}
+.icon.ndp {
+  color:$ndpColour;
+}
+.icon.green {
+  color:$greenColour;
+}
+.icon.bloc {
+  color:$blocColour;
+}
+
+.image-crop.lib {
+  border-bottom: 10px solid $libColour;
+}
+.image-crop.con {
+  border-bottom: 10px solid $conColour;
+}
+.image-crop.ndp {
+  border-bottom: 10px solid $ndpColour;
+}
+.image-crop.green {
+  border-bottom: 10px solid $greenColour;
+}
+.image-crop.bloc {
+  border-bottom: 10px solid $blocColour;
+}
+
+
+.mp-lead {
+  padding-top: 20px;
+  font-size: 40px;
+  font-weight: 400;
+  margin:0;
+  letter-spacing: -1.5px;
+
+}
+
+.underline {
+  border-bottom: 3px solid grey;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.underline.lib {
+  border-bottom: 3px solid $libColour;
+}
+.underline.con {
+  border-bottom: 3px solid $conColour;
+}
+.underline.ndp {
+  border-bottom: 3px solid $ndpColour;
+}
+.underline.bloc {
+  border-bottom: 3px solid $blocColour;
+}
+.underline.green {
+  border-bottom: 3px solid $greenColour;
+}
+
+.contact-foot {
+  text-transform: lowercase;
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  background-color: #333;
+  bottom: 0px;
+  color: white;
+  padding:10px 0px;
+  font-size: 25px;
+  font-weight: bold;
+  .col-md-6:first-child {
+    border-right: 1px solid #666;
+
+  }
+
+  a {
+    transition: opacity .3s ease-in-out;
+    color:white;
+    &:hover {
+      color:white;
+      opacity: .7;
+      text-decoration: none;
+    };
+  }
+}
+
+.main {
+  width:75%;
+}
+.body {
+  padding-top: 40px;
+  display: flex;
+  justify-content:center;
+}
+
+.main-body {
+  position: relative;
+  min-height:100vh;
+  border-left: 3px solid #333;
+  padding:0px 40px;
+}
+
+.main-body:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -50px;
+  width: 100%;
+  height: 150px;
+  -webkit-transform: skewY(-3deg);
+  -moz-transform: skewY(-3deg);
+  -ms-transform: skewY(-3deg);
+  -o-transform: skewY(-3deg);
+  transform: skewY(-3deg);
+  -webkit-backface-visibility: hidden;
+  border-top: 3px solid #333;
+}
+
+section {
+  padding-bottom: 10px;
+  position: relative;
+
+}
+
+.break {
+  margin-bottom:40px;
+}
+
+.address {
+  span {
+    display: block;
+  }
+}
+
+
+#mp-container {
+  display: flex;
+  justify-content: space-between;
+
+  flex-wrap: wrap;
+
+  .mp-index {
+    position: relative;
+    top: -20px;
+  }
+  .image-crop {
+    border-bottom: 0;
+  }
+}
+
+
+.mp-index-tag {
+  position: absolute;
+  bottom: 0px;
+  width:142px;
+  padding: 5px;
+  background-color:grey;
+  color: white;
+  font-size: 12px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .6s ease-in-out;
+  span:first-child {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  span {
+    transition: visibility .6s ease-in-out;
+    visibility: hidden;
+  }
+}
+
+.mp-index-tag.lib {
+  background-color: rgba( $libColour, .8 )
+}
+.mp-index-tag.con {
+  background-color: rgba( $conColour, .8 )
+
+}
+.mp-index-tag.bloc {
+  background-color: rgba( $blocColour, .8 )
+
+}
+.mp-index-tag.green {
+  background-color: rgba( $greenColour, .8 )
+
+}
+.mp-index-tag.ndp {
+  background-color: rgba( $ndpColour, .8 )
+}
