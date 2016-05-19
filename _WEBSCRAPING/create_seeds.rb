@@ -10,12 +10,6 @@ def write_mp_seed(name, party, address, phone, email, photourl, ridingID, langua
   string_ouput = "Mp.seed(name: \"#{name}\", party: \"#{party}\", cons_address: #{address}, cons_phone: \"#{phone}\", email: \"#{email}\", photo: \"#{photourl}\", riding: Riding.find_by(special_riding_id: #{ridingID}), languages: \"#{languages}\")"
 end
 
-
-def write_riding_seed()
-
-end
-
-
 file = File.read('mpsHash.json')
 mp_hash = JSON.parse(file)
 
