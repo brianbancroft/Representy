@@ -1,7 +1,7 @@
 require 'pry'
 require 'json'
 
-def write_riding_seed()
+def write_riding_seed(id, name_en, name_fr,mp_id, party, riding_geom)
   string_ouput = ""
 end
 
@@ -10,15 +10,16 @@ geo_hash = JSON.parse(geoFile)
 
 scrapeFile = File.read('constituencies_info.json')
 riding_hash = JSON.parse(scrapeFile)
-binding.pry
 
-
-open('ridings_seed.sql','w') {|file|
-  f << "INSERT INTO ridings (id, name_en, name_fr,mp_id, party, geom)\n"
-  f << "VALUES ("
-  f << write_mp_seed()
-  f << ");"
-
+open('ridings_seed.sql','w') {|sql_file|
+  geo_hash["features"].each do |riding|
+    support_file = riding_hash.select { |element| element["ridingID"].to_i == riding["properties"]["constit_id"] }[0]
+    binding.pry
+    sql_file << "INSERT INTO ridings (id, name_en, name_fr,mp_id, party, riding_geom)\n"
+    sql_file << "VALUES ("
+    sql_file << write_riding_seed(riding["properties"]["constit_id"],riding["properties"]["ENNAME"],riding["properties"]["FRNAME"],support_file["mpID"],support_file["party"],riding["geometry"])
+    sql_file << ");\n"
+  end
 
 }
 
