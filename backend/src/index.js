@@ -3,6 +3,7 @@ var route = require('koa-route'); //require it
 var json = require('koa-json');
 var koaPg = require('koa-pg');
 var pg = require('pg').native;
+var cors = require('koa-cors');
 var paramify = require('koa-params');
 pg.defaults.ssl = true;
 
@@ -11,12 +12,13 @@ var param = route.param;
 var get = route.get;
 
 var app = koa();
+app.use(cors());
 app.use(koaPg('postgres://dkuuauoezstjor:Lr6qZtm1TlJHJJoellAJd5_Yni@ec2-54-227-245-222.compute-1.amazonaws.com:5432/d2imlo0f5r5jov'));
 
 param('riding',function*(ridingid,next){
   var query = 'SELECT name, ST_AsGeoJSON(geom) FROM testgeom WHERE id=' + ridingid; //analog - seek params[:id] analog with this library
   var riding = yield this.pg.db.client.query_(query)
-  this.riding = riding.rows[0];
+  this.riding = riding.rows[0].st_asgeojson;
   yield next;
 });
 
@@ -37,6 +39,7 @@ app.use(route.get('/members', function*() {
 
 app.use(route.get('/riding/:riding', function*() {
   this.body = this.riding;
+  console.log("I'm a change");
 }));
 
 // app.use(route.get('/sampleJSON', sampleJSON));
