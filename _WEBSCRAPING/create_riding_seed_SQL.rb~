@@ -6,7 +6,7 @@ require 'rest-client'
 require 'json'
 require 'pry'
 
-json_file = File.read('committee_hash.json')
+json_file = File.read('constituencies_info.json')
 
 json_data = JSON.parse(json_file)
 
