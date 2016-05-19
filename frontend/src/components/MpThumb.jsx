@@ -25,8 +25,8 @@ var MpThumb = React.createClass({
             mpTag = "mp-index-tag green"
           }
         return (
-            <div className="mp-index">
-              <a className="mp-hover" onClick={this._selectMp}>
+            <div className="mp-index" onClick={this._selectMp}>
+              <a className="mp-hover">
                 <div className="image-crop">
                   <img src = {this.props.data.photo} />
                 </div>

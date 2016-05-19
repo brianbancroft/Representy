@@ -261,6 +261,15 @@ button:hover {
   width: 75%;
 }
 
+.logo {
+  cursor: pointer;
+  transition: opacity .2s ease-in-out;
+}
+
+.logo:hover {
+  opacity: .6;
+}
+
 form {
   width: 100%;
   position: relative;
@@ -481,7 +490,8 @@ section {
   font-size: 12px;
   max-height: 0;
   overflow: hidden;
-  transition: max-height .6s ease-in-out;
+  cursor: pointer;
+  transition: max-height .2s ease-in-out;
 }
 
 .mp-index-tag span:first-child {
@@ -490,7 +500,7 @@ section {
 }
 
 .mp-index-tag span {
-  transition: visibility .6s ease-in-out;
+  transition: visibility .2s ease-in-out;
   visibility: hidden;
 }
 

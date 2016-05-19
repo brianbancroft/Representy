@@ -187,6 +187,14 @@ button {
     width: 75%;
   }
 }
+
+.logo {
+  cursor: pointer;
+  transition: opacity .2s ease-in-out;
+  &:hover {
+    opacity:.6;
+  }
+}
 form {
   width: 100%;
   position: relative;
