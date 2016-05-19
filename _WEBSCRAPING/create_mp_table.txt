@@ -1,0 +1,9 @@
+CREATE TABLE members (
+id INT PRIMARY KEY,
+cons_address TEXT[],
+cons_phone TEXT,
+email TEXT,
+photo TEXT,
+riding_id INT,
+languages TEXT
+);
