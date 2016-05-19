@@ -180,13 +180,14 @@ section {
   font-size: 12px;
   max-height: 0;
   overflow: hidden;
-  transition: max-height .6s ease-in-out;
+  cursor: pointer;
+  transition: max-height .2s ease-in-out;
   span:first-child {
     font-size: 16px;
     font-weight: bold;
   }
   span {
-    transition: visibility .6s ease-in-out;
+    transition: visibility .2s ease-in-out;
     visibility: hidden;
   }
 }
