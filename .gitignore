@@ -36,4 +36,7 @@ node_modules/
 .Spotlight-V100
 .Trashes
 ehthumbs.db
-Thumbs.dbnode_modules/\nbower_components/
+Thumbs.db
+backend/node_modules/
+frontend/node_modules/
+frontend/bower_components/

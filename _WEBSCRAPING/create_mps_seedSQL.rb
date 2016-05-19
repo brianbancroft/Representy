@@ -9,9 +9,9 @@ json_file = File.read('mpsHash.json')
 
 json_data = JSON.parse(json_file)
 
-open('MP_seed.SQL', 'w') { |item|
-  item << "INSERT INTO members (mp_id, name, party, cons_address, cons_phone, email, photo, ridingId, languages)"
+open('MP_seed.txt', 'w') { |item|
   json_data.each do |i|
+    item << "INSERT INTO members (id, name, party, cons_address, cons_phone, email, photo, riding_id, languages)\n"
     if i['phone'] == ""
        i['phone'] = "N/A"
     end
@@ -21,8 +21,8 @@ open('MP_seed.SQL', 'w') { |item|
     if i['address'] == []
        i['address'].push("N/A")
     end
-    item << "VALUES (\'#{i['id']}'\, \'#{i['name']}'\, \'#{i['party']}'\, \ ARRAY#{i['address']}\, \'#{i['phone']}'\, \'#{i['email']}'\, \'#{i['photo']}'\, \'#{i['riding_id']}'\, \'#{i['languages']}'\}),\n"
-  
+    item << "VALUES (#{i['id'].to_i}, \'#{i['name']}'\, \'#{i['party']}'\, \ ARRAY#{i['address']}\, \'#{i['phone']}\', \'#{i['email']}\', \'#{i['photo']}\', #{i['riding_id'].to_i}, \'#{i['languages']}\');\n"
+
   end
-  
+
 }
