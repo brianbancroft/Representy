@@ -23,19 +23,21 @@ class App extends React.Component {
     : <AllMpView 
         data = { this.props.data }
         onChange = { this._changeSelectedMp }
-    />;
+    />
 
     return (
  
       <div>
-        <Navbar />
+        <Navbar 
+          onChange = { this._changeSelectedMp }
+        />
         { componentToRender }
       </div>
     )
   }
 
-  _changeSelectedMp = (mp) => {
-  
+  _changeSelectedMp = (mp) => {  
+
     this.setState({
       selectedMP: mp
     })

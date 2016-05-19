@@ -1,3 +1,5 @@
+node_modules/
+
 # Compiled source #
 ###################
 *.com
@@ -34,4 +36,4 @@
 .Spotlight-V100
 .Trashes
 ehthumbs.db
-Thumbs.db
+Thumbs.dbnode_modules/\nbower_components/
