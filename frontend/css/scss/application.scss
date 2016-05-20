@@ -35,7 +35,7 @@ a {
 }
 
 h1 {
-  font-size:40px;
+  font-size:45px;
   text-align: center;
 }
 
@@ -178,11 +178,19 @@ button {
   justify-content:space-between;
 
 }
-.row-container-center {
-  display: flex;
-  margin-bottom: 20px;
-  justify-content:center;
-
+.column-container-center {
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    h1 {
+      margin-bottom:10px;
+    }
+    p {
+      line-height: 150%; 
+      font-size: 20px; 
+    }
 }
 .row-container.mp-head {
   align-items:center;
@@ -226,4 +234,30 @@ form {
     text-transform: uppercase; 
     border:0; 
   }
+}
+
+.row-container.no-margin {
+  margin-bottom: 0px;
+  position: relative;
+  z-index: 10;
+}
+
+.filter {
+  flex-grow:3;
+  padding:10px;
+  font-weight: bold;
+  font-size:14px;
+  color: white;
+  border:3px solid white;
+/*  width:300px;
+*/  text-transform: uppercase;
+
+}
+
+.filter.all {
+  flex-grow:1;
+
+  /*width:120px;*/
+  color:#333;
+
 }

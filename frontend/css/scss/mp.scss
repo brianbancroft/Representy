@@ -30,6 +30,22 @@
   color:$blocColour;
 }
 
+.filter.lib {
+  background-color:$libColour;
+}
+.filter.con {
+  background-color:$conColour;
+}
+.filter.ndp {
+  background-color:$ndpColour;
+}
+.filter.green {
+  background-color:$greenColour;
+}
+.filter.bloc {
+  background-color:$blocColour;
+}
+
 .image-crop.lib {
   border-bottom: 10px solid $libColour;
 }

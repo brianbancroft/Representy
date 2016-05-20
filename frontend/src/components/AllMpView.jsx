@@ -2,20 +2,21 @@ import React from 'react';
 import MpThumb from './MpThumb.jsx';
 import MpIntro from './MpIntro.jsx';
 import MpTextSearch from './MpTextSearch.jsx';
+import MpMapSearch from './MpMapSearch.jsx';
+import MpPartyFilter from './MpPartyFilter.jsx';
 
 
 class AllMpView extends React.Component {
   state = {
     searchText: '',
-    searchBox: false
+    searchBox: false,
+    mapBox: false
   }
 
   render() {
-    // var searchToRender = this.state.searchBox
-    // ? <MpTextSearch updateSearchText = { this._updateSearchText }/>
 
 
-    var searchToRender = <p>ahh</p>
+
 
 
     var filterData = this.props.data.filter((data) => {
@@ -31,9 +32,10 @@ class AllMpView extends React.Component {
           <main className="main">
             <div className="main-body">
               <section>   
-              <MpIntro selectSearchBox = { this._selectSearchBox }/> 
-
+              <MpIntro selectSearchBox = { this._selectSearchBox } selectMapBox = {this._selectMapBox}/> 
+              {this.state.mapBox ? <MpMapSearch/> : ''}
               {this.state.searchBox ? <MpTextSearch updateSearchText = { this._updateSearchText }/> : ''}
+              <MpPartyFilter updateSearchText = { this._updateSearchText }/>
               <div id="mp-container">
 
                 {filterData.map(function(mp){
@@ -57,7 +59,11 @@ class AllMpView extends React.Component {
   }
 
   _selectSearchBox = (event) => {
-    this.setState({ searchBox: !this.state.searchBox })
+    this.setState({ searchBox: !this.state.searchBox, mapBox: false })
+  }
+
+    _selectMapBox = (event) => {
+    this.setState({ mapBox: !this.state.mapBox, searchBox: false })
   }
 
 }
