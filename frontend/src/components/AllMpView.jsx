@@ -1,6 +1,7 @@
 import React from 'react';
 import MpThumb from './MpThumb.jsx';
 import MpIntro from './MpIntro.jsx';
+import MpTextSearch from './MpTextSearch.jsx';
 
 
 class AllMpView extends React.Component {
@@ -13,6 +14,7 @@ class AllMpView extends React.Component {
             <div className="main-body">
               <section>   
               <MpIntro /> 
+              <MpTextSearch />
               <div id="mp-container">
 
                 {this.props.data.map(function(mp){
