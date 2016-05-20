@@ -1,0 +1,237 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+
+ *= require_tree .
+ *= require_self
+ */
+/*@import "bootstrap-sprockets";
+@import "bootstrap";*/
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #333;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 40px;
+  text-align: center;
+}
+
+h2 {
+  font-weight: bold;
+  margin-top: 0px;
+}
+
+button {
+  border-radius: 0px;
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+  width: 250px;
+  background-color: white;
+  border-color: #333;
+  color: #666;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color .2s ease-in-out, color .2s ease-in-out;
+}
+
+button:hover {
+  background-color: #333;
+  color: white;
+}
+
+button:focus {
+  outline: 0;
+}
+
+.width {
+  width: 75%;
+}
+
+.light {
+  font-weight: 200;
+}
+
+.bold {
+  font-weight: 900;
+}
+
+.navbar-mp {
+  z-index: 1;
+  position: relative;
+  color: white;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0px;
+}
+
+.skew {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
+
+.navbar-mp .skew:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: visible;
+  width: 100%;
+  height: 250px;
+  margin-bottom: 20px;
+  background-color: #333;
+  z-index: -1;
+  -webkit-transform: skewY(-3deg);
+  -moz-transform: skewY(-3deg);
+  -ms-transform: skewY(-3deg);
+  -o-transform: skewY(-3deg);
+  transform: skewY(-3deg);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: initial;
+}
+
+.form-control {
+  border-radius: 0px;
+  font-weight: bold;
+  color: #333;
+  border: 3px solid #666;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.form-control:focus {
+  border-color: #dbdbdb;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.btn-default {
+  border-radius: 0px;
+  background-color: #333;
+  border: 1px solid #333;
+  color: white;
+  font-weight: bold;
+  transition: background-color .15s ease-in-out;
+}
+
+.btn-default:hover {
+  background-color: #666;
+  border: 1px solid #333;
+  color: white;
+}
+
+.mp-hover + .mp-index-tag span {
+  display: block;
+}
+
+.mp-hover:hover + .mp-index-tag {
+  max-height: 100px;
+}
+
+.mp-hover:hover + .mp-index-tag span {
+  visibility: visible;
+  display: block;
+}
+
+.contact-foot {
+  display: flex;
+  flex-direction: row;
+  justify-contents: center;
+}
+
+.contact-foot div {
+  width: 50%;
+}
+
+.contact-foot div:first-child {
+  border-right: 1px solid #666;
+}
+
+.row-container {
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+.row-container-center {
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.row-container.mp-head {
+  align-items: center;
+}
+
+.row-container.mp-head .row-item:last-child {
+  width: 75%;
+}
+
+.logo {
+  cursor: pointer;
+  transition: opacity .2s ease-in-out;
+}
+
+.logo:hover {
+  opacity: .6;
+}
+
+form {
+  width: 100%;
+  position: relative;
+  z-index: 5;
+  display: flex;
+  align-items: stretch;
+  flex-direction: row;
+}
+
+form input, form button {
+  font-size: 18px;
+  padding: 5px 10px;
+}
+
+form input:focus, form button:focus {
+  outline: 0;
+}
+
+form input {
+  flex-grow: 1;
+  border: none;
+  border-bottom: 3px solid #333;
+}
+
+form button {
+  flex-grow: 0;
+  cursor: pointer;
+  background-color: #333;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 0;
+}
