@@ -7,6 +7,9 @@ require 'rest-client'
 require 'json'
 require 'pry'
 
+require_relative 'score_engagement.rb'
+
+
 client = Twitter::REST::Client.new do |config|
   config.consumer_key        = "b1HRb0wLGXLT1ZJNSHuhJA5ce"
   config.consumer_secret     = "2bZAqKlyGhjW6FU3EOLmFIMpo1ajpnrgy0XGv4YhqnNwv2z2Bh"
@@ -16,13 +19,22 @@ end
 
 binding.pry
 
-# test = client.user_timeline("jkenney")
+## Sample Hash: namesHash
+mid_array = []
+
+namesHash.each do |poli_twerp|
+
+  # get list of tweets
+  tweetList = client.user_timeline(poli_twerp, {count:70})
+  # For list of counts, do something
+  engagementCount = Score_engagement::getParticipationCount(tweetList)
+  # Otherwise, do something else.
+
+  # That's it.
+
+
+end
+
+# test = client.user_timeline("jkenney",{count:200})
 
 #to get the text, it's tweetvariable[i].text
-
-
-if testString[0] == '@' || testString[0] == '.' && testString[1] == '@'
-  partcipation_count += 1
-elsif not tweet.quoted_status.text.nil?
-  partcipation_count += 1
-end
