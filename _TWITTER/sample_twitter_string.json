@@ -1,0 +1,4019 @@
+[{
+	"created_at": "Fri May 20 03:58:21 +0000 2016",
+	"id": 733507124823785500,
+	"id_str": "733507124823785472",
+	"text": "@WntKitz Shut down Kinder Morgan, and you shut down 30% of your energy supply, which means more tankers. Not an opinion, a fact.",
+	"truncated": false,
+	"entities": {
+		"hashtags": [],
+		"symbols": [],
+		"user_mentions": [{
+			"screen_name": "WntKitz",
+			"name": "Todd Kitzler",
+			"id": 340592096,
+			"id_str": "340592096",
+			"indices": [
+				0,
+				8
+			]
+		}],
+		"urls": []
+	},
+	"source": "<a href="
+	http: //twitter.com" rel="nofollow">Twitter Web Client</a>",
+		"in_reply_to_status_id": 733500309071265800,
+	"in_reply_to_status_id_str": "733500309071265792",
+	"in_reply_to_user_id": 340592096,
+	"in_reply_to_user_id_str": "340592096",
+	"in_reply_to_screen_name": "WntKitz",
+	"user": {
+		"id": 21525682,
+		"id_str": "21525682",
+		"name": "Jason Kenney",
+		"screen_name": "jkenney",
+		"location": "Calgary, CANADA",
+		"description": "Member of Parliament for Calgary Midnapore / Continuez à me suivre en francais sur @jkenney_fr",
+		"url": "https://t.co/A3TlCZghYH",
+		"entities": {
+			"url": {
+				"urls": [{
+					"url": "https://t.co/A3TlCZghYH",
+					"expanded_url": "http://www.jasonkenney.com",
+					"display_url": "jasonkenney.com",
+					"indices": [
+						0,
+						23
+					]
+				}]
+			},
+			"description": {
+				"urls": []
+			}
+		},
+		"protected": false,
+		"followers_count": 56079,
+		"friends_count": 1162,
+		"listed_count": 1197,
+		"created_at": "Sat Feb 21 23:05:42 +0000 2009",
+		"favourites_count": 3534,
+		"utc_offset": -21600,
+		"time_zone": "Mountain Time (US & Canada)",
+		"geo_enabled": true,
+		"verified": true,
+		"statuses_count": 19671,
+		"lang": "en",
+		"contributors_enabled": false,
+		"is_translator": false,
+		"is_translation_enabled": false,
+		"profile_background_color": "2D1CE9",
+		"profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+		"profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+		"profile_background_tile": false,
+		"profile_image_url": "http://pbs.twimg.com/profile_images/710741808297324544/8GtVGpBt_normal.jpg",
+		"profile_image_url_https": "https://pbs.twimg.com/profile_images/710741808297324544/8GtVGpBt_normal.jpg",
+		"profile_banner_url": "https://pbs.twimg.com/profile_banners/21525682/1404268558",
+		"profile_link_color": "2D1CE9",
+		"profile_sidebar_border_color": "FFFFFF",
+		"profile_sidebar_fill_color": "7193C1",
+		"profile_text_color": "071A22",
+		"profile_use_background_image": false,
+		"has_extended_profile": false,
+		"default_profile": false,
+		"default_profile_image": false,
+		"following": false,
+		"follow_request_sent": false,
+		"notifications": false
+	},
+	"geo": null,
+	"coordinates": null,
+	"place": null,
+	"contributors": null,
+	"is_quote_status": false,
+	"retweet_count": 5,
+	"favorite_count": 8,
+	"favorited": false,
+	"retweeted": false,
+	"lang": "en"
+}, {
+	"created_at": "Fri May 20 03:57:36 +0000 2016",
+	"id": 733506936721842200,
+	"id_str": "733506936721842176",
+	"text": "@Stryder99 The UK Westminster Parliament is prorogued annually. The only time it has been controversial is when PMSH did it.",
+	"truncated": false,
+	"entities": {
+		"hashtags": [],
+		"symbols": [],
+		"user_mentions": [{
+			"screen_name": "Stryder99",
+			"name": "Stryder99",
+			"id": 419252740,
+			"id_str": "419252740",
+			"indices": [
+				0,
+				10
+			]
+		}],
+		"urls": []
+	},
+	"source": "<a href="
+	http: //twitter.com" rel="nofollow">Twitter Web Client</a>",
+		"in_reply_to_status_id": 733502110541680600,
+	"in_reply_to_status_id_str": "733502110541680640",
+	"in_reply_to_user_id": 419252740,
+	"in_reply_to_user_id_str": "419252740",
+	"in_reply_to_screen_name": "Stryder99",
+	"user": {
+		"id": 21525682,
+		"id_str": "21525682",
+		"name": "Jason Kenney",
+		"screen_name": "jkenney",
+		"location": "Calgary, CANADA",
+		"description": "Member of Parliament for Calgary Midnapore / Continuez à me suivre en francais sur @jkenney_fr",
+		"url": "https://t.co/A3TlCZghYH",
+		"entities": {
+			"url": {
+				"urls": [{
+					"url": "https://t.co/A3TlCZghYH",
+					"expanded_url": "http://www.jasonkenney.com",
+					"display_url": "jasonkenney.com",
+					"indices": [
+						0,
+						23
+					]
+				}]
+			},
+			"description": {
+				"urls": []
+			}
+		},
+		"protected": false,
+		"followers_count": 56079,
+		"friends_count": 1162,
+		"listed_count": 1197,
+		"created_at": "Sat Feb 21 23:05:42 +0000 2009",
+		"favourites_count": 3534,
+		"utc_offset": -21600,
+		"time_zone": "Mountain Time (US & Canada)",
+		"geo_enabled": true,
+		"verified": true,
+		"statuses_count": 19671,
+		"lang": "en",
+		"contributors_enabled": false,
+		"is_translator": false,
+		"is_translation_enabled": false,
+		"profile_background_color": "2D1CE9",
+		"profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+		"profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+		"profile_background_tile": false,
+		"profile_image_url": "http://pbs.twimg.com/profile_images/710741808297324544/8GtVGpBt_normal.jpg",
+		"profile_image_url_https": "https://pbs.twimg.com/profile_images/710741808297324544/8GtVGpBt_normal.jpg",
+		"profile_banner_url": "https://pbs.twimg.com/profile_banners/21525682/1404268558",
+		"profile_link_color": "2D1CE9",
+		"profile_sidebar_border_color": "FFFFFF",
+		"profile_sidebar_fill_color": "7193C1",
+		"profile_text_color": "071A22",
+		"profile_use_background_image": false,
+		"has_extended_profile": false,
+		"default_profile": false,
+		"default_profile_image": false,
+		"following": false,
+		"follow_request_sent": false,
+		"notifications": false
+	},
+	"geo": null,
+	"coordinates": null,
+	"place": null,
+	"contributors": null,
+	"is_quote_status": false,
+	"retweet_count": 0,
+	"favorite_count": 1,
+	"favorited": false,
+	"retweeted": false,
+	"lang": "en"
+}, {
+	"created_at": "Fri May 20 03:56:44 +0000 2016",
+	"id": 733506721600176100,
+	"id_str": "733506721600176128",
+	"text": "@Stryder99 Our Parliament has been prorogued 109 times since 1867, 3 of which prorogations occurred during PMSH's tenure. Entirely normal.",
+	"truncated": false,
+	"entities": {
+		"hashtags": [],
+		"symbols": [],
+		"user_mentions": [{
+			"screen_name": "Stryder99",
+			"name": "Stryder99",
+			"id": 419252740,
+			"id_str": "419252740",
+			"indices": [
+				0,
+				10
+			]
+		}],
+		"urls": []
+	},
+	"source": "<a href="
+	http: //twitter.com" rel="nofollow">Twitter Web Client</a>",
+		"in_reply_to_status_id": 733502110541680600,
+	"in_reply_to_status_id_str": "733502110541680640",
+	"in_reply_to_user_id": 419252740,
+	"in_reply_to_user_id_str": "419252740",
+	"in_reply_to_screen_name": "Stryder99",
+	"user": {
+		"id": 21525682,
+		"id_str": "21525682",
+		"name": "Jason Kenney",
+		"screen_name": "jkenney",
+		"location": "Calgary, CANADA",
+		"description": "Member of Parliament for Calgary Midnapore / Continuez à me suivre en francais sur @jkenney_fr",
+		"url": "https://t.co/A3TlCZghYH",
+		"entities": {
+			"url": {
+				"urls": [{
+					"url": "https://t.co/A3TlCZghYH",
+					"expanded_url": "http://www.jasonkenney.com",
+					"display_url": "jasonkenney.com",
+					"indices": [
+						0,
+						23
+					]
+				}]
+			},
+			"description": {
+				"urls": []
+			}
+		},
+		"protected": false,
+		"followers_count": 56079,
+		"friends_count": 1162,
+		"listed_count": 1197,
+		"created_at": "Sat Feb 21 23:05:42 +0000 2009",
+		"favourites_count": 3534,
+		"utc_offset": -21600,
+		"time_zone": "Mountain Time (US & Canada)",
+		"geo_enabled": true,
+		"verified": true,
+		"statuses_count": 19671,
+		"lang": "en",
+		"contributors_enabled": false,
+		"is_translator": false,
+		"is_translation_enabled": false,
+		"profile_background_color": "2D1CE9",
+		"profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+		"profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+		"profile_background_tile": false,
+		"profile_image_url": "http://pbs.twimg.com/profile_images/710741808297324544/8GtVGpBt_normal.jpg",
+		"profile_image_url_https": "https://pbs.twimg.com/profile_images/710741808297324544/8GtVGpBt_normal.jpg",
+		"profile_banner_url": "https://pbs.twimg.com/profile_banners/21525682/1404268558",
+		"profile_link_color": "2D1CE9",
+		"profile_sidebar_border_color": "FFFFFF",
+		"profile_sidebar_fill_color": "7193C1",
+		"profile_text_color": "071A22",
+		"profile_use_background_image": false,
+		"has_extended_profile": false,
+		"default_profile": false,
+		"default_profile_image": false,
+		"following": false,
+		"follow_request_sent": false,
+		"notifications": false
+	},
+	"geo": null,
+	"coordinates": null,
+	"place": null,
+	"contributors": null,
+	"is_quote_status": false,
+	"retweet_count": 0,
+	"favorite_count": 0,
+	"favorited": false,
+	"retweeted": false,
+	"lang": "en"
+}, {
+	"created_at": "Fri May 20 03:54:48 +0000 2016",
+	"id": 733506231982260200,
+	"id_str": "733506231982260224",
+	"text": "@jadeobrien_ None of these facts have been contested by the Prime Minsiter or his office.",
+	"truncated": false,
+	"entities": {
+		"hashtags": [],
+		"symbols": [],
+		"user_mentions": [{
+			"screen_name": "jadeobrien_",
+			"name": "Jade O'Brien",
+			"id": 717538971882954800,
+			"id_str": "717538971882954754",
+			"indices": [
+				0,
+				12
+			]
+		}],
+		"urls": []
+	},
+	"source": "<a href="
+	http: //twitter.com" rel="nofollow">Twitter Web Client</a>",
+		"in_reply_to_status_id": 733505003638263800,
+	"in_reply_to_status_id_str": "733505003638263808",
+	"in_reply_to_user_id": 717538971882954800,
+	"in_reply_to_user_id_str": "717538971882954754",
+	"in_reply_to_screen_name": "jadeobrien_",
+	"user": {
+		"id": 21525682,
+		"id_str": "21525682",
+		"name": "Jason Kenney",
+		"screen_name": "jkenney",
+		"location": "Calgary, CANADA",
+		"description": "Member of Parliament for Calgary Midnapore / Continuez à me suivre en francais sur @jkenney_fr",
+		"url": "https://t.co/A3TlCZghYH",
+		"entities": {
+			"url": {
+				"urls": [{
+					"url": "https://t.co/A3TlCZghYH",
+					"expanded_url": "http://www.jasonkenney.com",
+					"display_url": "jasonkenney.com",
+					"indices": [
+						0,
+						23
+					]
+				}]
+			},
+			"description": {
+				"urls": []
+			}
+		},
+		"protected": false,
+		"followers_count": 56079,
+		"friends_count": 1162,
+		"listed_count": 1197,
+		"created_at": "Sat Feb 21 23:05:42 +0000 2009",
+		"favourites_count": 3534,
+		"utc_offset": -21600,
+		"time_zone": "Mountain Time (US & Canada)",
+		"geo_enabled": true,
+		"verified": true,
+		"statuses_count": 19671,
+		"lang": "en",
+		"contributors_enabled": false,
+		"is_translator": false,
+		"is_translation_enabled": false,
+		"profile_background_color": "2D1CE9",
+		"profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+		"profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+		"profile_background_tile": false,
+		"profile_image_url": "http://pbs.twimg.com/profile_images/710741808297324544/8GtVGpBt_normal.jpg",
+		"profile_image_url_https": "https://pbs.twimg.com/profile_images/710741808297324544/8GtVGpBt_normal.jpg",
+		"profile_banner_url": "https://pbs.twimg.com/profile_banners/21525682/1404268558",
+		"profile_link_color": "2D1CE9",
+		"profile_sidebar_border_color": "FFFFFF",
+		"profile_sidebar_fill_color": "7193C1",
+		"profile_text_color": "071A22",
+		"profile_use_background_image": false,
+		"has_extended_profile": false,
+		"default_profile": false,
+		"default_profile_image": false,
+		"following": false,
+		"follow_request_sent": false,
+		"notifications": false
+	},
+	"geo": null,
+	"coordinates": null,
+	"place": null,
+	"contributors": null,
+	"is_quote_status": false,
+	"retweet_count": 0,
+	"favorite_count": 0,
+	"favorited": false,
+	"retweeted": false,
+	"lang": "en"
+}, {
+	"created_at": "Fri May 20 03:48:39 +0000 2016",
+	"id": 733504685966037000,
+	"id_str": "733504685966036993",
+	"text": "@jadeobrien_ He unintentionally stormed across floor,told MPs to "
+	get the f out of my way,
+	" pushed through them, grabbed an MP & pulled him?",
+	"truncated": false,
+	"entities": {
+		"hashtags": [],
+		"symbols": [],
+		"user_mentions": [{
+			"screen_name": "jadeobrien_",
+			"name": "Jade O'Brien",
+			"id": 717538971882954800,
+			"id_str": "717538971882954754",
+			"indices": [
+				0,
+				12
+			]
+		}],
+		"urls": []
+	},
+	"source": "<a href="
+	http: //twitter.com" rel="nofollow">Twitter Web Client</a>",
+		"in_reply_to_status_id": 733493900271181800,
+	"in_reply_to_status_id_str": "733493900271181824",
+	"in_reply_to_user_id": 717538971882954800,
+	"in_reply_to_user_id_str": "717538971882954754",
+	"in_reply_to_screen_name": "jadeobrien_",
+	"user": {
+		"id": 21525682,
+		"id_str": "21525682",
+		"name": "Jason Kenney",
+		"screen_name": "jkenney",
+		"location": "Calgary, CANADA",
+		"description": "Member of Parliament for Calgary Midnapore / Continuez à me suivre en francais sur @jkenney_fr",
+		"url": "https://t.co/A3TlCZghYH",
+		"entities": {
+			"url": {
+				"urls": [{
+					"url": "https://t.co/A3TlCZghYH",
+					"expanded_url": "http://www.jasonkenney.com",
+					"display_url": "jasonkenney.com",
+					"indices": [
+						0,
+						23
+					]
+				}]
+			},
+			"description": {
+				"urls": []
+			}
+		},
+		"protected": false,
+		"followers_count": 56079,
+		"friends_count": 1162,
+		"listed_count": 1197,
+		"created_at": "Sat Feb 21 23:05:42 +0000 2009",
+		"favourites_count": 3534,
+		"utc_offset": -21600,
+		"time_zone": "Mountain Time (US & Canada)",
+		"geo_enabled": true,
+		"verified": true,
+		"statuses_count": 19671,
+		"lang": "en",
+		"contributors_enabled": false,
+		"is_translator": false,
+		"is_translation_enabled": false,
+		"profile_background_color": "2D1CE9",
+		"profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+		"profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+		"profile_background_tile": false,
+		"profile_image_url": "http://pbs.twimg.com/profile_images/710741808297324544/8GtVGpBt_normal.jpg",
+		"profile_image_url_https": "https://pbs.twimg.com/profile_images/710741808297324544/8GtVGpBt_normal.jpg",
+		"profile_banner_url": "https://pbs.twimg.com/profile_banners/21525682/1404268558",
+		"profile_link_color": "2D1CE9",
+		"profile_sidebar_border_color": "FFFFFF",
+		"profile_sidebar_fill_color": "7193C1",
+		"profile_text_color": "071A22",
+		"profile_use_background_image": false,
+		"has_extended_profile": false,
+		"default_profile": false,
+		"default_profile_image": false,
+		"following": false,
+		"follow_request_sent": false,
+		"notifications": false
+	},
+	"geo": null,
+	"coordinates": null,
+	"place": null,
+	"contributors": null,
+	"is_quote_status": false,
+	"retweet_count": 1,
+	"favorite_count": 2,
+	"favorited": false,
+	"retweeted": false,
+	"lang": "en"
+}, {
+	"created_at": "Fri May 20 03:31:20 +0000 2016",
+	"id": 733500327186567200,
+	"id_str": "733500327186567168",
+	"text": "RT @RonaAmbrose: Parliament has a voice, it's the voice of every Canadian. Shuttering debate on a conscience issue is unprecedented: https:…",
+	"truncated": false,
+	"entities": {
+		"hashtags": [],
+		"symbols": [],
+		"user_mentions": [{
+			"screen_name": "RonaAmbrose",
+			"name": "Rona Ambrose",
+			"id": 277155475,
+			"id_str": "277155475",
+			"indices": [
+				3,
+				15
+			]
+		}],
+		"urls": [{
+			"url": "https://t.co/KFayVMdbtO",
+			"expanded_url": "https://www.facebook.com/ronaambrose/videos/10153705810093525/",
+			"display_url": "facebook.com/ronaambrose/vi…",
+			"indices": [
+				139,
+				140
+			]
+		}]
+	},
+	"source": "<a href="
+	http: //twitter.com" rel="nofollow">Twitter Web Client</a>",
+		"in_reply_to_status_id": null,
+	"in_reply_to_status_id_str": null,
+	"in_reply_to_user_id": null,
+	"in_reply_to_user_id_str": null,
+	"in_reply_to_screen_name": null,
+	"user": {
+		"id": 21525682,
+		"id_str": "21525682",
+		"name": "Jason Kenney",
+		"screen_name": "jkenney",
+		"location": "Calgary, CANADA",
+		"description": "Member of Parliament for Calgary Midnapore / Continuez à me suivre en francais sur @jkenney_fr",
+		"url": "https://t.co/A3TlCZghYH",
+		"entities": {
+			"url": {
+				"urls": [{
+					"url": "https://t.co/A3TlCZghYH",
+					"expanded_url": "http://www.jasonkenney.com",
+					"display_url": "jasonkenney.com",
+					"indices": [
+						0,
+						23
+					]
+				}]
+			},
+			"description": {
+				"urls": []
+			}
+		},
+		"protected": false,
+		"followers_count": 56079,
+		"friends_count": 1162,
+		"listed_count": 1197,
+		"created_at": "Sat Feb 21 23:05:42 +0000 2009",
+		"favourites_count": 3534,
+		"utc_offset": -21600,
+		"time_zone": "Mountain Time (US & Canada)",
+		"geo_enabled": true,
+		"verified": true,
+		"statuses_count": 19671,
+		"lang": "en",
+		"contributors_enabled": false,
+		"is_translator": false,
+		"is_translation_enabled": false,
+		"profile_background_color": "2D1CE9",
+		"profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+		"profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+		"profile_background_tile": false,
+		"profile_image_url": "http://pbs.twimg.com/profile_images/710741808297324544/8GtVGpBt_normal.jpg",
+		"profile_image_url_https": "https://pbs.twimg.com/profile_images/710741808297324544/8GtVGpBt_normal.jpg",
+		"profile_banner_url": "https://pbs.twimg.com/profile_banners/21525682/1404268558",
+		"profile_link_color": "2D1CE9",
+		"profile_sidebar_border_color": "FFFFFF",
+		"profile_sidebar_fill_color": "7193C1",
+		"profile_text_color": "071A22",
+		"profile_use_background_image": false,
+		"has_extended_profile": false,
+		"default_profile": false,
+		"default_profile_image": false,
+		"following": false,
+		"follow_request_sent": false,
+		"notifications": false
+	},
+	"geo": null,
+	"coordinates": null,
+	"place": null,
+	"contributors": null,
+	"retweeted_status": {
+		"created_at": "Fri May 20 01:44:06 +0000 2016",
+		"id": 733473343077130200,
+		"id_str": "733473343077130241",
+		"text": "Parliament has a voice, it's the voice of every Canadian. Shuttering debate on a conscience issue is unprecedented: https://t.co/KFayVMdbtO",
+		"truncated": false,
+		"entities": {
+			"hashtags": [],
+			"symbols": [],
+			"user_mentions": [],
+			"urls": [{
+				"url": "https://t.co/KFayVMdbtO",
+				"expanded_url": "https://www.facebook.com/ronaambrose/videos/10153705810093525/",
+				"display_url": "facebook.com/ronaambrose/vi…",
+				"indices": [
+					116,
+					139
+				]
+			}]
+		},
+		"source": "<a href="
+		https: //about.twitter.com/products/tweetdeck" rel="nofollow">TweetDeck</a>",
+			"in_reply_to_status_id": null,
+		"in_reply_to_status_id_str": null,
+		"in_reply_to_user_id": null,
+		"in_reply_to_user_id_str": null,
+		"in_reply_to_screen_name": null,
+		"user": {
+			"id": 277155475,
+			"id_str": "277155475",
+			"name": "Rona Ambrose",
+			"screen_name": "RonaAmbrose",
+			"location": "",
+			"description": "Interim Conservative Leader and Leader of the Official Opposition / Chef intérimaire du Parti conservateur et Chef de l'Opposition officielle",
+			"url": "https://t.co/acJZeBLccB",
+			"entities": {
+				"url": {
+					"urls": [{
+						"url": "https://t.co/acJZeBLccB",
+						"expanded_url": "http://www.ronaambrose.com",
+						"display_url": "ronaambrose.com",
+						"indices": [
+							0,
+							23
+						]
+					}]
+				},
+				"description": {
+					"urls": []
+				}
+			},
+			"protected": false,
+			"followers_count": 33661,
+			"friends_count": 360,
+			"listed_count": 639,
+			"created_at": "Mon Apr 04 20:18:29 +0000 2011",
+			"favourites_count": 58,
+			"utc_offset": -14400,
+			"time_zone": "Eastern Time (US & Canada)",
+			"geo_enabled": true,
+			"verified": true,
+			"statuses_count": 7353,
+			"lang": "en",
+			"contributors_enabled": false,
+			"is_translator": false,
+			"is_translation_enabled": false,
+			"profile_background_color": "C0DEED",
+			"profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+			"profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+			"profile_background_tile": false,
+			"profile_image_url": "http://pbs.twimg.com/profile_images/719949667350482944/rypkGRMz_normal.jpg",
+			"profile_image_url_https": "https://pbs.twimg.com/profile_images/719949667350482944/rypkGRMz_normal.jpg",
+			"profile_banner_url": "https://pbs.twimg.com/profile_banners/277155475/1462200259",
+			"profile_link_color": "0084B4",
+			"profile_sidebar_border_color": "C0DEED",
+			"profile_sidebar_fill_color": "DDEEF6",
+			"profile_text_color": "333333",
+			"profile_use_background_image": true,
+			"has_extended_profile": false,
+			"default_profile": true,
+			"default_profile_image": false,
+			"following": false,
+			"follow_request_sent": false,
+			"notifications": false
+		},
+		"geo": null,
+		"coordinates": null,
+		"place": null,
+		"contributors": null,
+		"is_quote_status": false,
+		"retweet_count": 102,
+		"favorite_count": 114,
+		"favorited": false,
+		"retweeted": false,
+		"possibly_sensitive": false,
+		"lang": "en"
+	},
+	"is_quote_status": false,
+	"retweet_count": 102,
+	"favorite_count": 0,
+	"favorited": false,
+	"retweeted": false,
+	"possibly_sensitive": false,
+	"lang": "en"
+}, {
+	"created_at": "Fri May 20 03:21:50 +0000 2016",
+	"id": 733497938748510200,
+	"id_str": "733497938748510208",
+	"text": "@markbrooksCA KM has operated for 60 yrs, providing 30% of BC fuel supply. Shut down KM, & you have to import that oil, i.e. more tankers.",
+	"truncated": false,
+	"entities": {
+		"hashtags": [],
+		"symbols": [],
+		"user_mentions": [{
+			"screen_name": "markbrooksCA",
+			"name": "Mark Brooks",
+			"id": 168350264,
+			"id_str": "168350264",
+			"indices": [
+				0,
+				13
+			]
+		}],
+		"urls": []
+	},
+	"source": "<a href="
+	http: //twitter.com" rel="nofollow">Twitter Web Client</a>",
+		"in_reply_to_status_id": 733466002625728500,
+	"in_reply_to_status_id_str": "733466002625728513",
+	"in_reply_to_user_id": 168350264,
+	"in_reply_to_user_id_str": "168350264",
+	"in_reply_to_screen_name": "markbrooksCA",
+	"user": {
+		"id": 21525682,
+		"id_str": "21525682",
+		"name": "Jason Kenney",
+		"screen_name": "jkenney",
+		"location": "Calgary, CANADA",
+		"description": "Member of Parliament for Calgary Midnapore / Continuez à me suivre en francais sur @jkenney_fr",
+		"url": "https://t.co/A3TlCZghYH",
+		"entities": {
+			"url": {
+				"urls": [{
+					"url": "https://t.co/A3TlCZghYH",
+					"expanded_url": "http://www.jasonkenney.com",
+					"display_url": "jasonkenney.com",
+					"indices": [
+						0,
+						23
+					]
+				}]
+			},
+			"description": {
+				"urls": []
+			}
+		},
+		"protected": false,
+		"followers_count": 56079,
+		"friends_count": 1162,
+		"listed_count": 1197,
+		"created_at": "Sat Feb 21 23:05:42 +0000 2009",
+		"favourites_count": 3534,
+		"utc_offset": -21600,
+		"time_zone": "Mountain Time (US & Canada)",
+		"geo_enabled": true,
+		"verified": true,
+		"statuses_count": 19671,
+		"lang": "en",
+		"contributors_enabled": false,
+		"is_translator": false,
+		"is_translation_enabled": false,
+		"profile_background_color": "2D1CE9",
+		"profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+		"profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+		"profile_background_tile": false,
+		"profile_image_url": "http://pbs.twimg.com/profile_images/710741808297324544/8GtVGpBt_normal.jpg",
+		"profile_image_url_https": "https://pbs.twimg.com/profile_images/710741808297324544/8GtVGpBt_normal.jpg",
+		"profile_banner_url": "https://pbs.twimg.com/profile_banners/21525682/1404268558",
+		"profile_link_color": "2D1CE9",
+		"profile_sidebar_border_color": "FFFFFF",
+		"profile_sidebar_fill_color": "7193C1",
+		"profile_text_color": "071A22",
+		"profile_use_background_image": false,
+		"has_extended_profile": false,
+		"default_profile": false,
+		"default_profile_image": false,
+		"following": false,
+		"follow_request_sent": false,
+		"notifications": false
+	},
+	"geo": null,
+	"coordinates": null,
+	"place": null,
+	"contributors": null,
+	"is_quote_status": false,
+	"retweet_count": 0,
+	"favorite_count": 0,
+	"favorited": false,
+	"retweeted": false,
+	"lang": "en"
+}, {
+	"created_at": "Fri May 20 03:18:54 +0000 2016",
+	"id": 733497198999113700,
+	"id_str": "733497198999113728",
+	"text": "@kgrandia Kinder Morgan currently supplies 30% of the oil consumed in BC. Shut down KM, and you have to import that, i.e. more tankers.",
+	"truncated": false,
+	"entities": {
+		"hashtags": [],
+		"symbols": [],
+		"user_mentions": [{
+			"screen_name": "kgrandia",
+			"name": "Kevin Grandia",
+			"id": 12726792,
+			"id_str": "12726792",
+			"indices": [
+				0,
+				9
+			]
+		}],
+		"urls": []
+	},
+	"source": "<a href="
+	http: //twitter.com" rel="nofollow">Twitter Web Client</a>",
+		"in_reply_to_status_id": 733470291297325000,
+	"in_reply_to_status_id_str": "733470291297325056",
+	"in_reply_to_user_id": 12726792,
+	"in_reply_to_user_id_str": "12726792",
+	"in_reply_to_screen_name": "kgrandia",
+	"user": {
+		"id": 21525682,
+		"id_str": "21525682",
+		"name": "Jason Kenney",
+		"screen_name": "jkenney",
+		"location": "Calgary, CANADA",
+		"description": "Member of Parliament for Calgary Midnapore / Continuez à me suivre en francais sur @jkenney_fr",
+		"url": "https://t.co/A3TlCZghYH",
+		"entities": {
+			"url": {
+				"urls": [{
+					"url": "https://t.co/A3TlCZghYH",
+					"expanded_url": "http://www.jasonkenney.com",
+					"display_url": "jasonkenney.com",
+					"indices": [
+						0,
+						23
+					]
+				}]
+			},
+			"description": {
+				"urls": []
+			}
+		},
+		"protected": false,
+		"followers_count": 56079,
+		"friends_count": 1162,
+		"listed_count": 1197,
+		"created_at": "Sat Feb 21 23:05:42 +0000 2009",
+		"favourites_count": 3534,
+		"utc_offset": -21600,
+		"time_zone": "Mountain Time (US & Canada)",
+		"geo_enabled": true,
+		"verified": true,
+		"statuses_count": 19671,
+		"lang": "en",
+		"contributors_enabled": false,
+		"is_translator": false,
+		"is_translation_enabled": false,
+		"profile_background_color": "2D1CE9",
+		"profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+		"profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+		"profile_background_tile": false,
+		"profile_image_url": "http://pbs.twimg.com/profile_images/710741808297324544/8GtVGpBt_normal.jpg",
+		"profile_image_url_https": "https://pbs.twimg.com/profile_images/710741808297324544/8GtVGpBt_normal.jpg",
+		"profile_banner_url": "https://pbs.twimg.com/profile_banners/21525682/1404268558",
+		"profile_link_color": "2D1CE9",
+		"profile_sidebar_border_color": "FFFFFF",
+		"profile_sidebar_fill_color": "7193C1",
+		"profile_text_color": "071A22",
+		"profile_use_background_image": false,
+		"has_extended_profile": false,
+		"default_profile": false,
+		"default_profile_image": false,
+		"following": false,
+		"follow_request_sent": false,
+		"notifications": false
+	},
+	"geo": null,
+	"coordinates": null,
+	"place": null,
+	"contributors": null,
+	"is_quote_status": false,
+	"retweet_count": 0,
+	"favorite_count": 0,
+	"favorited": false,
+	"retweeted": false,
+	"lang": "en"
+}, {
+	"created_at": "Fri May 20 03:05:38 +0000 2016",
+	"id": 733493860882481200,
+	"id_str": "733493860882481152",
+	"text": "@gloade_don I think more people are coming to that conclusion. It shouldn't be so contentious, IMHO.",
+	"truncated": false,
+	"entities": {
+		"hashtags": [],
+		"symbols": [],
+		"user_mentions": [{
+			"screen_name": "gloade_don",
+			"name": "Don Gloade",
+			"id": 2310273817,
+			"id_str": "2310273817",
+			"indices": [
+				0,
+				11
+			]
+		}],
+		"urls": []
+	},
+	"source": "<a href="
+	http: //twitter.com" rel="nofollow">Twitter Web Client</a>",
+		"in_reply_to_status_id": 733475367776845800,
+	"in_reply_to_status_id_str": "733475367776845824",
+	"in_reply_to_user_id": 2310273817,
+	"in_reply_to_user_id_str": "2310273817",
+	"in_reply_to_screen_name": "gloade_don",
+	"user": {
+		"id": 21525682,
+		"id_str": "21525682",
+		"name": "Jason Kenney",
+		"screen_name": "jkenney",
+		"location": "Calgary, CANADA",
+		"description": "Member of Parliament for Calgary Midnapore / Continuez à me suivre en francais sur @jkenney_fr",
+		"url": "https://t.co/A3TlCZghYH",
+		"entities": {
+			"url": {
+				"urls": [{
+					"url": "https://t.co/A3TlCZghYH",
+					"expanded_url": "http://www.jasonkenney.com",
+					"display_url": "jasonkenney.com",
+					"indices": [
+						0,
+						23
+					]
+				}]
+			},
+			"description": {
+				"urls": []
+			}
+		},
+		"protected": false,
+		"followers_count": 56079,
+		"friends_count": 1162,
+		"listed_count": 1197,
+		"created_at": "Sat Feb 21 23:05:42 +0000 2009",
+		"favourites_count": 3534,
+		"utc_offset": -21600,
+		"time_zone": "Mountain Time (US & Canada)",
+		"geo_enabled": true,
+		"verified": true,
+		"statuses_count": 19671,
+		"lang": "en",
+		"contributors_enabled": false,
+		"is_translator": false,
+		"is_translation_enabled": false,
+		"profile_background_color": "2D1CE9",
+		"profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+		"profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+		"profile_background_tile": false,
+		"profile_image_url": "http://pbs.twimg.com/profile_images/710741808297324544/8GtVGpBt_normal.jpg",
+		"profile_image_url_https": "https://pbs.twimg.com/profile_images/710741808297324544/8GtVGpBt_normal.jpg",
+		"profile_banner_url": "https://pbs.twimg.com/profile_banners/21525682/1404268558",
+		"profile_link_color": "2D1CE9",
+		"profile_sidebar_border_color": "FFFFFF",
+		"profile_sidebar_fill_color": "7193C1",
+		"profile_text_color": "071A22",
+		"profile_use_background_image": false,
+		"has_extended_profile": false,
+		"default_profile": false,
+		"default_profile_image": false,
+		"following": false,
+		"follow_request_sent": false,
+		"notifications": false
+	},
+	"geo": null,
+	"coordinates": null,
+	"place": null,
+	"contributors": null,
+	"is_quote_status": false,
+	"retweet_count": 0,
+	"favorite_count": 0,
+	"favorited": false,
+	"retweeted": false,
+	"lang": "en"
+}, {
+	"created_at": "Fri May 20 03:04:17 +0000 2016",
+	"id": 733493520049147900,
+	"id_str": "733493520049147905",
+	"text": "@StimulatedMindz I've always wanted to be a minion!",
+	"truncated": false,
+	"entities": {
+		"hashtags": [],
+		"symbols": [],
+		"user_mentions": [{
+			"screen_name": "StimulatedMindz",
+			"name": "Stimulated Mindz",
+			"id": 552622046,
+			"id_str": "552622046",
+			"indices": [
+				0,
+				16
+			]
+		}],
+		"urls": []
+	},
+	"source": "<a href="
+	http: //twitter.com" rel="nofollow">Twitter Web Client</a>",
+		"in_reply_to_status_id": 733482689341337600,
+	"in_reply_to_status_id_str": "733482689341337601",
+	"in_reply_to_user_id": 552622046,
+	"in_reply_to_user_id_str": "552622046",
+	"in_reply_to_screen_name": "StimulatedMindz",
+	"user": {
+		"id": 21525682,
+		"id_str": "21525682",
+		"name": "Jason Kenney",
+		"screen_name": "jkenney",
+		"location": "Calgary, CANADA",
+		"description": "Member of Parliament for Calgary Midnapore / Continuez à me suivre en francais sur @jkenney_fr",
+		"url": "https://t.co/A3TlCZghYH",
+		"entities": {
+			"url": {
+				"urls": [{
+					"url": "https://t.co/A3TlCZghYH",
+					"expanded_url": "http://www.jasonkenney.com",
+					"display_url": "jasonkenney.com",
+					"indices": [
+						0,
+						23
+					]
+				}]
+			},
+			"description": {
+				"urls": []
+			}
+		},
+		"protected": false,
+		"followers_count": 56079,
+		"friends_count": 1162,
+		"listed_count": 1197,
+		"created_at": "Sat Feb 21 23:05:42 +0000 2009",
+		"favourites_count": 3534,
+		"utc_offset": -21600,
+		"time_zone": "Mountain Time (US & Canada)",
+		"geo_enabled": true,
+		"verified": true,
+		"statuses_count": 19671,
+		"lang": "en",
+		"contributors_enabled": false,
+		"is_translator": false,
+		"is_translation_enabled": false,
+		"profile_background_color": "2D1CE9",
+		"profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+		"profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+		"profile_background_tile": false,
+		"profile_image_url": "http://pbs.twimg.com/profile_images/710741808297324544/8GtVGpBt_normal.jpg",
+		"profile_image_url_https": "https://pbs.twimg.com/profile_images/710741808297324544/8GtVGpBt_normal.jpg",
+		"profile_banner_url": "https://pbs.twimg.com/profile_banners/21525682/1404268558",
+		"profile_link_color": "2D1CE9",
+		"profile_sidebar_border_color": "FFFFFF",
+		"profile_sidebar_fill_color": "7193C1",
+		"profile_text_color": "071A22",
+		"profile_use_background_image": false,
+		"has_extended_profile": false,
+		"default_profile": false,
+		"default_profile_image": false,
+		"following": false,
+		"follow_request_sent": false,
+		"notifications": false
+	},
+	"geo": null,
+	"coordinates": null,
+	"place": null,
+	"contributors": null,
+	"is_quote_status": false,
+	"retweet_count": 0,
+	"favorite_count": 1,
+	"favorited": false,
+	"retweeted": false,
+	"lang": "en"
+}, {
+	"created_at": "Fri May 20 03:03:40 +0000 2016",
+	"id": 733493365006688300,
+	"id_str": "733493365006688256",
+	"text": "@bishabhatti Because of the childish behaviour of one Parliamentarian, who happens to be the Prime Minsiter.",
+	"truncated": false,
+	"entities": {
+		"hashtags": [],
+		"symbols": [],
+		"user_mentions": [{
+			"screen_name": "bishabhatti",
+			"name": "Bushra Iqbal",
+			"id": 472092412,
+			"id_str": "472092412",
+			"indices": [
+				0,
+				12
+			]
+		}],
+		"urls": []
+	},
+	"source": "<a href="
+	http: //twitter.com" rel="nofollow">Twitter Web Client</a>",
+		"in_reply_to_status_id": 733483315160862700,
+	"in_reply_to_status_id_str": "733483315160862720",
+	"in_reply_to_user_id": 472092412,
+	"in_reply_to_user_id_str": "472092412",
+	"in_reply_to_screen_name": "bishabhatti",
+	"user": {
+		"id": 21525682,
+		"id_str": "21525682",
+		"name": "Jason Kenney",
+		"screen_name": "jkenney",
+		"location": "Calgary, CANADA",
+		"description": "Member of Parliament for Calgary Midnapore / Continuez à me suivre en francais sur @jkenney_fr",
+		"url": "https://t.co/A3TlCZghYH",
+		"entities": {
+			"url": {
+				"urls": [{
+					"url": "https://t.co/A3TlCZghYH",
+					"expanded_url": "http://www.jasonkenney.com",
+					"display_url": "jasonkenney.com",
+					"indices": [
+						0,
+						23
+					]
+				}]
+			},
+			"description": {
+				"urls": []
+			}
+		},
+		"protected": false,
+		"followers_count": 56079,
+		"friends_count": 1162,
+		"listed_count": 1197,
+		"created_at": "Sat Feb 21 23:05:42 +0000 2009",
+		"favourites_count": 3534,
+		"utc_offset": -21600,
+		"time_zone": "Mountain Time (US & Canada)",
+		"geo_enabled": true,
+		"verified": true,
+		"statuses_count": 19671,
+		"lang": "en",
+		"contributors_enabled": false,
+		"is_translator": false,
+		"is_translation_enabled": false,
+		"profile_background_color": "2D1CE9",
+		"profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+		"profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+		"profile_background_tile": false,
+		"profile_image_url": "http://pbs.twimg.com/profile_images/710741808297324544/8GtVGpBt_normal.jpg",
+		"profile_image_url_https": "https://pbs.twimg.com/profile_images/710741808297324544/8GtVGpBt_normal.jpg",
+		"profile_banner_url": "https://pbs.twimg.com/profile_banners/21525682/1404268558",
+		"profile_link_color": "2D1CE9",
+		"profile_sidebar_border_color": "FFFFFF",
+		"profile_sidebar_fill_color": "7193C1",
+		"profile_text_color": "071A22",
+		"profile_use_background_image": false,
+		"has_extended_profile": false,
+		"default_profile": false,
+		"default_profile_image": false,
+		"following": false,
+		"follow_request_sent": false,
+		"notifications": false
+	},
+	"geo": null,
+	"coordinates": null,
+	"place": null,
+	"contributors": null,
+	"is_quote_status": false,
+	"retweet_count": 0,
+	"favorite_count": 2,
+	"favorited": false,
+	"retweeted": false,
+	"lang": "en"
+}, {
+	"created_at": "Thu May 19 23:36:11 +0000 2016",
+	"id": 733441151680827400,
+	"id_str": "733441151680827392",
+	"text": "@ScotiaBuck Precisely. "
+	Social license " empowers those who operate outside the democratic consensus & rule of law.",
+	"truncated": false,
+	"entities": {
+		"hashtags": [],
+		"symbols": [],
+		"user_mentions": [{
+			"screen_name": "ScotiaBuck",
+			"name": "Gordon Fullerton",
+			"id": 244698720,
+			"id_str": "244698720",
+			"indices": [
+				0,
+				11
+			]
+		}],
+		"urls": []
+	},
+	"source": "<a href="
+	http: //twitter.com/download/iphone" rel="nofollow">Twitter for iPhone</a>",
+		"in_reply_to_status_id": 733436188065976300,
+	"in_reply_to_status_id_str": "733436188065976320",
+	"in_reply_to_user_id": 244698720,
+	"in_reply_to_user_id_str": "244698720",
+	"in_reply_to_screen_name": "ScotiaBuck",
+	"user": {
+		"id": 21525682,
+		"id_str": "21525682",
+		"name": "Jason Kenney",
+		"screen_name": "jkenney",
+		"location": "Calgary, CANADA",
+		"description": "Member of Parliament for Calgary Midnapore / Continuez à me suivre en francais sur @jkenney_fr",
+		"url": "https://t.co/A3TlCZghYH",
+		"entities": {
+			"url": {
+				"urls": [{
+					"url": "https://t.co/A3TlCZghYH",
+					"expanded_url": "http://www.jasonkenney.com",
+					"display_url": "jasonkenney.com",
+					"indices": [
+						0,
+						23
+					]
+				}]
+			},
+			"description": {
+				"urls": []
+			}
+		},
+		"protected": false,
+		"followers_count": 56079,
+		"friends_count": 1162,
+		"listed_count": 1197,
+		"created_at": "Sat Feb 21 23:05:42 +0000 2009",
+		"favourites_count": 3534,
+		"utc_offset": -21600,
+		"time_zone": "Mountain Time (US & Canada)",
+		"geo_enabled": true,
+		"verified": true,
+		"statuses_count": 19671,
+		"lang": "en",
+		"contributors_enabled": false,
+		"is_translator": false,
+		"is_translation_enabled": false,
+		"profile_background_color": "2D1CE9",
+		"profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+		"profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+		"profile_background_tile": false,
+		"profile_image_url": "http://pbs.twimg.com/profile_images/710741808297324544/8GtVGpBt_normal.jpg",
+		"profile_image_url_https": "https://pbs.twimg.com/profile_images/710741808297324544/8GtVGpBt_normal.jpg",
+		"profile_banner_url": "https://pbs.twimg.com/profile_banners/21525682/1404268558",
+		"profile_link_color": "2D1CE9",
+		"profile_sidebar_border_color": "FFFFFF",
+		"profile_sidebar_fill_color": "7193C1",
+		"profile_text_color": "071A22",
+		"profile_use_background_image": false,
+		"has_extended_profile": false,
+		"default_profile": false,
+		"default_profile_image": false,
+		"following": false,
+		"follow_request_sent": false,
+		"notifications": false
+	},
+	"geo": null,
+	"coordinates": null,
+	"place": null,
+	"contributors": null,
+	"is_quote_status": false,
+	"retweet_count": 0,
+	"favorite_count": 2,
+	"favorited": false,
+	"retweeted": false,
+	"lang": "en"
+}, {
+	"created_at": "Thu May 19 23:32:45 +0000 2016",
+	"id": 733440284156153900,
+	"id_str": "733440284156153856",
+	"text": "@RodneyBerg Rodney, if you loosen your tinfoil hat, it will be easier to hear the Israeli black helicopters flying overhead.",
+	"truncated": false,
+	"entities": {
+		"hashtags": [],
+		"symbols": [],
+		"user_mentions": [{
+			"screen_name": "RodneyBerg",
+			"name": "Rodney Berg",
+			"id": 721085115317616600,
+			"id_str": "721085115317616640",
+			"indices": [
+				0,
+				11
+			]
+		}],
+		"urls": []
+	},
+	"source": "<a href="
+	http: //twitter.com/download/iphone" rel="nofollow">Twitter for iPhone</a>",
+		"in_reply_to_status_id": 733439252218925000,
+	"in_reply_to_status_id_str": "733439252218925056",
+	"in_reply_to_user_id": 721085115317616600,
+	"in_reply_to_user_id_str": "721085115317616640",
+	"in_reply_to_screen_name": "RodneyBerg",
+	"user": {
+		"id": 21525682,
+		"id_str": "21525682",
+		"name": "Jason Kenney",
+		"screen_name": "jkenney",
+		"location": "Calgary, CANADA",
+		"description": "Member of Parliament for Calgary Midnapore / Continuez à me suivre en francais sur @jkenney_fr",
+		"url": "https://t.co/A3TlCZghYH",
+		"entities": {
+			"url": {
+				"urls": [{
+					"url": "https://t.co/A3TlCZghYH",
+					"expanded_url": "http://www.jasonkenney.com",
+					"display_url": "jasonkenney.com",
+					"indices": [
+						0,
+						23
+					]
+				}]
+			},
+			"description": {
+				"urls": []
+			}
+		},
+		"protected": false,
+		"followers_count": 56079,
+		"friends_count": 1162,
+		"listed_count": 1197,
+		"created_at": "Sat Feb 21 23:05:42 +0000 2009",
+		"favourites_count": 3534,
+		"utc_offset": -21600,
+		"time_zone": "Mountain Time (US & Canada)",
+		"geo_enabled": true,
+		"verified": true,
+		"statuses_count": 19671,
+		"lang": "en",
+		"contributors_enabled": false,
+		"is_translator": false,
+		"is_translation_enabled": false,
+		"profile_background_color": "2D1CE9",
+		"profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+		"profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+		"profile_background_tile": false,
+		"profile_image_url": "http://pbs.twimg.com/profile_images/710741808297324544/8GtVGpBt_normal.jpg",
+		"profile_image_url_https": "https://pbs.twimg.com/profile_images/710741808297324544/8GtVGpBt_normal.jpg",
+		"profile_banner_url": "https://pbs.twimg.com/profile_banners/21525682/1404268558",
+		"profile_link_color": "2D1CE9",
+		"profile_sidebar_border_color": "FFFFFF",
+		"profile_sidebar_fill_color": "7193C1",
+		"profile_text_color": "071A22",
+		"profile_use_background_image": false,
+		"has_extended_profile": false,
+		"default_profile": false,
+		"default_profile_image": false,
+		"following": false,
+		"follow_request_sent": false,
+		"notifications": false
+	},
+	"geo": null,
+	"coordinates": null,
+	"place": null,
+	"contributors": null,
+	"is_quote_status": false,
+	"retweet_count": 1,
+	"favorite_count": 7,
+	"favorited": false,
+	"retweeted": false,
+	"lang": "en"
+}, {
+	"created_at": "Thu May 19 23:27:54 +0000 2016",
+	"id": 733439065471782900,
+	"id_str": "733439065471782912",
+	"text": "Tim Harper in the Toronto Star: "
+	Liberal petulance and hubris had been exposed in the ugliest way.
+	"\n\nhttps://t.co/ea2spuh2YQ",
+	"truncated": false,
+	"entities": {
+		"hashtags": [],
+		"symbols": [],
+		"user_mentions": [],
+		"urls": [{
+			"url": "https://t.co/ea2spuh2YQ",
+			"expanded_url": "https://www.thestar.com/news/canada/2016/05/19/liberals-had-been-elbows-up-before-justin-trudeau-got-physical-tim-harper.html",
+			"display_url": "thestar.com/news/canada/20…",
+			"indices": [
+				102,
+				125
+			]
+		}]
+	},
+	"source": "<a href="
+	http: //twitter.com/download/iphone" rel="nofollow">Twitter for iPhone</a>",
+		"in_reply_to_status_id": null,
+	"in_reply_to_status_id_str": null,
+	"in_reply_to_user_id": null,
+	"in_reply_to_user_id_str": null,
+	"in_reply_to_screen_name": null,
+	"user": {
+		"id": 21525682,
+		"id_str": "21525682",
+		"name": "Jason Kenney",
+		"screen_name": "jkenney",
+		"location": "Calgary, CANADA",
+		"description": "Member of Parliament for Calgary Midnapore / Continuez à me suivre en francais sur @jkenney_fr",
+		"url": "https://t.co/A3TlCZghYH",
+		"entities": {
+			"url": {
+				"urls": [{
+					"url": "https://t.co/A3TlCZghYH",
+					"expanded_url": "http://www.jasonkenney.com",
+					"display_url": "jasonkenney.com",
+					"indices": [
+						0,
+						23
+					]
+				}]
+			},
+			"description": {
+				"urls": []
+			}
+		},
+		"protected": false,
+		"followers_count": 56079,
+		"friends_count": 1162,
+		"listed_count": 1197,
+		"created_at": "Sat Feb 21 23:05:42 +0000 2009",
+		"favourites_count": 3534,
+		"utc_offset": -21600,
+		"time_zone": "Mountain Time (US & Canada)",
+		"geo_enabled": true,
+		"verified": true,
+		"statuses_count": 19671,
+		"lang": "en",
+		"contributors_enabled": false,
+		"is_translator": false,
+		"is_translation_enabled": false,
+		"profile_background_color": "2D1CE9",
+		"profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+		"profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+		"profile_background_tile": false,
+		"profile_image_url": "http://pbs.twimg.com/profile_images/710741808297324544/8GtVGpBt_normal.jpg",
+		"profile_image_url_https": "https://pbs.twimg.com/profile_images/710741808297324544/8GtVGpBt_normal.jpg",
+		"profile_banner_url": "https://pbs.twimg.com/profile_banners/21525682/1404268558",
+		"profile_link_color": "2D1CE9",
+		"profile_sidebar_border_color": "FFFFFF",
+		"profile_sidebar_fill_color": "7193C1",
+		"profile_text_color": "071A22",
+		"profile_use_background_image": false,
+		"has_extended_profile": false,
+		"default_profile": false,
+		"default_profile_image": false,
+		"following": false,
+		"follow_request_sent": false,
+		"notifications": false
+	},
+	"geo": null,
+	"coordinates": null,
+	"place": null,
+	"contributors": null,
+	"is_quote_status": false,
+	"retweet_count": 75,
+	"favorite_count": 68,
+	"favorited": false,
+	"retweeted": false,
+	"possibly_sensitive": false,
+	"lang": "en"
+}, {
+	"created_at": "Thu May 19 23:15:27 +0000 2016",
+	"id": 733435934071529500,
+	"id_str": "733435934071529472",
+	"text": "RT @HillelNeuer: I gave Congress totals of UNHRC condemnations over 10 years:\nOn Israel: 67\nRest of world: 61\nhttps://t.co/j8yGBE1hnq https…",
+	"truncated": false,
+	"entities": {
+		"hashtags": [],
+		"symbols": [],
+		"user_mentions": [{
+			"screen_name": "HillelNeuer",
+			"name": "Hillel Neuer",
+			"id": 22434517,
+			"id_str": "22434517",
+			"indices": [
+				3,
+				15
+			]
+		}],
+		"urls": [{
+			"url": "https://t.co/j8yGBE1hnq",
+			"expanded_url": "http://www.unwatch.org/10837-2/",
+			"display_url": "unwatch.org/10837-2/",
+			"indices": [
+				110,
+				133
+			]
+		}],
+		"media": [{
+			"id": 733433552293912600,
+			"id_str": "733433552293912576",
+			"indices": [
+				139,
+				140
+			],
+			"media_url": "http://pbs.twimg.com/media/Ci2t7g7U4AAO7zw.jpg",
+			"media_url_https": "https://pbs.twimg.com/media/Ci2t7g7U4AAO7zw.jpg",
+			"url": "https://t.co/ByCIIPCLWF",
+			"display_url": "pic.twitter.com/ByCIIPCLWF",
+			"expanded_url": "http://twitter.com/HillelNeuer/status/733433557989855233/photo/1",
+			"type": "photo",
+			"sizes": {
+				"large": {
+					"w": 619,
+					"h": 723,
+					"resize": "fit"
+				},
+				"small": {
+					"w": 340,
+					"h": 397,
+					"resize": "fit"
+				},
+				"thumb": {
+					"w": 150,
+					"h": 150,
+					"resize": "crop"
+				},
+				"medium": {
+					"w": 600,
+					"h": 701,
+					"resize": "fit"
+				}
+			},
+			"source_status_id": 733433557989855200,
+			"source_status_id_str": "733433557989855233",
+			"source_user_id": 22434517,
+			"source_user_id_str": "22434517"
+		}]
+	},
+	"extended_entities": {
+		"media": [{
+			"id": 733433552293912600,
+			"id_str": "733433552293912576",
+			"indices": [
+				139,
+				140
+			],
+			"media_url": "http://pbs.twimg.com/media/Ci2t7g7U4AAO7zw.jpg",
+			"media_url_https": "https://pbs.twimg.com/media/Ci2t7g7U4AAO7zw.jpg",
+			"url": "https://t.co/ByCIIPCLWF",
+			"display_url": "pic.twitter.com/ByCIIPCLWF",
+			"expanded_url": "http://twitter.com/HillelNeuer/status/733433557989855233/photo/1",
+			"type": "photo",
+			"sizes": {
+				"large": {
+					"w": 619,
+					"h": 723,
+					"resize": "fit"
+				},
+				"small": {
+					"w": 340,
+					"h": 397,
+					"resize": "fit"
+				},
+				"thumb": {
+					"w": 150,
+					"h": 150,
+					"resize": "crop"
+				},
+				"medium": {
+					"w": 600,
+					"h": 701,
+					"resize": "fit"
+				}
+			},
+			"source_status_id": 733433557989855200,
+			"source_status_id_str": "733433557989855233",
+			"source_user_id": 22434517,
+			"source_user_id_str": "22434517"
+		}]
+	},
+	"source": "<a href="
+	http: //twitter.com/download/iphone" rel="nofollow">Twitter for iPhone</a>",
+		"in_reply_to_status_id": null,
+	"in_reply_to_status_id_str": null,
+	"in_reply_to_user_id": null,
+	"in_reply_to_user_id_str": null,
+	"in_reply_to_screen_name": null,
+	"user": {
+		"id": 21525682,
+		"id_str": "21525682",
+		"name": "Jason Kenney",
+		"screen_name": "jkenney",
+		"location": "Calgary, CANADA",
+		"description": "Member of Parliament for Calgary Midnapore / Continuez à me suivre en francais sur @jkenney_fr",
+		"url": "https://t.co/A3TlCZghYH",
+		"entities": {
+			"url": {
+				"urls": [{
+					"url": "https://t.co/A3TlCZghYH",
+					"expanded_url": "http://www.jasonkenney.com",
+					"display_url": "jasonkenney.com",
+					"indices": [
+						0,
+						23
+					]
+				}]
+			},
+			"description": {
+				"urls": []
+			}
+		},
+		"protected": false,
+		"followers_count": 56079,
+		"friends_count": 1162,
+		"listed_count": 1197,
+		"created_at": "Sat Feb 21 23:05:42 +0000 2009",
+		"favourites_count": 3534,
+		"utc_offset": -21600,
+		"time_zone": "Mountain Time (US & Canada)",
+		"geo_enabled": true,
+		"verified": true,
+		"statuses_count": 19671,
+		"lang": "en",
+		"contributors_enabled": false,
+		"is_translator": false,
+		"is_translation_enabled": false,
+		"profile_background_color": "2D1CE9",
+		"profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+		"profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+		"profile_background_tile": false,
+		"profile_image_url": "http://pbs.twimg.com/profile_images/710741808297324544/8GtVGpBt_normal.jpg",
+		"profile_image_url_https": "https://pbs.twimg.com/profile_images/710741808297324544/8GtVGpBt_normal.jpg",
+		"profile_banner_url": "https://pbs.twimg.com/profile_banners/21525682/1404268558",
+		"profile_link_color": "2D1CE9",
+		"profile_sidebar_border_color": "FFFFFF",
+		"profile_sidebar_fill_color": "7193C1",
+		"profile_text_color": "071A22",
+		"profile_use_background_image": false,
+		"has_extended_profile": false,
+		"default_profile": false,
+		"default_profile_image": false,
+		"following": false,
+		"follow_request_sent": false,
+		"notifications": false
+	},
+	"geo": null,
+	"coordinates": null,
+	"place": null,
+	"contributors": null,
+	"retweeted_status": {
+		"created_at": "Thu May 19 23:06:01 +0000 2016",
+		"id": 733433557989855200,
+		"id_str": "733433557989855233",
+		"text": "I gave Congress totals of UNHRC condemnations over 10 years:\nOn Israel: 67\nRest of world: 61\nhttps://t.co/j8yGBE1hnq https://t.co/ByCIIPCLWF",
+		"truncated": false,
+		"entities": {
+			"hashtags": [],
+			"symbols": [],
+			"user_mentions": [],
+			"urls": [{
+				"url": "https://t.co/j8yGBE1hnq",
+				"expanded_url": "http://www.unwatch.org/10837-2/",
+				"display_url": "unwatch.org/10837-2/",
+				"indices": [
+					93,
+					116
+				]
+			}],
+			"media": [{
+				"id": 733433552293912600,
+				"id_str": "733433552293912576",
+				"indices": [
+					117,
+					140
+				],
+				"media_url": "http://pbs.twimg.com/media/Ci2t7g7U4AAO7zw.jpg",
+				"media_url_https": "https://pbs.twimg.com/media/Ci2t7g7U4AAO7zw.jpg",
+				"url": "https://t.co/ByCIIPCLWF",
+				"display_url": "pic.twitter.com/ByCIIPCLWF",
+				"expanded_url": "http://twitter.com/HillelNeuer/status/733433557989855233/photo/1",
+				"type": "photo",
+				"sizes": {
+					"large": {
+						"w": 619,
+						"h": 723,
+						"resize": "fit"
+					},
+					"small": {
+						"w": 340,
+						"h": 397,
+						"resize": "fit"
+					},
+					"thumb": {
+						"w": 150,
+						"h": 150,
+						"resize": "crop"
+					},
+					"medium": {
+						"w": 600,
+						"h": 701,
+						"resize": "fit"
+					}
+				}
+			}]
+		},
+		"extended_entities": {
+			"media": [{
+				"id": 733433552293912600,
+				"id_str": "733433552293912576",
+				"indices": [
+					117,
+					140
+				],
+				"media_url": "http://pbs.twimg.com/media/Ci2t7g7U4AAO7zw.jpg",
+				"media_url_https": "https://pbs.twimg.com/media/Ci2t7g7U4AAO7zw.jpg",
+				"url": "https://t.co/ByCIIPCLWF",
+				"display_url": "pic.twitter.com/ByCIIPCLWF",
+				"expanded_url": "http://twitter.com/HillelNeuer/status/733433557989855233/photo/1",
+				"type": "photo",
+				"sizes": {
+					"large": {
+						"w": 619,
+						"h": 723,
+						"resize": "fit"
+					},
+					"small": {
+						"w": 340,
+						"h": 397,
+						"resize": "fit"
+					},
+					"thumb": {
+						"w": 150,
+						"h": 150,
+						"resize": "crop"
+					},
+					"medium": {
+						"w": 600,
+						"h": 701,
+						"resize": "fit"
+					}
+				}
+			}]
+		},
+		"source": "<a href="
+		http: //twitter.com" rel="nofollow">Twitter Web Client</a>",
+			"in_reply_to_status_id": null,
+		"in_reply_to_status_id_str": null,
+		"in_reply_to_user_id": null,
+		"in_reply_to_user_id_str": null,
+		"in_reply_to_screen_name": null,
+		"user": {
+			"id": 22434517,
+			"id_str": "22434517",
+			"name": "Hillel Neuer",
+			"screen_name": "HillelNeuer",
+			"location": "Geneva, Switzerland",
+			"description": "Fighting dictatorships & double standards. Executive Director of United Nations Watch in Geneva. Human rights activist, international lawyer, writer.",
+			"url": "https://t.co/BdJcBpptDy",
+			"entities": {
+				"url": {
+					"urls": [{
+						"url": "https://t.co/BdJcBpptDy",
+						"expanded_url": "http://www.unwatch.org",
+						"display_url": "unwatch.org",
+						"indices": [
+							0,
+							23
+						]
+					}]
+				},
+				"description": {
+					"urls": []
+				}
+			},
+			"protected": false,
+			"followers_count": 20900,
+			"friends_count": 3,
+			"listed_count": 507,
+			"created_at": "Mon Mar 02 01:36:49 +0000 2009",
+			"favourites_count": 2094,
+			"utc_offset": 7200,
+			"time_zone": "Paris",
+			"geo_enabled": false,
+			"verified": false,
+			"statuses_count": 12474,
+			"lang": "en",
+			"contributors_enabled": false,
+			"is_translator": false,
+			"is_translation_enabled": true,
+			"profile_background_color": "131516",
+			"profile_background_image_url": "http://abs.twimg.com/images/themes/theme14/bg.gif",
+			"profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme14/bg.gif",
+			"profile_background_tile": true,
+			"profile_image_url": "http://pbs.twimg.com/profile_images/489960680364068865/HO8zvZG-_normal.jpeg",
+			"profile_image_url_https": "https://pbs.twimg.com/profile_images/489960680364068865/HO8zvZG-_normal.jpeg",
+			"profile_banner_url": "https://pbs.twimg.com/profile_banners/22434517/1399284042",
+			"profile_link_color": "009999",
+			"profile_sidebar_border_color": "EEEEEE",
+			"profile_sidebar_fill_color": "EFEFEF",
+			"profile_text_color": "333333",
+			"profile_use_background_image": true,
+			"has_extended_profile": false,
+			"default_profile": false,
+			"default_profile_image": false,
+			"following": false,
+			"follow_request_sent": false,
+			"notifications": false
+		},
+		"geo": null,
+		"coordinates": null,
+		"place": null,
+		"contributors": null,
+		"is_quote_status": false,
+		"retweet_count": 141,
+		"favorite_count": 82,
+		"favorited": false,
+		"retweeted": false,
+		"possibly_sensitive": false,
+		"lang": "en"
+	},
+	"is_quote_status": false,
+	"retweet_count": 141,
+	"favorite_count": 0,
+	"favorited": false,
+	"retweeted": false,
+	"possibly_sensitive": false,
+	"lang": "en"
+}, {
+	"created_at": "Thu May 19 23:12:33 +0000 2016",
+	"id": 733435201662115800,
+	"id_str": "733435201662115840",
+	"text": "@VanStreetDog @CDZ_999 If Kinder Morgan were shut down tomorrow, so too would the economy of the Lower Mainland.",
+	"truncated": false,
+	"entities": {
+		"hashtags": [],
+		"symbols": [],
+		"user_mentions": [{
+			"screen_name": "VanStreetDog",
+			"name": "Roberta",
+			"id": 468732172,
+			"id_str": "468732172",
+			"indices": [
+				0,
+				13
+			]
+		}, {
+			"screen_name": "CDZ_999",
+			"name": "CDZ",
+			"id": 270437243,
+			"id_str": "270437243",
+			"indices": [
+				14,
+				22
+			]
+		}],
+		"urls": []
+	},
+	"source": "<a href="
+	http: //twitter.com/download/iphone" rel="nofollow">Twitter for iPhone</a>",
+		"in_reply_to_status_id": null,
+	"in_reply_to_status_id_str": null,
+	"in_reply_to_user_id": 468732172,
+	"in_reply_to_user_id_str": "468732172",
+	"in_reply_to_screen_name": "VanStreetDog",
+	"user": {
+		"id": 21525682,
+		"id_str": "21525682",
+		"name": "Jason Kenney",
+		"screen_name": "jkenney",
+		"location": "Calgary, CANADA",
+		"description": "Member of Parliament for Calgary Midnapore / Continuez à me suivre en francais sur @jkenney_fr",
+		"url": "https://t.co/A3TlCZghYH",
+		"entities": {
+			"url": {
+				"urls": [{
+					"url": "https://t.co/A3TlCZghYH",
+					"expanded_url": "http://www.jasonkenney.com",
+					"display_url": "jasonkenney.com",
+					"indices": [
+						0,
+						23
+					]
+				}]
+			},
+			"description": {
+				"urls": []
+			}
+		},
+		"protected": false,
+		"followers_count": 56079,
+		"friends_count": 1162,
+		"listed_count": 1197,
+		"created_at": "Sat Feb 21 23:05:42 +0000 2009",
+		"favourites_count": 3534,
+		"utc_offset": -21600,
+		"time_zone": "Mountain Time (US & Canada)",
+		"geo_enabled": true,
+		"verified": true,
+		"statuses_count": 19671,
+		"lang": "en",
+		"contributors_enabled": false,
+		"is_translator": false,
+		"is_translation_enabled": false,
+		"profile_background_color": "2D1CE9",
+		"profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+		"profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+		"profile_background_tile": false,
+		"profile_image_url": "http://pbs.twimg.com/profile_images/710741808297324544/8GtVGpBt_normal.jpg",
+		"profile_image_url_https": "https://pbs.twimg.com/profile_images/710741808297324544/8GtVGpBt_normal.jpg",
+		"profile_banner_url": "https://pbs.twimg.com/profile_banners/21525682/1404268558",
+		"profile_link_color": "2D1CE9",
+		"profile_sidebar_border_color": "FFFFFF",
+		"profile_sidebar_fill_color": "7193C1",
+		"profile_text_color": "071A22",
+		"profile_use_background_image": false,
+		"has_extended_profile": false,
+		"default_profile": false,
+		"default_profile_image": false,
+		"following": false,
+		"follow_request_sent": false,
+		"notifications": false
+	},
+	"geo": null,
+	"coordinates": null,
+	"place": null,
+	"contributors": null,
+	"is_quote_status": false,
+	"retweet_count": 0,
+	"favorite_count": 0,
+	"favorited": false,
+	"retweeted": false,
+	"lang": "en"
+}, {
+	"created_at": "Thu May 19 23:04:19 +0000 2016",
+	"id": 733433132003786800,
+	"id_str": "733433132003786752",
+	"text": "@gourock819 It happened 60 years ago. You're a little behind the times.",
+	"truncated": false,
+	"entities": {
+		"hashtags": [],
+		"symbols": [],
+		"user_mentions": [{
+			"screen_name": "gourock819",
+			"name": "Bill Williamson",
+			"id": 3317062278,
+			"id_str": "3317062278",
+			"indices": [
+				0,
+				11
+			]
+		}],
+		"urls": []
+	},
+	"source": "<a href="
+	http: //twitter.com/download/iphone" rel="nofollow">Twitter for iPhone</a>",
+		"in_reply_to_status_id": 733428602394402800,
+	"in_reply_to_status_id_str": "733428602394402816",
+	"in_reply_to_user_id": 3317062278,
+	"in_reply_to_user_id_str": "3317062278",
+	"in_reply_to_screen_name": "gourock819",
+	"user": {
+		"id": 21525682,
+		"id_str": "21525682",
+		"name": "Jason Kenney",
+		"screen_name": "jkenney",
+		"location": "Calgary, CANADA",
+		"description": "Member of Parliament for Calgary Midnapore / Continuez à me suivre en francais sur @jkenney_fr",
+		"url": "https://t.co/A3TlCZghYH",
+		"entities": {
+			"url": {
+				"urls": [{
+					"url": "https://t.co/A3TlCZghYH",
+					"expanded_url": "http://www.jasonkenney.com",
+					"display_url": "jasonkenney.com",
+					"indices": [
+						0,
+						23
+					]
+				}]
+			},
+			"description": {
+				"urls": []
+			}
+		},
+		"protected": false,
+		"followers_count": 56079,
+		"friends_count": 1162,
+		"listed_count": 1197,
+		"created_at": "Sat Feb 21 23:05:42 +0000 2009",
+		"favourites_count": 3534,
+		"utc_offset": -21600,
+		"time_zone": "Mountain Time (US & Canada)",
+		"geo_enabled": true,
+		"verified": true,
+		"statuses_count": 19671,
+		"lang": "en",
+		"contributors_enabled": false,
+		"is_translator": false,
+		"is_translation_enabled": false,
+		"profile_background_color": "2D1CE9",
+		"profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+		"profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+		"profile_background_tile": false,
+		"profile_image_url": "http://pbs.twimg.com/profile_images/710741808297324544/8GtVGpBt_normal.jpg",
+		"profile_image_url_https": "https://pbs.twimg.com/profile_images/710741808297324544/8GtVGpBt_normal.jpg",
+		"profile_banner_url": "https://pbs.twimg.com/profile_banners/21525682/1404268558",
+		"profile_link_color": "2D1CE9",
+		"profile_sidebar_border_color": "FFFFFF",
+		"profile_sidebar_fill_color": "7193C1",
+		"profile_text_color": "071A22",
+		"profile_use_background_image": false,
+		"has_extended_profile": false,
+		"default_profile": false,
+		"default_profile_image": false,
+		"following": false,
+		"follow_request_sent": false,
+		"notifications": false
+	},
+	"geo": null,
+	"coordinates": null,
+	"place": null,
+	"contributors": null,
+	"is_quote_status": false,
+	"retweet_count": 1,
+	"favorite_count": 2,
+	"favorited": false,
+	"retweeted": false,
+	"lang": "en"
+}, {
+	"created_at": "Thu May 19 23:03:28 +0000 2016",
+	"id": 733432916123000800,
+	"id_str": "733432916123000832",
+	"text": "@CalgaryDignity Tak",
+	"truncated": false,
+	"entities": {
+		"hashtags": [],
+		"symbols": [],
+		"user_mentions": [{
+			"screen_name": "CalgaryDignity",
+			"name": "Inna Platonova",
+			"id": 3996771086,
+			"id_str": "3996771086",
+			"indices": [
+				0,
+				15
+			]
+		}],
+		"urls": []
+	},
+	"source": "<a href="
+	http: //twitter.com/download/iphone" rel="nofollow">Twitter for iPhone</a>",
+		"in_reply_to_status_id": 733429029949210600,
+	"in_reply_to_status_id_str": "733429029949210625",
+	"in_reply_to_user_id": 3996771086,
+	"in_reply_to_user_id_str": "3996771086",
+	"in_reply_to_screen_name": "CalgaryDignity",
+	"user": {
+		"id": 21525682,
+		"id_str": "21525682",
+		"name": "Jason Kenney",
+		"screen_name": "jkenney",
+		"location": "Calgary, CANADA",
+		"description": "Member of Parliament for Calgary Midnapore / Continuez à me suivre en francais sur @jkenney_fr",
+		"url": "https://t.co/A3TlCZghYH",
+		"entities": {
+			"url": {
+				"urls": [{
+					"url": "https://t.co/A3TlCZghYH",
+					"expanded_url": "http://www.jasonkenney.com",
+					"display_url": "jasonkenney.com",
+					"indices": [
+						0,
+						23
+					]
+				}]
+			},
+			"description": {
+				"urls": []
+			}
+		},
+		"protected": false,
+		"followers_count": 56079,
+		"friends_count": 1162,
+		"listed_count": 1197,
+		"created_at": "Sat Feb 21 23:05:42 +0000 2009",
+		"favourites_count": 3534,
+		"utc_offset": -21600,
+		"time_zone": "Mountain Time (US & Canada)",
+		"geo_enabled": true,
+		"verified": true,
+		"statuses_count": 19671,
+		"lang": "en",
+		"contributors_enabled": false,
+		"is_translator": false,
+		"is_translation_enabled": false,
+		"profile_background_color": "2D1CE9",
+		"profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+		"profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+		"profile_background_tile": false,
+		"profile_image_url": "http://pbs.twimg.com/profile_images/710741808297324544/8GtVGpBt_normal.jpg",
+		"profile_image_url_https": "https://pbs.twimg.com/profile_images/710741808297324544/8GtVGpBt_normal.jpg",
+		"profile_banner_url": "https://pbs.twimg.com/profile_banners/21525682/1404268558",
+		"profile_link_color": "2D1CE9",
+		"profile_sidebar_border_color": "FFFFFF",
+		"profile_sidebar_fill_color": "7193C1",
+		"profile_text_color": "071A22",
+		"profile_use_background_image": false,
+		"has_extended_profile": false,
+		"default_profile": false,
+		"default_profile_image": false,
+		"following": false,
+		"follow_request_sent": false,
+		"notifications": false
+	},
+	"geo": null,
+	"coordinates": null,
+	"place": null,
+	"contributors": null,
+	"is_quote_status": false,
+	"retweet_count": 0,
+	"favorite_count": 2,
+	"favorited": false,
+	"retweeted": false,
+	"lang": "und"
+}, {
+	"created_at": "Thu May 19 22:13:11 +0000 2016",
+	"id": 733420262021038100,
+	"id_str": "733420262021038080",
+	"text": "Fun to participate in #Vyshnyvanka Day w/ Ukrainian interns, incl Evelina & Dima from my office. #standwithUkraine https://t.co/3Xy8x1XzPw",
+	"truncated": false,
+	"entities": {
+		"hashtags": [{
+			"text": "Vyshnyvanka",
+			"indices": [
+				22,
+				34
+			]
+		}, {
+			"text": "standwithUkraine",
+			"indices": [
+				101,
+				118
+			]
+		}],
+		"symbols": [],
+		"user_mentions": [],
+		"urls": [],
+		"media": [{
+			"id": 733420254190305300,
+			"id_str": "733420254190305280",
+			"indices": [
+				119,
+				142
+			],
+			"media_url": "http://pbs.twimg.com/media/Ci2h1doXAAAb9cQ.jpg",
+			"media_url_https": "https://pbs.twimg.com/media/Ci2h1doXAAAb9cQ.jpg",
+			"url": "https://t.co/3Xy8x1XzPw",
+			"display_url": "pic.twitter.com/3Xy8x1XzPw",
+			"expanded_url": "http://twitter.com/jkenney/status/733420262021038080/photo/1",
+			"type": "photo",
+			"sizes": {
+				"thumb": {
+					"w": 150,
+					"h": 150,
+					"resize": "crop"
+				},
+				"medium": {
+					"w": 600,
+					"h": 400,
+					"resize": "fit"
+				},
+				"small": {
+					"w": 340,
+					"h": 226,
+					"resize": "fit"
+				},
+				"large": {
+					"w": 1024,
+					"h": 682,
+					"resize": "fit"
+				}
+			}
+		}]
+	},
+	"extended_entities": {
+		"media": [{
+			"id": 733420254190305300,
+			"id_str": "733420254190305280",
+			"indices": [
+				119,
+				142
+			],
+			"media_url": "http://pbs.twimg.com/media/Ci2h1doXAAAb9cQ.jpg",
+			"media_url_https": "https://pbs.twimg.com/media/Ci2h1doXAAAb9cQ.jpg",
+			"url": "https://t.co/3Xy8x1XzPw",
+			"display_url": "pic.twitter.com/3Xy8x1XzPw",
+			"expanded_url": "http://twitter.com/jkenney/status/733420262021038080/photo/1",
+			"type": "photo",
+			"sizes": {
+				"thumb": {
+					"w": 150,
+					"h": 150,
+					"resize": "crop"
+				},
+				"medium": {
+					"w": 600,
+					"h": 400,
+					"resize": "fit"
+				},
+				"small": {
+					"w": 340,
+					"h": 226,
+					"resize": "fit"
+				},
+				"large": {
+					"w": 1024,
+					"h": 682,
+					"resize": "fit"
+				}
+			}
+		}, {
+			"id": 733420254555078700,
+			"id_str": "733420254555078657",
+			"indices": [
+				119,
+				142
+			],
+			"media_url": "http://pbs.twimg.com/media/Ci2h1e_VAAEnTgA.jpg",
+			"media_url_https": "https://pbs.twimg.com/media/Ci2h1e_VAAEnTgA.jpg",
+			"url": "https://t.co/3Xy8x1XzPw",
+			"display_url": "pic.twitter.com/3Xy8x1XzPw",
+			"expanded_url": "http://twitter.com/jkenney/status/733420262021038080/photo/1",
+			"type": "photo",
+			"sizes": {
+				"medium": {
+					"w": 600,
+					"h": 400,
+					"resize": "fit"
+				},
+				"thumb": {
+					"w": 150,
+					"h": 150,
+					"resize": "crop"
+				},
+				"small": {
+					"w": 340,
+					"h": 226,
+					"resize": "fit"
+				},
+				"large": {
+					"w": 1024,
+					"h": 682,
+					"resize": "fit"
+				}
+			}
+		}, {
+			"id": 733420254647464000,
+			"id_str": "733420254647463936",
+			"indices": [
+				119,
+				142
+			],
+			"media_url": "http://pbs.twimg.com/media/Ci2h1fVWsAA14-N.jpg",
+			"media_url_https": "https://pbs.twimg.com/media/Ci2h1fVWsAA14-N.jpg",
+			"url": "https://t.co/3Xy8x1XzPw",
+			"display_url": "pic.twitter.com/3Xy8x1XzPw",
+			"expanded_url": "http://twitter.com/jkenney/status/733420262021038080/photo/1",
+			"type": "photo",
+			"sizes": {
+				"small": {
+					"w": 340,
+					"h": 226,
+					"resize": "fit"
+				},
+				"thumb": {
+					"w": 150,
+					"h": 150,
+					"resize": "crop"
+				},
+				"medium": {
+					"w": 600,
+					"h": 400,
+					"resize": "fit"
+				},
+				"large": {
+					"w": 1024,
+					"h": 682,
+					"resize": "fit"
+				}
+			}
+		}]
+	},
+	"source": "<a href="
+	http: //twitter.com/download/iphone" rel="nofollow">Twitter for iPhone</a>",
+		"in_reply_to_status_id": null,
+	"in_reply_to_status_id_str": null,
+	"in_reply_to_user_id": null,
+	"in_reply_to_user_id_str": null,
+	"in_reply_to_screen_name": null,
+	"user": {
+		"id": 21525682,
+		"id_str": "21525682",
+		"name": "Jason Kenney",
+		"screen_name": "jkenney",
+		"location": "Calgary, CANADA",
+		"description": "Member of Parliament for Calgary Midnapore / Continuez à me suivre en francais sur @jkenney_fr",
+		"url": "https://t.co/A3TlCZghYH",
+		"entities": {
+			"url": {
+				"urls": [{
+					"url": "https://t.co/A3TlCZghYH",
+					"expanded_url": "http://www.jasonkenney.com",
+					"display_url": "jasonkenney.com",
+					"indices": [
+						0,
+						23
+					]
+				}]
+			},
+			"description": {
+				"urls": []
+			}
+		},
+		"protected": false,
+		"followers_count": 56079,
+		"friends_count": 1162,
+		"listed_count": 1197,
+		"created_at": "Sat Feb 21 23:05:42 +0000 2009",
+		"favourites_count": 3534,
+		"utc_offset": -21600,
+		"time_zone": "Mountain Time (US & Canada)",
+		"geo_enabled": true,
+		"verified": true,
+		"statuses_count": 19671,
+		"lang": "en",
+		"contributors_enabled": false,
+		"is_translator": false,
+		"is_translation_enabled": false,
+		"profile_background_color": "2D1CE9",
+		"profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+		"profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+		"profile_background_tile": false,
+		"profile_image_url": "http://pbs.twimg.com/profile_images/710741808297324544/8GtVGpBt_normal.jpg",
+		"profile_image_url_https": "https://pbs.twimg.com/profile_images/710741808297324544/8GtVGpBt_normal.jpg",
+		"profile_banner_url": "https://pbs.twimg.com/profile_banners/21525682/1404268558",
+		"profile_link_color": "2D1CE9",
+		"profile_sidebar_border_color": "FFFFFF",
+		"profile_sidebar_fill_color": "7193C1",
+		"profile_text_color": "071A22",
+		"profile_use_background_image": false,
+		"has_extended_profile": false,
+		"default_profile": false,
+		"default_profile_image": false,
+		"following": false,
+		"follow_request_sent": false,
+		"notifications": false
+	},
+	"geo": null,
+	"coordinates": null,
+	"place": null,
+	"contributors": null,
+	"is_quote_status": false,
+	"retweet_count": 21,
+	"favorite_count": 31,
+	"favorited": false,
+	"retweeted": false,
+	"possibly_sensitive": false,
+	"lang": "en"
+}, {
+	"created_at": "Thu May 19 21:57:17 +0000 2016",
+	"id": 733416260822671400,
+	"id_str": "733416260822671363",
+	"text": "@HeatherMForsyth @DSolberg That's quite a crew. Please say hello to all of those wonderful Calgary ladies (& constituents!)",
+	"truncated": false,
+	"entities": {
+		"hashtags": [],
+		"symbols": [],
+		"user_mentions": [{
+			"screen_name": "HeatherMForsyth",
+			"name": "Heather Forsyth",
+			"id": 43422167,
+			"id_str": "43422167",
+			"indices": [
+				0,
+				16
+			]
+		}, {
+			"screen_name": "DSolberg",
+			"name": "Deb Solberg",
+			"id": 24839123,
+			"id_str": "24839123",
+			"indices": [
+				17,
+				26
+			]
+		}],
+		"urls": []
+	},
+	"source": "<a href="
+	http: //twitter.com/download/iphone" rel="nofollow">Twitter for iPhone</a>",
+		"in_reply_to_status_id": 733400686751154200,
+	"in_reply_to_status_id_str": "733400686751154180",
+	"in_reply_to_user_id": 43422167,
+	"in_reply_to_user_id_str": "43422167",
+	"in_reply_to_screen_name": "HeatherMForsyth",
+	"user": {
+		"id": 21525682,
+		"id_str": "21525682",
+		"name": "Jason Kenney",
+		"screen_name": "jkenney",
+		"location": "Calgary, CANADA",
+		"description": "Member of Parliament for Calgary Midnapore / Continuez à me suivre en francais sur @jkenney_fr",
+		"url": "https://t.co/A3TlCZghYH",
+		"entities": {
+			"url": {
+				"urls": [{
+					"url": "https://t.co/A3TlCZghYH",
+					"expanded_url": "http://www.jasonkenney.com",
+					"display_url": "jasonkenney.com",
+					"indices": [
+						0,
+						23
+					]
+				}]
+			},
+			"description": {
+				"urls": []
+			}
+		},
+		"protected": false,
+		"followers_count": 56079,
+		"friends_count": 1162,
+		"listed_count": 1197,
+		"created_at": "Sat Feb 21 23:05:42 +0000 2009",
+		"favourites_count": 3534,
+		"utc_offset": -21600,
+		"time_zone": "Mountain Time (US & Canada)",
+		"geo_enabled": true,
+		"verified": true,
+		"statuses_count": 19671,
+		"lang": "en",
+		"contributors_enabled": false,
+		"is_translator": false,
+		"is_translation_enabled": false,
+		"profile_background_color": "2D1CE9",
+		"profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+		"profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+		"profile_background_tile": false,
+		"profile_image_url": "http://pbs.twimg.com/profile_images/710741808297324544/8GtVGpBt_normal.jpg",
+		"profile_image_url_https": "https://pbs.twimg.com/profile_images/710741808297324544/8GtVGpBt_normal.jpg",
+		"profile_banner_url": "https://pbs.twimg.com/profile_banners/21525682/1404268558",
+		"profile_link_color": "2D1CE9",
+		"profile_sidebar_border_color": "FFFFFF",
+		"profile_sidebar_fill_color": "7193C1",
+		"profile_text_color": "071A22",
+		"profile_use_background_image": false,
+		"has_extended_profile": false,
+		"default_profile": false,
+		"default_profile_image": false,
+		"following": false,
+		"follow_request_sent": false,
+		"notifications": false
+	},
+	"geo": null,
+	"coordinates": null,
+	"place": null,
+	"contributors": null,
+	"is_quote_status": false,
+	"retweet_count": 0,
+	"favorite_count": 0,
+	"favorited": false,
+	"retweeted": false,
+	"lang": "en"
+}, {
+	"created_at": "Thu May 19 21:52:36 +0000 2016",
+	"id": 733415084341465100,
+	"id_str": "733415084341465088",
+	"text": "Stopping #KinderMorgan doesn't mean #notankers. It means more tankers, to import foreign oil to run the BC economy. https://t.co/LnKOY0tX7A",
+	"truncated": false,
+	"entities": {
+		"hashtags": [{
+			"text": "KinderMorgan",
+			"indices": [
+				9,
+				22
+			]
+		}, {
+			"text": "notankers",
+			"indices": [
+				36,
+				46
+			]
+		}],
+		"symbols": [],
+		"user_mentions": [],
+		"urls": [{
+			"url": "https://t.co/LnKOY0tX7A",
+			"expanded_url": "https://twitter.com/elizabethmay/status/733403068180500480",
+			"display_url": "twitter.com/elizabethmay/s…",
+			"indices": [
+				116,
+				139
+			]
+		}]
+	},
+	"source": "<a href="
+	http: //twitter.com/download/iphone" rel="nofollow">Twitter for iPhone</a>",
+		"in_reply_to_status_id": null,
+	"in_reply_to_status_id_str": null,
+	"in_reply_to_user_id": null,
+	"in_reply_to_user_id_str": null,
+	"in_reply_to_screen_name": null,
+	"user": {
+		"id": 21525682,
+		"id_str": "21525682",
+		"name": "Jason Kenney",
+		"screen_name": "jkenney",
+		"location": "Calgary, CANADA",
+		"description": "Member of Parliament for Calgary Midnapore / Continuez à me suivre en francais sur @jkenney_fr",
+		"url": "https://t.co/A3TlCZghYH",
+		"entities": {
+			"url": {
+				"urls": [{
+					"url": "https://t.co/A3TlCZghYH",
+					"expanded_url": "http://www.jasonkenney.com",
+					"display_url": "jasonkenney.com",
+					"indices": [
+						0,
+						23
+					]
+				}]
+			},
+			"description": {
+				"urls": []
+			}
+		},
+		"protected": false,
+		"followers_count": 56079,
+		"friends_count": 1162,
+		"listed_count": 1197,
+		"created_at": "Sat Feb 21 23:05:42 +0000 2009",
+		"favourites_count": 3534,
+		"utc_offset": -21600,
+		"time_zone": "Mountain Time (US & Canada)",
+		"geo_enabled": true,
+		"verified": true,
+		"statuses_count": 19671,
+		"lang": "en",
+		"contributors_enabled": false,
+		"is_translator": false,
+		"is_translation_enabled": false,
+		"profile_background_color": "2D1CE9",
+		"profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+		"profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+		"profile_background_tile": false,
+		"profile_image_url": "http://pbs.twimg.com/profile_images/710741808297324544/8GtVGpBt_normal.jpg",
+		"profile_image_url_https": "https://pbs.twimg.com/profile_images/710741808297324544/8GtVGpBt_normal.jpg",
+		"profile_banner_url": "https://pbs.twimg.com/profile_banners/21525682/1404268558",
+		"profile_link_color": "2D1CE9",
+		"profile_sidebar_border_color": "FFFFFF",
+		"profile_sidebar_fill_color": "7193C1",
+		"profile_text_color": "071A22",
+		"profile_use_background_image": false,
+		"has_extended_profile": false,
+		"default_profile": false,
+		"default_profile_image": false,
+		"following": false,
+		"follow_request_sent": false,
+		"notifications": false
+	},
+	"geo": null,
+	"coordinates": null,
+	"place": null,
+	"contributors": null,
+	"quoted_status_id": 733403068180500500,
+	"quoted_status_id_str": "733403068180500480",
+	"quoted_status": {
+		"created_at": "Thu May 19 21:04:52 +0000 2016",
+		"id": 733403068180500500,
+		"id_str": "733403068180500480",
+		"text": "We will stop #KinderMorgan. Unacceptable risk to our coasts, our whales, our salmon - and yes, to jobs at Chevron refinery. #GPC #notankers",
+		"truncated": false,
+		"entities": {
+			"hashtags": [{
+				"text": "KinderMorgan",
+				"indices": [
+					13,
+					26
+				]
+			}, {
+				"text": "GPC",
+				"indices": [
+					124,
+					128
+				]
+			}, {
+				"text": "notankers",
+				"indices": [
+					129,
+					139
+				]
+			}],
+			"symbols": [],
+			"user_mentions": [],
+			"urls": []
+		},
+		"source": "<a href="
+		http: //www.twitter.com" rel="nofollow">Twitter for BlackBerry</a>",
+			"in_reply_to_status_id": null,
+		"in_reply_to_status_id_str": null,
+		"in_reply_to_user_id": null,
+		"in_reply_to_user_id_str": null,
+		"in_reply_to_screen_name": null,
+		"user": {
+			"id": 16220555,
+			"id_str": "16220555",
+			"name": "Elizabeth May",
+			"screen_name": "ElizabethMay",
+			"location": "Sidney, British Columbia",
+			"description": "Leader of Green Party, Saanich-Gulf Islands, activist, author & mother. Tweets are Elizabeth's unless signed by Hill Staff -hs. En français - @MayElizabeth",
+			"url": "https://t.co/SchJK1pmLC",
+			"entities": {
+				"url": {
+					"urls": [{
+						"url": "https://t.co/SchJK1pmLC",
+						"expanded_url": "http://www.elizabethmaymp.ca",
+						"display_url": "elizabethmaymp.ca",
+						"indices": [
+							0,
+							23
+						]
+					}]
+				},
+				"description": {
+					"urls": []
+				}
+			},
+			"protected": false,
+			"followers_count": 258645,
+			"friends_count": 6024,
+			"listed_count": 3784,
+			"created_at": "Wed Sep 10 13:24:51 +0000 2008",
+			"favourites_count": 254,
+			"utc_offset": -14400,
+			"time_zone": "Eastern Time (US & Canada)",
+			"geo_enabled": false,
+			"verified": true,
+			"statuses_count": 34263,
+			"lang": "en",
+			"contributors_enabled": false,
+			"is_translator": false,
+			"is_translation_enabled": false,
+			"profile_background_color": "479B23",
+			"profile_background_image_url": "http://pbs.twimg.com/profile_background_images/3022852/twit_back.png",
+			"profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/3022852/twit_back.png",
+			"profile_background_tile": false,
+			"profile_image_url": "http://pbs.twimg.com/profile_images/539819887707709441/jbUkuD5E_normal.jpeg",
+			"profile_image_url_https": "https://pbs.twimg.com/profile_images/539819887707709441/jbUkuD5E_normal.jpeg",
+			"profile_banner_url": "https://pbs.twimg.com/profile_banners/16220555/1412626534",
+			"profile_link_color": "479B23",
+			"profile_sidebar_border_color": "479B23",
+			"profile_sidebar_fill_color": "EDFACB",
+			"profile_text_color": "000000",
+			"profile_use_background_image": true,
+			"has_extended_profile": false,
+			"default_profile": false,
+			"default_profile_image": false,
+			"following": false,
+			"follow_request_sent": false,
+			"notifications": false
+		},
+		"geo": null,
+		"coordinates": null,
+		"place": null,
+		"contributors": null,
+		"is_quote_status": false,
+		"retweet_count": 115,
+		"favorite_count": 121,
+		"favorited": false,
+		"retweeted": false,
+		"lang": "en"
+	},
+	"is_quote_status": true,
+	"retweet_count": 76,
+	"favorite_count": 92,
+	"favorited": false,
+	"retweeted": false,
+	"possibly_sensitive": false,
+	"lang": "en"
+}, {
+	"created_at": "Thu May 19 21:49:51 +0000 2016",
+	"id": 733414389039169500,
+	"id_str": "733414389039169536",
+	"text": "Take note: nothing - not endless consultations or carbon taxes- will generate "
+	social license " from these ideologues https://t.co/LnKOY0tX7A",
+	"truncated": false,
+	"entities": {
+		"hashtags": [],
+		"symbols": [],
+		"user_mentions": [],
+		"urls": [{
+			"url": "https://t.co/LnKOY0tX7A",
+			"expanded_url": "https://twitter.com/elizabethmay/status/733403068180500480",
+			"display_url": "twitter.com/elizabethmay/s…",
+			"indices": [
+				117,
+				140
+			]
+		}]
+	},
+	"source": "<a href="
+	http: //twitter.com/download/iphone" rel="nofollow">Twitter for iPhone</a>",
+		"in_reply_to_status_id": null,
+	"in_reply_to_status_id_str": null,
+	"in_reply_to_user_id": null,
+	"in_reply_to_user_id_str": null,
+	"in_reply_to_screen_name": null,
+	"user": {
+		"id": 21525682,
+		"id_str": "21525682",
+		"name": "Jason Kenney",
+		"screen_name": "jkenney",
+		"location": "Calgary, CANADA",
+		"description": "Member of Parliament for Calgary Midnapore / Continuez à me suivre en francais sur @jkenney_fr",
+		"url": "https://t.co/A3TlCZghYH",
+		"entities": {
+			"url": {
+				"urls": [{
+					"url": "https://t.co/A3TlCZghYH",
+					"expanded_url": "http://www.jasonkenney.com",
+					"display_url": "jasonkenney.com",
+					"indices": [
+						0,
+						23
+					]
+				}]
+			},
+			"description": {
+				"urls": []
+			}
+		},
+		"protected": false,
+		"followers_count": 56079,
+		"friends_count": 1162,
+		"listed_count": 1197,
+		"created_at": "Sat Feb 21 23:05:42 +0000 2009",
+		"favourites_count": 3534,
+		"utc_offset": -21600,
+		"time_zone": "Mountain Time (US & Canada)",
+		"geo_enabled": true,
+		"verified": true,
+		"statuses_count": 19671,
+		"lang": "en",
+		"contributors_enabled": false,
+		"is_translator": false,
+		"is_translation_enabled": false,
+		"profile_background_color": "2D1CE9",
+		"profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+		"profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+		"profile_background_tile": false,
+		"profile_image_url": "http://pbs.twimg.com/profile_images/710741808297324544/8GtVGpBt_normal.jpg",
+		"profile_image_url_https": "https://pbs.twimg.com/profile_images/710741808297324544/8GtVGpBt_normal.jpg",
+		"profile_banner_url": "https://pbs.twimg.com/profile_banners/21525682/1404268558",
+		"profile_link_color": "2D1CE9",
+		"profile_sidebar_border_color": "FFFFFF",
+		"profile_sidebar_fill_color": "7193C1",
+		"profile_text_color": "071A22",
+		"profile_use_background_image": false,
+		"has_extended_profile": false,
+		"default_profile": false,
+		"default_profile_image": false,
+		"following": false,
+		"follow_request_sent": false,
+		"notifications": false
+	},
+	"geo": null,
+	"coordinates": null,
+	"place": null,
+	"contributors": null,
+	"quoted_status_id": 733403068180500500,
+	"quoted_status_id_str": "733403068180500480",
+	"quoted_status": {
+		"created_at": "Thu May 19 21:04:52 +0000 2016",
+		"id": 733403068180500500,
+		"id_str": "733403068180500480",
+		"text": "We will stop #KinderMorgan. Unacceptable risk to our coasts, our whales, our salmon - and yes, to jobs at Chevron refinery. #GPC #notankers",
+		"truncated": false,
+		"entities": {
+			"hashtags": [{
+				"text": "KinderMorgan",
+				"indices": [
+					13,
+					26
+				]
+			}, {
+				"text": "GPC",
+				"indices": [
+					124,
+					128
+				]
+			}, {
+				"text": "notankers",
+				"indices": [
+					129,
+					139
+				]
+			}],
+			"symbols": [],
+			"user_mentions": [],
+			"urls": []
+		},
+		"source": "<a href="
+		http: //www.twitter.com" rel="nofollow">Twitter for BlackBerry</a>",
+			"in_reply_to_status_id": null,
+		"in_reply_to_status_id_str": null,
+		"in_reply_to_user_id": null,
+		"in_reply_to_user_id_str": null,
+		"in_reply_to_screen_name": null,
+		"user": {
+			"id": 16220555,
+			"id_str": "16220555",
+			"name": "Elizabeth May",
+			"screen_name": "ElizabethMay",
+			"location": "Sidney, British Columbia",
+			"description": "Leader of Green Party, Saanich-Gulf Islands, activist, author & mother. Tweets are Elizabeth's unless signed by Hill Staff -hs. En français - @MayElizabeth",
+			"url": "https://t.co/SchJK1pmLC",
+			"entities": {
+				"url": {
+					"urls": [{
+						"url": "https://t.co/SchJK1pmLC",
+						"expanded_url": "http://www.elizabethmaymp.ca",
+						"display_url": "elizabethmaymp.ca",
+						"indices": [
+							0,
+							23
+						]
+					}]
+				},
+				"description": {
+					"urls": []
+				}
+			},
+			"protected": false,
+			"followers_count": 258645,
+			"friends_count": 6024,
+			"listed_count": 3784,
+			"created_at": "Wed Sep 10 13:24:51 +0000 2008",
+			"favourites_count": 254,
+			"utc_offset": -14400,
+			"time_zone": "Eastern Time (US & Canada)",
+			"geo_enabled": false,
+			"verified": true,
+			"statuses_count": 34263,
+			"lang": "en",
+			"contributors_enabled": false,
+			"is_translator": false,
+			"is_translation_enabled": false,
+			"profile_background_color": "479B23",
+			"profile_background_image_url": "http://pbs.twimg.com/profile_background_images/3022852/twit_back.png",
+			"profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/3022852/twit_back.png",
+			"profile_background_tile": false,
+			"profile_image_url": "http://pbs.twimg.com/profile_images/539819887707709441/jbUkuD5E_normal.jpeg",
+			"profile_image_url_https": "https://pbs.twimg.com/profile_images/539819887707709441/jbUkuD5E_normal.jpeg",
+			"profile_banner_url": "https://pbs.twimg.com/profile_banners/16220555/1412626534",
+			"profile_link_color": "479B23",
+			"profile_sidebar_border_color": "479B23",
+			"profile_sidebar_fill_color": "EDFACB",
+			"profile_text_color": "000000",
+			"profile_use_background_image": true,
+			"has_extended_profile": false,
+			"default_profile": false,
+			"default_profile_image": false,
+			"following": false,
+			"follow_request_sent": false,
+			"notifications": false
+		},
+		"geo": null,
+		"coordinates": null,
+		"place": null,
+		"contributors": null,
+		"is_quote_status": false,
+		"retweet_count": 115,
+		"favorite_count": 121,
+		"favorited": false,
+		"retweeted": false,
+		"lang": "en"
+	},
+	"is_quote_status": true,
+	"retweet_count": 79,
+	"favorite_count": 83,
+	"favorited": false,
+	"retweeted": false,
+	"possibly_sensitive": false,
+	"lang": "en"
+}, {
+	"created_at": "Thu May 19 21:05:04 +0000 2016",
+	"id": 733403120420696000,
+	"id_str": "733403120420696064",
+	"text": "@CalgaryDignity Tak!",
+	"truncated": false,
+	"entities": {
+		"hashtags": [],
+		"symbols": [],
+		"user_mentions": [{
+			"screen_name": "CalgaryDignity",
+			"name": "Inna Platonova",
+			"id": 3996771086,
+			"id_str": "3996771086",
+			"indices": [
+				0,
+				15
+			]
+		}],
+		"urls": []
+	},
+	"source": "<a href="
+	http: //twitter.com/download/iphone" rel="nofollow">Twitter for iPhone</a>",
+		"in_reply_to_status_id": 733402760113070100,
+	"in_reply_to_status_id_str": "733402760113070083",
+	"in_reply_to_user_id": 3996771086,
+	"in_reply_to_user_id_str": "3996771086",
+	"in_reply_to_screen_name": "CalgaryDignity",
+	"user": {
+		"id": 21525682,
+		"id_str": "21525682",
+		"name": "Jason Kenney",
+		"screen_name": "jkenney",
+		"location": "Calgary, CANADA",
+		"description": "Member of Parliament for Calgary Midnapore / Continuez à me suivre en francais sur @jkenney_fr",
+		"url": "https://t.co/A3TlCZghYH",
+		"entities": {
+			"url": {
+				"urls": [{
+					"url": "https://t.co/A3TlCZghYH",
+					"expanded_url": "http://www.jasonkenney.com",
+					"display_url": "jasonkenney.com",
+					"indices": [
+						0,
+						23
+					]
+				}]
+			},
+			"description": {
+				"urls": []
+			}
+		},
+		"protected": false,
+		"followers_count": 56079,
+		"friends_count": 1162,
+		"listed_count": 1197,
+		"created_at": "Sat Feb 21 23:05:42 +0000 2009",
+		"favourites_count": 3534,
+		"utc_offset": -21600,
+		"time_zone": "Mountain Time (US & Canada)",
+		"geo_enabled": true,
+		"verified": true,
+		"statuses_count": 19671,
+		"lang": "en",
+		"contributors_enabled": false,
+		"is_translator": false,
+		"is_translation_enabled": false,
+		"profile_background_color": "2D1CE9",
+		"profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+		"profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+		"profile_background_tile": false,
+		"profile_image_url": "http://pbs.twimg.com/profile_images/710741808297324544/8GtVGpBt_normal.jpg",
+		"profile_image_url_https": "https://pbs.twimg.com/profile_images/710741808297324544/8GtVGpBt_normal.jpg",
+		"profile_banner_url": "https://pbs.twimg.com/profile_banners/21525682/1404268558",
+		"profile_link_color": "2D1CE9",
+		"profile_sidebar_border_color": "FFFFFF",
+		"profile_sidebar_fill_color": "7193C1",
+		"profile_text_color": "071A22",
+		"profile_use_background_image": false,
+		"has_extended_profile": false,
+		"default_profile": false,
+		"default_profile_image": false,
+		"following": false,
+		"follow_request_sent": false,
+		"notifications": false
+	},
+	"geo": null,
+	"coordinates": null,
+	"place": null,
+	"contributors": null,
+	"is_quote_status": false,
+	"retweet_count": 0,
+	"favorite_count": 2,
+	"favorited": false,
+	"retweeted": false,
+	"lang": "und"
+}, {
+	"created_at": "Thu May 19 20:56:44 +0000 2016",
+	"id": 733401021339275300,
+	"id_str": "733401021339275264",
+	"text": "@CalgaryDignity Da",
+	"truncated": false,
+	"entities": {
+		"hashtags": [],
+		"symbols": [],
+		"user_mentions": [{
+			"screen_name": "CalgaryDignity",
+			"name": "Inna Platonova",
+			"id": 3996771086,
+			"id_str": "3996771086",
+			"indices": [
+				0,
+				15
+			]
+		}],
+		"urls": []
+	},
+	"source": "<a href="
+	http: //twitter.com/download/iphone" rel="nofollow">Twitter for iPhone</a>",
+		"in_reply_to_status_id": 733399094882750500,
+	"in_reply_to_status_id_str": "733399094882750465",
+	"in_reply_to_user_id": 3996771086,
+	"in_reply_to_user_id_str": "3996771086",
+	"in_reply_to_screen_name": "CalgaryDignity",
+	"user": {
+		"id": 21525682,
+		"id_str": "21525682",
+		"name": "Jason Kenney",
+		"screen_name": "jkenney",
+		"location": "Calgary, CANADA",
+		"description": "Member of Parliament for Calgary Midnapore / Continuez à me suivre en francais sur @jkenney_fr",
+		"url": "https://t.co/A3TlCZghYH",
+		"entities": {
+			"url": {
+				"urls": [{
+					"url": "https://t.co/A3TlCZghYH",
+					"expanded_url": "http://www.jasonkenney.com",
+					"display_url": "jasonkenney.com",
+					"indices": [
+						0,
+						23
+					]
+				}]
+			},
+			"description": {
+				"urls": []
+			}
+		},
+		"protected": false,
+		"followers_count": 56079,
+		"friends_count": 1162,
+		"listed_count": 1197,
+		"created_at": "Sat Feb 21 23:05:42 +0000 2009",
+		"favourites_count": 3534,
+		"utc_offset": -21600,
+		"time_zone": "Mountain Time (US & Canada)",
+		"geo_enabled": true,
+		"verified": true,
+		"statuses_count": 19671,
+		"lang": "en",
+		"contributors_enabled": false,
+		"is_translator": false,
+		"is_translation_enabled": false,
+		"profile_background_color": "2D1CE9",
+		"profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+		"profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+		"profile_background_tile": false,
+		"profile_image_url": "http://pbs.twimg.com/profile_images/710741808297324544/8GtVGpBt_normal.jpg",
+		"profile_image_url_https": "https://pbs.twimg.com/profile_images/710741808297324544/8GtVGpBt_normal.jpg",
+		"profile_banner_url": "https://pbs.twimg.com/profile_banners/21525682/1404268558",
+		"profile_link_color": "2D1CE9",
+		"profile_sidebar_border_color": "FFFFFF",
+		"profile_sidebar_fill_color": "7193C1",
+		"profile_text_color": "071A22",
+		"profile_use_background_image": false,
+		"has_extended_profile": false,
+		"default_profile": false,
+		"default_profile_image": false,
+		"following": false,
+		"follow_request_sent": false,
+		"notifications": false
+	},
+	"geo": null,
+	"coordinates": null,
+	"place": null,
+	"contributors": null,
+	"is_quote_status": false,
+	"retweet_count": 0,
+	"favorite_count": 2,
+	"favorited": false,
+	"retweeted": false,
+	"lang": "und"
+}, {
+	"created_at": "Thu May 19 19:36:51 +0000 2016",
+	"id": 733380919474716700,
+	"id_str": "733380919474716677",
+	"text": "Nice to run into friends from the GTA #Filipino community visiting Parliament. #Mabuhay https://t.co/MMQDq20nzh",
+	"truncated": false,
+	"entities": {
+		"hashtags": [{
+			"text": "Filipino",
+			"indices": [
+				38,
+				47
+			]
+		}, {
+			"text": "Mabuhay",
+			"indices": [
+				79,
+				87
+			]
+		}],
+		"symbols": [],
+		"user_mentions": [],
+		"urls": [],
+		"media": [{
+			"id": 733380904199065600,
+			"id_str": "733380904199065600",
+			"indices": [
+				88,
+				111
+			],
+			"media_url": "http://pbs.twimg.com/media/Ci1-C_fXEAATrcu.jpg",
+			"media_url_https": "https://pbs.twimg.com/media/Ci1-C_fXEAATrcu.jpg",
+			"url": "https://t.co/MMQDq20nzh",
+			"display_url": "pic.twitter.com/MMQDq20nzh",
+			"expanded_url": "http://twitter.com/jkenney/status/733380919474716677/photo/1",
+			"type": "photo",
+			"sizes": {
+				"small": {
+					"w": 340,
+					"h": 238,
+					"resize": "fit"
+				},
+				"thumb": {
+					"w": 150,
+					"h": 150,
+					"resize": "crop"
+				},
+				"large": {
+					"w": 1024,
+					"h": 717,
+					"resize": "fit"
+				},
+				"medium": {
+					"w": 600,
+					"h": 420,
+					"resize": "fit"
+				}
+			}
+		}]
+	},
+	"extended_entities": {
+		"media": [{
+			"id": 733380904199065600,
+			"id_str": "733380904199065600",
+			"indices": [
+				88,
+				111
+			],
+			"media_url": "http://pbs.twimg.com/media/Ci1-C_fXEAATrcu.jpg",
+			"media_url_https": "https://pbs.twimg.com/media/Ci1-C_fXEAATrcu.jpg",
+			"url": "https://t.co/MMQDq20nzh",
+			"display_url": "pic.twitter.com/MMQDq20nzh",
+			"expanded_url": "http://twitter.com/jkenney/status/733380919474716677/photo/1",
+			"type": "photo",
+			"sizes": {
+				"small": {
+					"w": 340,
+					"h": 238,
+					"resize": "fit"
+				},
+				"thumb": {
+					"w": 150,
+					"h": 150,
+					"resize": "crop"
+				},
+				"large": {
+					"w": 1024,
+					"h": 717,
+					"resize": "fit"
+				},
+				"medium": {
+					"w": 600,
+					"h": 420,
+					"resize": "fit"
+				}
+			}
+		}]
+	},
+	"source": "<a href="
+	http: //twitter.com/download/iphone" rel="nofollow">Twitter for iPhone</a>",
+		"in_reply_to_status_id": null,
+	"in_reply_to_status_id_str": null,
+	"in_reply_to_user_id": null,
+	"in_reply_to_user_id_str": null,
+	"in_reply_to_screen_name": null,
+	"user": {
+		"id": 21525682,
+		"id_str": "21525682",
+		"name": "Jason Kenney",
+		"screen_name": "jkenney",
+		"location": "Calgary, CANADA",
+		"description": "Member of Parliament for Calgary Midnapore / Continuez à me suivre en francais sur @jkenney_fr",
+		"url": "https://t.co/A3TlCZghYH",
+		"entities": {
+			"url": {
+				"urls": [{
+					"url": "https://t.co/A3TlCZghYH",
+					"expanded_url": "http://www.jasonkenney.com",
+					"display_url": "jasonkenney.com",
+					"indices": [
+						0,
+						23
+					]
+				}]
+			},
+			"description": {
+				"urls": []
+			}
+		},
+		"protected": false,
+		"followers_count": 56079,
+		"friends_count": 1162,
+		"listed_count": 1197,
+		"created_at": "Sat Feb 21 23:05:42 +0000 2009",
+		"favourites_count": 3534,
+		"utc_offset": -21600,
+		"time_zone": "Mountain Time (US & Canada)",
+		"geo_enabled": true,
+		"verified": true,
+		"statuses_count": 19671,
+		"lang": "en",
+		"contributors_enabled": false,
+		"is_translator": false,
+		"is_translation_enabled": false,
+		"profile_background_color": "2D1CE9",
+		"profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+		"profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+		"profile_background_tile": false,
+		"profile_image_url": "http://pbs.twimg.com/profile_images/710741808297324544/8GtVGpBt_normal.jpg",
+		"profile_image_url_https": "https://pbs.twimg.com/profile_images/710741808297324544/8GtVGpBt_normal.jpg",
+		"profile_banner_url": "https://pbs.twimg.com/profile_banners/21525682/1404268558",
+		"profile_link_color": "2D1CE9",
+		"profile_sidebar_border_color": "FFFFFF",
+		"profile_sidebar_fill_color": "7193C1",
+		"profile_text_color": "071A22",
+		"profile_use_background_image": false,
+		"has_extended_profile": false,
+		"default_profile": false,
+		"default_profile_image": false,
+		"following": false,
+		"follow_request_sent": false,
+		"notifications": false
+	},
+	"geo": null,
+	"coordinates": null,
+	"place": null,
+	"contributors": null,
+	"is_quote_status": false,
+	"retweet_count": 11,
+	"favorite_count": 22,
+	"favorited": false,
+	"retweeted": false,
+	"possibly_sensitive": false,
+	"lang": "en"
+}, {
+	"created_at": "Thu May 19 19:00:45 +0000 2016",
+	"id": 733371835870552000,
+	"id_str": "733371835870552064",
+	"text": "The last federal referendum, Charlottetown in 1992, drew 72% turnout, compared to 68% in the 2015 federal election. https://t.co/27gHWj1kua",
+	"truncated": false,
+	"entities": {
+		"hashtags": [],
+		"symbols": [],
+		"user_mentions": [],
+		"urls": [{
+			"url": "https://t.co/27gHWj1kua",
+			"expanded_url": "https://twitter.com/alexboutilier/status/733367657840443392",
+			"display_url": "twitter.com/alexboutilier/…",
+			"indices": [
+				116,
+				139
+			]
+		}]
+	},
+	"source": "<a href="
+	http: //twitter.com/download/iphone" rel="nofollow">Twitter for iPhone</a>",
+		"in_reply_to_status_id": null,
+	"in_reply_to_status_id_str": null,
+	"in_reply_to_user_id": null,
+	"in_reply_to_user_id_str": null,
+	"in_reply_to_screen_name": null,
+	"user": {
+		"id": 21525682,
+		"id_str": "21525682",
+		"name": "Jason Kenney",
+		"screen_name": "jkenney",
+		"location": "Calgary, CANADA",
+		"description": "Member of Parliament for Calgary Midnapore / Continuez à me suivre en francais sur @jkenney_fr",
+		"url": "https://t.co/A3TlCZghYH",
+		"entities": {
+			"url": {
+				"urls": [{
+					"url": "https://t.co/A3TlCZghYH",
+					"expanded_url": "http://www.jasonkenney.com",
+					"display_url": "jasonkenney.com",
+					"indices": [
+						0,
+						23
+					]
+				}]
+			},
+			"description": {
+				"urls": []
+			}
+		},
+		"protected": false,
+		"followers_count": 56079,
+		"friends_count": 1162,
+		"listed_count": 1197,
+		"created_at": "Sat Feb 21 23:05:42 +0000 2009",
+		"favourites_count": 3534,
+		"utc_offset": -21600,
+		"time_zone": "Mountain Time (US & Canada)",
+		"geo_enabled": true,
+		"verified": true,
+		"statuses_count": 19671,
+		"lang": "en",
+		"contributors_enabled": false,
+		"is_translator": false,
+		"is_translation_enabled": false,
+		"profile_background_color": "2D1CE9",
+		"profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+		"profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+		"profile_background_tile": false,
+		"profile_image_url": "http://pbs.twimg.com/profile_images/710741808297324544/8GtVGpBt_normal.jpg",
+		"profile_image_url_https": "https://pbs.twimg.com/profile_images/710741808297324544/8GtVGpBt_normal.jpg",
+		"profile_banner_url": "https://pbs.twimg.com/profile_banners/21525682/1404268558",
+		"profile_link_color": "2D1CE9",
+		"profile_sidebar_border_color": "FFFFFF",
+		"profile_sidebar_fill_color": "7193C1",
+		"profile_text_color": "071A22",
+		"profile_use_background_image": false,
+		"has_extended_profile": false,
+		"default_profile": false,
+		"default_profile_image": false,
+		"following": false,
+		"follow_request_sent": false,
+		"notifications": false
+	},
+	"geo": null,
+	"coordinates": null,
+	"place": null,
+	"contributors": null,
+	"quoted_status_id": 733367657840443400,
+	"quoted_status_id_str": "733367657840443392",
+	"quoted_status": {
+		"created_at": "Thu May 19 18:44:09 +0000 2016",
+		"id": 733367657840443400,
+		"id_str": "733367657840443392",
+		"text": "Monsef says that only 50 per cent of people voted in some referendums.",
+		"truncated": false,
+		"entities": {
+			"hashtags": [],
+			"symbols": [],
+			"user_mentions": [],
+			"urls": []
+		},
+		"source": "<a href="
+		https: //about.twitter.com/products/tweetdeck" rel="nofollow">TweetDeck</a>",
+			"in_reply_to_status_id": null,
+		"in_reply_to_status_id_str": null,
+		"in_reply_to_user_id": null,
+		"in_reply_to_user_id_str": null,
+		"in_reply_to_screen_name": null,
+		"user": {
+			"id": 23365803,
+			"id_str": "23365803",
+			"name": "Alex Boutilier",
+			"screen_name": "alexboutilier",
+			"location": "Ottawa",
+			"description": "National politics reporter, Toronto Star. Late of Nova Scotia. aboutilier(at)thestar(dot)ca or alexboutilier(at)protonmail(dot)com PGP: https://t.co/5GMD3Lr5gQ",
+			"url": null,
+			"entities": {
+				"description": {
+					"urls": [{
+						"url": "https://t.co/5GMD3Lr5gQ",
+						"expanded_url": "http://tinyurl.com/okqoekq",
+						"display_url": "tinyurl.com/okqoekq",
+						"indices": [
+							136,
+							159
+						]
+					}]
+				}
+			},
+			"protected": false,
+			"followers_count": 8067,
+			"friends_count": 991,
+			"listed_count": 419,
+			"created_at": "Sun Mar 08 22:46:50 +0000 2009",
+			"favourites_count": 72,
+			"utc_offset": -14400,
+			"time_zone": "Eastern Time (US & Canada)",
+			"geo_enabled": false,
+			"verified": false,
+			"statuses_count": 44664,
+			"lang": "en",
+			"contributors_enabled": false,
+			"is_translator": false,
+			"is_translation_enabled": false,
+			"profile_background_color": "1A1B1F",
+			"profile_background_image_url": "http://pbs.twimg.com/profile_background_images/10989207/plain_black_background.jpg",
+			"profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/10989207/plain_black_background.jpg",
+			"profile_background_tile": true,
+			"profile_image_url": "http://pbs.twimg.com/profile_images/559780713587699712/z9pdpUw8_normal.jpeg",
+			"profile_image_url_https": "https://pbs.twimg.com/profile_images/559780713587699712/z9pdpUw8_normal.jpeg",
+			"profile_banner_url": "https://pbs.twimg.com/profile_banners/23365803/1428603111",
+			"profile_link_color": "141011",
+			"profile_sidebar_border_color": "181A1E",
+			"profile_sidebar_fill_color": "CCC8C8",
+			"profile_text_color": "050101",
+			"profile_use_background_image": true,
+			"has_extended_profile": false,
+			"default_profile": false,
+			"default_profile_image": false,
+			"following": false,
+			"follow_request_sent": false,
+			"notifications": false
+		},
+		"geo": null,
+		"coordinates": null,
+		"place": null,
+		"contributors": null,
+		"is_quote_status": false,
+		"retweet_count": 0,
+		"favorite_count": 0,
+		"favorited": false,
+		"retweeted": false,
+		"lang": "en"
+	},
+	"is_quote_status": true,
+	"retweet_count": 89,
+	"favorite_count": 62,
+	"favorited": false,
+	"retweeted": false,
+	"possibly_sensitive": false,
+	"lang": "en"
+}, {
+	"created_at": "Thu May 19 18:26:11 +0000 2016",
+	"id": 733363135252463600,
+	"id_str": "733363135252463620",
+	"text": "RT @davidakin: Wow. Hated “Motion 6” has been withdrawn. Opposition won. Thanks to @JustinTrudeau outburst.",
+	"truncated": false,
+	"entities": {
+		"hashtags": [],
+		"symbols": [],
+		"user_mentions": [{
+			"screen_name": "davidakin",
+			"name": "David Akin",
+			"id": 12034642,
+			"id_str": "12034642",
+			"indices": [
+				3,
+				13
+			]
+		}, {
+			"screen_name": "JustinTrudeau",
+			"name": "Justin Trudeau",
+			"id": 14260960,
+			"id_str": "14260960",
+			"indices": [
+				83,
+				97
+			]
+		}],
+		"urls": []
+	},
+	"source": "<a href="
+	http: //twitter.com/download/iphone" rel="nofollow">Twitter for iPhone</a>",
+		"in_reply_to_status_id": null,
+	"in_reply_to_status_id_str": null,
+	"in_reply_to_user_id": null,
+	"in_reply_to_user_id_str": null,
+	"in_reply_to_screen_name": null,
+	"user": {
+		"id": 21525682,
+		"id_str": "21525682",
+		"name": "Jason Kenney",
+		"screen_name": "jkenney",
+		"location": "Calgary, CANADA",
+		"description": "Member of Parliament for Calgary Midnapore / Continuez à me suivre en francais sur @jkenney_fr",
+		"url": "https://t.co/A3TlCZghYH",
+		"entities": {
+			"url": {
+				"urls": [{
+					"url": "https://t.co/A3TlCZghYH",
+					"expanded_url": "http://www.jasonkenney.com",
+					"display_url": "jasonkenney.com",
+					"indices": [
+						0,
+						23
+					]
+				}]
+			},
+			"description": {
+				"urls": []
+			}
+		},
+		"protected": false,
+		"followers_count": 56079,
+		"friends_count": 1162,
+		"listed_count": 1197,
+		"created_at": "Sat Feb 21 23:05:42 +0000 2009",
+		"favourites_count": 3534,
+		"utc_offset": -21600,
+		"time_zone": "Mountain Time (US & Canada)",
+		"geo_enabled": true,
+		"verified": true,
+		"statuses_count": 19671,
+		"lang": "en",
+		"contributors_enabled": false,
+		"is_translator": false,
+		"is_translation_enabled": false,
+		"profile_background_color": "2D1CE9",
+		"profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+		"profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+		"profile_background_tile": false,
+		"profile_image_url": "http://pbs.twimg.com/profile_images/710741808297324544/8GtVGpBt_normal.jpg",
+		"profile_image_url_https": "https://pbs.twimg.com/profile_images/710741808297324544/8GtVGpBt_normal.jpg",
+		"profile_banner_url": "https://pbs.twimg.com/profile_banners/21525682/1404268558",
+		"profile_link_color": "2D1CE9",
+		"profile_sidebar_border_color": "FFFFFF",
+		"profile_sidebar_fill_color": "7193C1",
+		"profile_text_color": "071A22",
+		"profile_use_background_image": false,
+		"has_extended_profile": false,
+		"default_profile": false,
+		"default_profile_image": false,
+		"following": false,
+		"follow_request_sent": false,
+		"notifications": false
+	},
+	"geo": null,
+	"coordinates": null,
+	"place": null,
+	"contributors": null,
+	"retweeted_status": {
+		"created_at": "Thu May 19 18:19:39 +0000 2016",
+		"id": 733361492343423000,
+		"id_str": "733361492343422976",
+		"text": "Wow. Hated “Motion 6” has been withdrawn. Opposition won. Thanks to @JustinTrudeau outburst.",
+		"truncated": false,
+		"entities": {
+			"hashtags": [],
+			"symbols": [],
+			"user_mentions": [{
+				"screen_name": "JustinTrudeau",
+				"name": "Justin Trudeau",
+				"id": 14260960,
+				"id_str": "14260960",
+				"indices": [
+					68,
+					82
+				]
+			}],
+			"urls": []
+		},
+		"source": "<a href="
+		https: //about.twitter.com/products/tweetdeck" rel="nofollow">TweetDeck</a>",
+			"in_reply_to_status_id": null,
+		"in_reply_to_status_id_str": null,
+		"in_reply_to_user_id": null,
+		"in_reply_to_user_id_str": null,
+		"in_reply_to_screen_name": null,
+		"user": {
+			"id": 12034642,
+			"id_str": "12034642",
+			"name": "David Akin",
+			"screen_name": "davidakin",
+			"location": "Ottawa, Ontario, Canada",
+			"description": "Parliamentary Bureau Chief. Sun Media. I cover politics. Normally from Ottawa, Canada.",
+			"url": "https://t.co/okR1oJlHGG",
+			"entities": {
+				"url": {
+					"urls": [{
+						"url": "https://t.co/okR1oJlHGG",
+						"expanded_url": "http://www.davidakin.com",
+						"display_url": "davidakin.com",
+						"indices": [
+							0,
+							23
+						]
+					}]
+				},
+				"description": {
+					"urls": []
+				}
+			},
+			"protected": false,
+			"followers_count": 43725,
+			"friends_count": 4393,
+			"listed_count": 1758,
+			"created_at": "Wed Jan 09 17:15:32 +0000 2008",
+			"favourites_count": 554,
+			"utc_offset": -14400,
+			"time_zone": "Eastern Time (US & Canada)",
+			"geo_enabled": true,
+			"verified": true,
+			"statuses_count": 122830,
+			"lang": "en",
+			"contributors_enabled": false,
+			"is_translator": false,
+			"is_translation_enabled": false,
+			"profile_background_color": "FCEBB6",
+			"profile_background_image_url": "http://pbs.twimg.com/profile_background_images/700490188/cadcc7f9063f144e182820d2bb3ef102.png",
+			"profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/700490188/cadcc7f9063f144e182820d2bb3ef102.png",
+			"profile_background_tile": true,
+			"profile_image_url": "http://pbs.twimg.com/profile_images/681277042550288384/obOH2sWS_normal.jpg",
+			"profile_image_url_https": "https://pbs.twimg.com/profile_images/681277042550288384/obOH2sWS_normal.jpg",
+			"profile_banner_url": "https://pbs.twimg.com/profile_banners/12034642/1458429587",
+			"profile_link_color": "ABB8C2",
+			"profile_sidebar_border_color": "F0A830",
+			"profile_sidebar_fill_color": "78C0A8",
+			"profile_text_color": "5E412F",
+			"profile_use_background_image": true,
+			"has_extended_profile": true,
+			"default_profile": false,
+			"default_profile_image": false,
+			"following": false,
+			"follow_request_sent": false,
+			"notifications": false
+		},
+		"geo": null,
+		"coordinates": null,
+		"place": null,
+		"contributors": null,
+		"is_quote_status": false,
+		"retweet_count": 102,
+		"favorite_count": 95,
+		"favorited": false,
+		"retweeted": false,
+		"lang": "en"
+	},
+	"is_quote_status": false,
+	"retweet_count": 102,
+	"favorite_count": 0,
+	"favorited": false,
+	"retweeted": false,
+	"lang": "en"
+}, {
+	"created_at": "Thu May 19 17:25:19 +0000 2016",
+	"id": 733347818535026700,
+	"id_str": "733347818535026688",
+	"text": "Just terrible. Condolences to the loved ones of those lost. https://t.co/TZjwzhVlJR",
+	"truncated": false,
+	"entities": {
+		"hashtags": [],
+		"symbols": [],
+		"user_mentions": [],
+		"urls": [{
+			"url": "https://t.co/TZjwzhVlJR",
+			"expanded_url": "https://twitter.com/bbcbreaking/status/733344307588046848",
+			"display_url": "twitter.com/bbcbreaking/st…",
+			"indices": [
+				60,
+				83
+			]
+		}]
+	},
+	"source": "<a href="
+	http: //twitter.com/download/iphone" rel="nofollow">Twitter for iPhone</a>",
+		"in_reply_to_status_id": null,
+	"in_reply_to_status_id_str": null,
+	"in_reply_to_user_id": null,
+	"in_reply_to_user_id_str": null,
+	"in_reply_to_screen_name": null,
+	"user": {
+		"id": 21525682,
+		"id_str": "21525682",
+		"name": "Jason Kenney",
+		"screen_name": "jkenney",
+		"location": "Calgary, CANADA",
+		"description": "Member of Parliament for Calgary Midnapore / Continuez à me suivre en francais sur @jkenney_fr",
+		"url": "https://t.co/A3TlCZghYH",
+		"entities": {
+			"url": {
+				"urls": [{
+					"url": "https://t.co/A3TlCZghYH",
+					"expanded_url": "http://www.jasonkenney.com",
+					"display_url": "jasonkenney.com",
+					"indices": [
+						0,
+						23
+					]
+				}]
+			},
+			"description": {
+				"urls": []
+			}
+		},
+		"protected": false,
+		"followers_count": 56079,
+		"friends_count": 1162,
+		"listed_count": 1197,
+		"created_at": "Sat Feb 21 23:05:42 +0000 2009",
+		"favourites_count": 3534,
+		"utc_offset": -21600,
+		"time_zone": "Mountain Time (US & Canada)",
+		"geo_enabled": true,
+		"verified": true,
+		"statuses_count": 19671,
+		"lang": "en",
+		"contributors_enabled": false,
+		"is_translator": false,
+		"is_translation_enabled": false,
+		"profile_background_color": "2D1CE9",
+		"profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+		"profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+		"profile_background_tile": false,
+		"profile_image_url": "http://pbs.twimg.com/profile_images/710741808297324544/8GtVGpBt_normal.jpg",
+		"profile_image_url_https": "https://pbs.twimg.com/profile_images/710741808297324544/8GtVGpBt_normal.jpg",
+		"profile_banner_url": "https://pbs.twimg.com/profile_banners/21525682/1404268558",
+		"profile_link_color": "2D1CE9",
+		"profile_sidebar_border_color": "FFFFFF",
+		"profile_sidebar_fill_color": "7193C1",
+		"profile_text_color": "071A22",
+		"profile_use_background_image": false,
+		"has_extended_profile": false,
+		"default_profile": false,
+		"default_profile_image": false,
+		"following": false,
+		"follow_request_sent": false,
+		"notifications": false
+	},
+	"geo": null,
+	"coordinates": null,
+	"place": null,
+	"contributors": null,
+	"quoted_status_id": 733344307588046800,
+	"quoted_status_id_str": "733344307588046848",
+	"quoted_status": {
+		"created_at": "Thu May 19 17:11:22 +0000 2016",
+		"id": 733344307588046800,
+		"id_str": "733344307588046848",
+		"text": "Wreckage of EgyptAir flight MS804 has been found near Greek island of Karpathos, Egyptian aviation officials confirm https://t.co/kKgfBQTvJG",
+		"truncated": false,
+		"entities": {
+			"hashtags": [],
+			"symbols": [],
+			"user_mentions": [],
+			"urls": [{
+				"url": "https://t.co/kKgfBQTvJG",
+				"expanded_url": "http://bbc.in/1TJp6vF",
+				"display_url": "bbc.in/1TJp6vF",
+				"indices": [
+					117,
+					140
+				]
+			}]
+		},
+		"source": "<a href="
+		http: //www.socialflow.com" rel="nofollow">SocialFlow</a>",
+			"in_reply_to_status_id": null,
+		"in_reply_to_status_id_str": null,
+		"in_reply_to_user_id": null,
+		"in_reply_to_user_id_str": null,
+		"in_reply_to_screen_name": null,
+		"user": {
+			"id": 5402612,
+			"id_str": "5402612",
+			"name": "BBC Breaking News",
+			"screen_name": "BBCBreaking",
+			"location": "London, UK",
+			"description": "Breaking news alerts and updates from the BBC. For news, features, analysis follow @BBCWorld (international) or @BBCNews (UK). Latest sport news @BBCSport.",
+			"url": "http://t.co/vBzl7LOaso",
+			"entities": {
+				"url": {
+					"urls": [{
+						"url": "http://t.co/vBzl7LOaso",
+						"expanded_url": "http://www.bbc.co.uk/news",
+						"display_url": "bbc.co.uk/news",
+						"indices": [
+							0,
+							22
+						]
+					}]
+				},
+				"description": {
+					"urls": []
+				}
+			},
+			"protected": false,
+			"followers_count": 22703117,
+			"friends_count": 3,
+			"listed_count": 118873,
+			"created_at": "Sun Apr 22 14:42:37 +0000 2007",
+			"favourites_count": 0,
+			"utc_offset": 3600,
+			"time_zone": "London",
+			"geo_enabled": false,
+			"verified": true,
+			"statuses_count": 28372,
+			"lang": "en",
+			"contributors_enabled": false,
+			"is_translator": false,
+			"is_translation_enabled": true,
+			"profile_background_color": "FFFFFF",
+			"profile_background_image_url": "http://pbs.twimg.com/profile_background_images/459283928017149952/IMgcIyBE.jpeg",
+			"profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/459283928017149952/IMgcIyBE.jpeg",
+			"profile_background_tile": false,
+			"profile_image_url": "http://pbs.twimg.com/profile_images/460740982498013184/wIPwMwru_normal.png",
+			"profile_image_url_https": "https://pbs.twimg.com/profile_images/460740982498013184/wIPwMwru_normal.png",
+			"profile_banner_url": "https://pbs.twimg.com/profile_banners/5402612/1398336837",
+			"profile_link_color": "1F527B",
+			"profile_sidebar_border_color": "FFFFFF",
+			"profile_sidebar_fill_color": "FFFFFF",
+			"profile_text_color": "5A5A5A",
+			"profile_use_background_image": true,
+			"has_extended_profile": false,
+			"default_profile": false,
+			"default_profile_image": false,
+			"following": false,
+			"follow_request_sent": false,
+			"notifications": false
+		},
+		"geo": null,
+		"coordinates": null,
+		"place": null,
+		"contributors": null,
+		"is_quote_status": false,
+		"retweet_count": 1447,
+		"favorite_count": 475,
+		"favorited": false,
+		"retweeted": false,
+		"possibly_sensitive": false,
+		"lang": "en"
+	},
+	"is_quote_status": true,
+	"retweet_count": 19,
+	"favorite_count": 18,
+	"favorited": false,
+	"retweeted": false,
+	"possibly_sensitive": false,
+	"lang": "en"
+}, {
+	"created_at": "Thu May 19 17:19:43 +0000 2016",
+	"id": 733346410314276900,
+	"id_str": "733346410314276867",
+	"text": "@kassideyknuth Because they are disproportionately targeted, for genocide.",
+	"truncated": false,
+	"entities": {
+		"hashtags": [],
+		"symbols": [],
+		"user_mentions": [{
+			"screen_name": "kassideyknuth",
+			"name": "Kass",
+			"id": 980734495,
+			"id_str": "980734495",
+			"indices": [
+				0,
+				14
+			]
+		}],
+		"urls": []
+	},
+	"source": "<a href="
+	http: //twitter.com/download/iphone" rel="nofollow">Twitter for iPhone</a>",
+		"in_reply_to_status_id": 733345539958411300,
+	"in_reply_to_status_id_str": "733345539958411264",
+	"in_reply_to_user_id": 980734495,
+	"in_reply_to_user_id_str": "980734495",
+	"in_reply_to_screen_name": "kassideyknuth",
+	"user": {
+		"id": 21525682,
+		"id_str": "21525682",
+		"name": "Jason Kenney",
+		"screen_name": "jkenney",
+		"location": "Calgary, CANADA",
+		"description": "Member of Parliament for Calgary Midnapore / Continuez à me suivre en francais sur @jkenney_fr",
+		"url": "https://t.co/A3TlCZghYH",
+		"entities": {
+			"url": {
+				"urls": [{
+					"url": "https://t.co/A3TlCZghYH",
+					"expanded_url": "http://www.jasonkenney.com",
+					"display_url": "jasonkenney.com",
+					"indices": [
+						0,
+						23
+					]
+				}]
+			},
+			"description": {
+				"urls": []
+			}
+		},
+		"protected": false,
+		"followers_count": 56079,
+		"friends_count": 1162,
+		"listed_count": 1197,
+		"created_at": "Sat Feb 21 23:05:42 +0000 2009",
+		"favourites_count": 3534,
+		"utc_offset": -21600,
+		"time_zone": "Mountain Time (US & Canada)",
+		"geo_enabled": true,
+		"verified": true,
+		"statuses_count": 19671,
+		"lang": "en",
+		"contributors_enabled": false,
+		"is_translator": false,
+		"is_translation_enabled": false,
+		"profile_background_color": "2D1CE9",
+		"profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+		"profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+		"profile_background_tile": false,
+		"profile_image_url": "http://pbs.twimg.com/profile_images/710741808297324544/8GtVGpBt_normal.jpg",
+		"profile_image_url_https": "https://pbs.twimg.com/profile_images/710741808297324544/8GtVGpBt_normal.jpg",
+		"profile_banner_url": "https://pbs.twimg.com/profile_banners/21525682/1404268558",
+		"profile_link_color": "2D1CE9",
+		"profile_sidebar_border_color": "FFFFFF",
+		"profile_sidebar_fill_color": "7193C1",
+		"profile_text_color": "071A22",
+		"profile_use_background_image": false,
+		"has_extended_profile": false,
+		"default_profile": false,
+		"default_profile_image": false,
+		"following": false,
+		"follow_request_sent": false,
+		"notifications": false
+	},
+	"geo": null,
+	"coordinates": null,
+	"place": null,
+	"contributors": null,
+	"is_quote_status": false,
+	"retweet_count": 0,
+	"favorite_count": 2,
+	"favorited": false,
+	"retweeted": false,
+	"lang": "en"
+}, {
+	"created_at": "Thu May 19 17:14:35 +0000 2016",
+	"id": 733345116144971800,
+	"id_str": "733345116144971776",
+	"text": "@PierAsselin Good points.",
+	"truncated": false,
+	"entities": {
+		"hashtags": [],
+		"symbols": [],
+		"user_mentions": [{
+			"screen_name": "PierAsselin",
+			"name": "Pierre Asselin",
+			"id": 76991566,
+			"id_str": "76991566",
+			"indices": [
+				0,
+				12
+			]
+		}],
+		"urls": []
+	},
+	"source": "<a href="
+	http: //twitter.com/download/iphone" rel="nofollow">Twitter for iPhone</a>",
+		"in_reply_to_status_id": 733341046537654300,
+	"in_reply_to_status_id_str": "733341046537654276",
+	"in_reply_to_user_id": 76991566,
+	"in_reply_to_user_id_str": "76991566",
+	"in_reply_to_screen_name": "PierAsselin",
+	"user": {
+		"id": 21525682,
+		"id_str": "21525682",
+		"name": "Jason Kenney",
+		"screen_name": "jkenney",
+		"location": "Calgary, CANADA",
+		"description": "Member of Parliament for Calgary Midnapore / Continuez à me suivre en francais sur @jkenney_fr",
+		"url": "https://t.co/A3TlCZghYH",
+		"entities": {
+			"url": {
+				"urls": [{
+					"url": "https://t.co/A3TlCZghYH",
+					"expanded_url": "http://www.jasonkenney.com",
+					"display_url": "jasonkenney.com",
+					"indices": [
+						0,
+						23
+					]
+				}]
+			},
+			"description": {
+				"urls": []
+			}
+		},
+		"protected": false,
+		"followers_count": 56079,
+		"friends_count": 1162,
+		"listed_count": 1197,
+		"created_at": "Sat Feb 21 23:05:42 +0000 2009",
+		"favourites_count": 3534,
+		"utc_offset": -21600,
+		"time_zone": "Mountain Time (US & Canada)",
+		"geo_enabled": true,
+		"verified": true,
+		"statuses_count": 19671,
+		"lang": "en",
+		"contributors_enabled": false,
+		"is_translator": false,
+		"is_translation_enabled": false,
+		"profile_background_color": "2D1CE9",
+		"profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+		"profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+		"profile_background_tile": false,
+		"profile_image_url": "http://pbs.twimg.com/profile_images/710741808297324544/8GtVGpBt_normal.jpg",
+		"profile_image_url_https": "https://pbs.twimg.com/profile_images/710741808297324544/8GtVGpBt_normal.jpg",
+		"profile_banner_url": "https://pbs.twimg.com/profile_banners/21525682/1404268558",
+		"profile_link_color": "2D1CE9",
+		"profile_sidebar_border_color": "FFFFFF",
+		"profile_sidebar_fill_color": "7193C1",
+		"profile_text_color": "071A22",
+		"profile_use_background_image": false,
+		"has_extended_profile": false,
+		"default_profile": false,
+		"default_profile_image": false,
+		"following": false,
+		"follow_request_sent": false,
+		"notifications": false
+	},
+	"geo": null,
+	"coordinates": null,
+	"place": null,
+	"contributors": null,
+	"is_quote_status": false,
+	"retweet_count": 0,
+	"favorite_count": 0,
+	"favorited": false,
+	"retweeted": false,
+	"lang": "en"
+}]
