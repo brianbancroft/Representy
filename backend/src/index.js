@@ -3,7 +3,11 @@ var route = require('koa-route'); //require it
 var json = require('koa-json');
 var koaPg = require('koa-pg');
 <<<<<<< HEAD
+<<<<<<< HEAD
 var pg = require('pg')//.native;
+=======
+var pg = require('pg'); // .native;
+>>>>>>> master
 =======
 var pg = require('pg'); // .native;
 >>>>>>> master
