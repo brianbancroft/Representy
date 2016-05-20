@@ -6,13 +6,23 @@ import MpTextSearch from './MpTextSearch.jsx';
 
 class AllMpView extends React.Component {
   state = {
-    searchText: ''
+    searchText: '',
+    searchBox: false
   }
 
   render() {
+    // var searchToRender = this.state.searchBox
+    // ? <MpTextSearch updateSearchText = { this._updateSearchText }/>
+
+
+    var searchToRender = <p>ahh</p>
+
 
     var filterData = this.props.data.filter((data) => {
-      return data.name.match(this.state.searchText)
+      var text = this.state.searchText
+      return data.name.toUpperCase().includes(text.toUpperCase()) || 
+      data.riding.toUpperCase().includes(text.toUpperCase()) || 
+      data.party.toUpperCase().includes(text.toUpperCase())
     })
 
     return (
@@ -21,8 +31,9 @@ class AllMpView extends React.Component {
           <main className="main">
             <div className="main-body">
               <section>   
-              <MpIntro /> 
-              <MpTextSearch updateSearchText = { this._updateSearchText }/>
+              <MpIntro selectSearchBox = { this._selectSearchBox }/> 
+
+              {this.state.searchBox ? <MpTextSearch updateSearchText = { this._updateSearchText }/> : ''}
               <div id="mp-container">
 
                 {filterData.map(function(mp){
@@ -43,6 +54,10 @@ class AllMpView extends React.Component {
   _updateSearchText = (text) => {
     console.log(text)
     this.setState({searchText: text})
+  }
+
+  _selectSearchBox = (event) => {
+    this.setState({ searchBox: !this.state.searchBox })
   }
 
 }
