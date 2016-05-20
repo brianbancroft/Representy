@@ -5,17 +5,16 @@ var SearchButton = React.createClass({
     this.props.onClick(event.target.value)
   },
 
-    render: function() {
+  render: function() {
 
-        return (
-        <div className="row-item">
-          <button onClick = {this._selectSearch}><span className="icon icon-search"></span> Search</button>
-        </div>
+    return (
+      <div className="row-item">
+        <button onClick = {this._selectSearch}><span className="icon icon-search"></span> Search</button>
+      </div>
+    )
 
-          )
-    }
+  }
+
 });
-
-
 
 export default SearchButton;
