@@ -5,8 +5,16 @@ import MpTextSearch from './MpTextSearch.jsx';
 
 
 class AllMpView extends React.Component {
-  
+  state = {
+    searchText: ''
+  }
+
   render() {
+
+    var filterData = this.props.data.filter((data) => {
+      return data.name.match(this.state.searchText)
+    })
+
     return (
       <div>
         <div className="body">
@@ -14,10 +22,10 @@ class AllMpView extends React.Component {
             <div className="main-body">
               <section>   
               <MpIntro /> 
-              <MpTextSearch />
+              <MpTextSearch updateSearchText = { this._updateSearchText }/>
               <div id="mp-container">
 
-                {this.props.data.map(function(mp){
+                {filterData.map(function(mp){
                   return (<MpThumb key={mp.name} data={mp} onChange={ this.props.onChange } />)
                 }, this)}
 
@@ -31,7 +39,12 @@ class AllMpView extends React.Component {
       </div>
     )
   }
-  
+ 
+  _updateSearchText = (text) => {
+    console.log(text)
+    this.setState({searchText: text})
+  }
+
 }
 
 export default AllMpView;
