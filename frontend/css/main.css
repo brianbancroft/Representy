@@ -107,7 +107,7 @@ a {
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 45px;
   text-align: center;
 }
 
@@ -251,10 +251,21 @@ button:focus {
   justify-content: space-between;
 }
 
-.row-container-center {
+.column-container-center {
   display: flex;
   margin-bottom: 20px;
   justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.column-container-center h1 {
+  margin-bottom: 10px;
+}
+
+.column-container-center p {
+  line-height: 150%;
+  font-size: 20px;
 }
 
 .row-container.mp-head {
@@ -308,6 +319,30 @@ form button {
   border: 0;
 }
 
+.row-container.no-margin {
+  margin-bottom: 0px;
+  position: relative;
+  z-index: 10;
+}
+
+.filter {
+  flex-grow: 3;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 14px;
+  color: white;
+  border: 3px solid white;
+  /*  width:300px;
+*/
+  text-transform: uppercase;
+}
+
+.filter.all {
+  flex-grow: 1;
+  /*width:120px;*/
+  color: #333;
+}
+
 .image-crop {
   width: 142px;
   height: 152px;
@@ -339,6 +374,26 @@ form button {
 
 .icon.bloc {
   color: #0088CE;
+}
+
+.filter.lib {
+  background-color: #ed2e38;
+}
+
+.filter.con {
+  background-color: #002395;
+}
+
+.filter.ndp {
+  background-color: #FF5800;
+}
+
+.filter.green {
+  background-color: #427730;
+}
+
+.filter.bloc {
+  background-color: #0088CE;
 }
 
 .image-crop.lib {
