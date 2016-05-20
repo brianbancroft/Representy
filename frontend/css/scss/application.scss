@@ -63,6 +63,9 @@ button {
     background-color: #333;
     color:white;
   }
+  &:focus {
+   outline:0;
+  }
 }
 .width {
   width:75%;
@@ -224,4 +227,3 @@ form {
     border:0; 
   }
 }
-

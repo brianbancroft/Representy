@@ -2,7 +2,10 @@ import React from 'react';
 import SearchButton from './SearchButton.jsx';
 
 class MpIntro extends React.Component {
+
+
   render() {
+
     return (
       <div>
       <div className="row-container-center">
@@ -15,11 +18,13 @@ class MpIntro extends React.Component {
         <div className="row-item">
           <button><span className="icon icon-globe"></span> Map</button>
         </div>
-        <SearchButton/>
+
+        <SearchButton onClick = {this.props.selectSearchBox} />
       </div>
       </div>
     )
   }
+
 }
 
 export default MpIntro;

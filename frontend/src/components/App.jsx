@@ -10,8 +10,6 @@ import AllMpView from './AllMpView.jsx';
 
 class App extends React.Component {
   
-
-
   state = {
     selectedMP: null
   }
@@ -45,6 +43,8 @@ class App extends React.Component {
       selectedMP: mp
     })
   }
+
+
   
 }
 

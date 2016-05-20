@@ -136,6 +136,10 @@ button:hover {
   color: white;
 }
 
+button:focus {
+  outline: 0;
+}
+
 .width {
   width: 75%;
 }
