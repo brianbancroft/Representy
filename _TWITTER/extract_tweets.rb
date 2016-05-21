@@ -36,19 +36,23 @@ json_data.each do |i|
 end
 
 
-def collect_with_max_id(collection=[], max_id=nil, &block)
-  response = yield(max_id)
-  collection += response
-  response.empty? ? collection.flatten : collect_with_max_id(collection, response.last.id - 1, &block)
-end
+puts twitter.first
 
-def client.get_all_tweets(user)
-  collect_with_max_id do |max_id|
-    options = {count: 50, include_rts: true}
-    options[:max_id] = max_id unless max_id.nil?
-    user_timeline(user, options)
-  end
-end
+
+
+# def collect_with_max_id(collection=[], max_id=nil, &block)
+#   response = yield(max_id)
+#   collection += response
+#   response.empty? ? collection.flatten : collect_with_max_id(collection, response.last.id - 1, &block)
+# end
+
+# def client.get_all_tweets(user)
+#   collect_with_max_id do |max_id|
+#     options = {count: 10}
+#     options[:max_id] = max_id unless max_id.nil?
+#     user_timeline(user, options)
+#   end
+# end
 
 # binding.pry
 puts client.get_all_tweets("#{twitter.first}")
@@ -64,3 +68,5 @@ puts client.get_all_tweets("#{twitter.first}")
 # elsif not tweet.quoted_status.text.nil?
 #   partcipation_count += 1
 # end
+
+
