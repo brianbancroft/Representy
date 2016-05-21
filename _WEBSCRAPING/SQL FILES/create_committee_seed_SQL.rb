@@ -12,12 +12,10 @@ json_data = JSON.parse(json_file)
 
 # puts jsonarray
 
-open('committee_hash_SQL.SQL', 'w'){ |item|
-  item << "INSERT INTO members (mp_id, committee_title)"
+open('committee_seed.SQL', 'w') { |item|
   json_data.each do |i|
-    item << "VALUES ({\'#{i['mp_id']}'\, \'#{i['committee_title']}\');\n"
+    item << "INSERT INTO members (mp_id, committee_title)\n"
+    item << "VALUES (#{i['mp_id'].to_i}, \'#{i['committee_title']}\');\n"
   end
+
 }
-
-
-
