@@ -1,14 +1,64 @@
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="../css/main.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.18.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.18.0/mapbox-gl.css' rel='stylesheet' />
+    <style>
+        #map { position:relative; height:300px; width:100%; }
+    </style>
     <title>MY MP</title>
   </head>
   <body> 
-
+  <style>
+      #menu {
+          position: absolute;
+          background: #fff;
+          padding: 10px;
+          font-family: 'Open Sans', sans-serif;
+      }
+  </style>
+ 
 
     <div id="app"></div>
+    
     <script src="/bundle.js"></script>
+    <script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoiYnJpYW5iYW5jcm9mdCIsImEiOiJsVGVnMXFzIn0.7ldhVh3Ppsgv4lCYs65UdA';
+    var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/brianbancroft/cio5y4bf10001afnmjjdelbzf',
+        zoom: 2,
+        center: [-91.23046875,45.460130637921]
+    });
 
+    map.on('load', function () {
+        var data =
+        map.addSource('urban-areas', {
+            'type': 'geojson',
+            //'data': {"type":"Polygon","coordinates":[[[-91.23046875,45.460130637921],[-79.8046875,49.837982453085],[-69.08203125,43.452918893555],[-88.2421875,32.694865977875],[-91.23046875,45.460130637921]]]}
+            //compare: {"type":"Polygon","coordinates":[[[-91.23046875,45.460130637921],[-79.8046875,49.837982453085],[-69.08203125,43.452918893555],[-88.2421875,32.694865977875],[-91.23046875,45.460130637921]]]}
+            'data': 'http://localhost:3000/riding/938'
+            // 'data': 'https://d2ad6b4ur7yvpq.cloudfront.net/naturalearth-3.3.0/ne_50m_urban_areas.geojson'
+        });
+
+        map.addLayer({
+            'id': 'urban-areas-fill',
+            'type': 'fill',
+            'source': 'urban-areas',
+            'layout': {},
+            'paint': {
+                'fill-color': '#f08',
+                'fill-opacity': 0.4
+            }
+        // This is the important part of this example: the addLayer
+        // method takes 2 arguments: the layer as an object, and a string
+        // representing another layer's name. if the other layer
+        // exists in the stylesheet already, the new layer will be positioned
+        // right before that layer in the stack, making it possible to put
+        // 'overlays' anywhere in the layer stack.
+        }, 'water');
+    });
+    </script>
   </body>
 </html>

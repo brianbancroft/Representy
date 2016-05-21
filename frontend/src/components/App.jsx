@@ -7,7 +7,6 @@ import SingleMpView from './SingleMpView.jsx';
 import AllMpView from './AllMpView.jsx';
 
 
-
 class App extends React.Component {
   
   state = {
@@ -32,6 +31,7 @@ class App extends React.Component {
         <Navbar 
           onChange = { this._changeSelectedMp }
         />
+
         { componentToRender }
       </div>
     )
