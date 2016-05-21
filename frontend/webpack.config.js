@@ -1,5 +1,6 @@
 var path = require('path');
 var webpack = require('webpack');
+
 var config = {
   debug: true,
   devtool: 'cheap-eval-source-map',
