@@ -24,8 +24,9 @@ end
   
 votes_placed.sort!
 
-votes_placed.each do |bills|  
   vote_bill_hash = []
+
+votes_placed.each do |bills|  
   bill_vote = URI(bills).path.split('/').last
   legis = Nokogiri::HTML(open(bills))
   legis_un = legis.css('.focus')
@@ -63,23 +64,22 @@ votes_placed.each do |bills|
     end
 
    vote_bill_hash.push({
-      :mp_id => mp_id,
-     :mp_name => mp_name,
-     :vote => mp_vote,
-     :bill_vote => bill_vote
+     "mp_id": mp_id,
+     "mp_name": mp_name,
+     "vote": mp_vote,
+     "bill_vote": bill_vote
       })
   
 end
 
+  # vote_bill_hash.map { |o| Hash[o.each_pair.to_a] }.to_json
 
 
-
-  vote_bill_hash.map { |o| Hash[o.each_pair.to_a] }.to_json
-
-
-  File.open("voting_record.json","a") do |f|
-    f.write(vote_bill_hash)
-  end
-   
 end
+
+
+File.open("voting_record.json","w") do |f|
+  f.write(vote_bill_hash.to_json)
+end
+
 
