@@ -1,5 +1,6 @@
 import React from 'react';
 import MpHeader from './MpHeader.jsx';
+import MpStats from './MpStats.jsx';
 import ConstituencyAddress from './ConstituencyAddress.jsx';
 import MpFooter from './MpFooter.jsx';
 
@@ -23,6 +24,7 @@ getMp() {
             <div className="main-body">
               <section>
                <MpHeader mp = {this.getMp()} />
+               <MpStats/>
                 <div className="row-container">
                   <ConstituencyAddress mp = {this.getMp()} />
                 </div>
