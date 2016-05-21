@@ -1,14 +1,11 @@
 require 'twitter'
 require 'pry'
 require 'json'
-require 'rubygems'
-require 'open-uri'
 require 'rest-client'
 require 'json'
 require 'pry'
 
 require_relative 'score_engagement.rb'
-
 
 client = Twitter::REST::Client.new do |config|
   config.consumer_key        = "b1HRb0wLGXLT1ZJNSHuhJA5ce"
@@ -25,7 +22,7 @@ mid_array = []
 namesHash.each do |poli_twerp|
 
   # get list of tweets
-  tweetList = client.user_timeline(poli_twerp, {count:70})
+  tweetList = client.user_timeline(poli_twerp, {count:50})
   # For list of counts, do something
   engagementCount = Score_engagement::getParticipationCount(tweetList)
   # Otherwise, do something else.
