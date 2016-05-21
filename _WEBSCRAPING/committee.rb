@@ -11,12 +11,11 @@ json_data = JSON.parse(json_file)
 
 committee_list = doc.css('#TABLE > tr:nth-child(n+2):nth-child(-n+24) > td:nth-child(1)')
 
+committee_hash = []
 
 committee_list.each do |data| 
-  committee_hash = []
-  output = []
-  output2 =[]
 
+  output = []
   # comm = data.children[1].children[1].css('b').text()
   # puts comm
   title = data.children[1].children[1].css('b').text()
@@ -38,8 +37,8 @@ committee_list.each do |data|
         end
       end 
        committee_hash.push({
-      :mp_id => mp_id,
-      :committee_title => committee_title,
+      "mp_id": mp_id,
+      "committee_title": committee_title
       })  
 
     end
@@ -65,8 +64,8 @@ committee_list.each do |data|
           end
         end
        committee_hash.push({
-          :mp_id => mp_id,
-          :committee_title => committee_title,
+          "mp_id": mp_id,
+          "committee_title": committee_title
           })
 
     end
@@ -74,14 +73,14 @@ committee_list.each do |data|
   end
 
 
-  committee_hash.map { |o| Hash[o.each_pair.to_a] }.to_json
+  # committee_hash.map { |o| Hash[o.each_pair.to_a] }.to_json
 
-  File.open("committee_hash.json","a") do |f|
-  f.write(committee_hash)
-  end
 
 end
 
+File.open("committee_hash2.json","w") do |f|
+  f.write(committee_hash.to_json)
+end
 
 
 
