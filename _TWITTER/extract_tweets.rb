@@ -14,15 +14,53 @@ client = Twitter::REST::Client.new do |config|
   config.access_token_secret = "U2RpWh0zYboBJQS1lI0oy6KlOFvOA8e2n5JHuJEs34VID"
 end
 
-binding.pry
-
-# test = client.user_timeline("jkenney")
-
-#to get the text, it's tweetvariable[i].text
+# binding.pry
 
 
-if testString[0] == '@' || testString[0] == '.' && testString[1] == '@'
-  partcipation_count += 1
-elsif not tweet.quoted_status.text.nil?
-  partcipation_count += 1
+
+json_file = File.read('twitter.json')
+
+json_data = JSON.parse(json_file)
+
+
+
+
+
+twitter = []
+
+json_data.each do |i| 
+
+  twitter.push(i['handle'])
+
+# test = client.user_timeline(i['handle'])
 end
+
+
+def collect_with_max_id(collection=[], max_id=nil, &block)
+  response = yield(max_id)
+  collection += response
+  response.empty? ? collection.flatten : collect_with_max_id(collection, response.last.id - 1, &block)
+end
+
+def client.get_all_tweets(user)
+  collect_with_max_id do |max_id|
+    options = {count: 50, include_rts: true}
+    options[:max_id] = max_id unless max_id.nil?
+    user_timeline(user, options)
+  end
+end
+
+# binding.pry
+puts client.get_all_tweets("#{twitter.first}")
+
+
+
+
+# to get the text, it's tweetvariable[i].text
+
+
+# if tweet.text[0] == '@' || tweet.text[0] == '.' && tweet.text[1] == '@'
+#   partcipation_count += 1
+# elsif not tweet.quoted_status.text.nil?
+#   partcipation_count += 1
+# end

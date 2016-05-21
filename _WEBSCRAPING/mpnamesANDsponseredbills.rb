@@ -6,25 +6,15 @@ require 'json'
 require 'ostruct'
 require 'pry'
 
-# DATA_MAP = { 
-
-#   "name.en": {db: "description", format: "string"},
-#   "introduced": {db: "date_introduced", format: "date" }
-
-# }
-
 url='http://api.openparliament.ca/politicians/?format=json'
 
 name_json = Crack::JSON.parse(RestClient.get(url))
 
-
-json_file = File.read('mpsHash.json')
+json_file = File.read('mpsHashtest.json')
 
 json_data = JSON.parse(json_file)
 
-# puts name_json
 @name_arr = []
-
 
 name_json['objects'].each do |mp_info|
   sponsored_bill_hash = []
@@ -36,18 +26,19 @@ name_json['objects'].each do |mp_info|
     rest = RestClient.get(mp_details[:rest_url])
     bill = JSON.parse(rest)
     mp_name = mp_details['name']
+    arr = mp_name.split(" ")
+    first_name = arr[0]
+    last_name = arr.last
     mp_id = ""
-#    puts mp_name
     json_data.each do |data|
-      # puts "matching #{mp_name}Against #{data['name']}"
-      if (data['name']) =~ /#{mp_name}/
+    if data['name'].include?(first_name) && data['name'].include?(last_name)
          mp_id = data['id']
       end
     end
     if  bill["objects"] === []
-        bill_exist = "No sponsored bills."
+        bill_exist = "N/A"
     else 
-      bill_exist = "Bill Information:"
+      bill_exist = "True"
       bill_number = bill["objects"][0]["number"]
       bill_english = bill["objects"][0]["name"]["en"]
       bill_french = bill["objects"][0]["name"]["fr"]
@@ -78,7 +69,7 @@ name_json['objects'].each do |mp_info|
    sponsored_bill_hash.map { |o| Hash[o.each_pair.to_a] }.to_json
 
 
-  File.open("sponsored_bills.json","a") do |f|
+  File.open("sponsored_bills2.json","a") do |f|
     f.write(sponsored_bill_hash)
   end
 
