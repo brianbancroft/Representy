@@ -1,19 +1,3 @@
-// Place all the styles related to the mp controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
-
-.image-crop {
-  width:142px;
-  height:152px;
-  overflow: hidden;
-  border-bottom:10px solid grey;
-  margin-top:35px;
-  img {
-    position: relative;
-    top: -15px;
-  }
-}
-
 .icon.lib {
   color:$libColour;
 }
@@ -73,11 +57,7 @@
 
 }
 
-.underline {
-  border-bottom: 3px solid grey;
-  font-weight: 900;
-  text-transform: uppercase;
-}
+
 
 .underline.lib {
   border-bottom: 3px solid $libColour;
@@ -122,47 +102,6 @@
   }
 }
 
-.main {
-  width:75%;
-}
-.body {
-  padding-top: 40px;
-  display: flex;
-  justify-content:center;
-}
-
-.main-body {
-  position: relative;
-  min-height:100vh;
-  border-left: 3px solid #333;
-  padding:0px 40px;
-}
-
-.main-body:before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: -50px;
-  width: 100%;
-  height: 150px;
-  -webkit-transform: skewY(-3deg);
-  -moz-transform: skewY(-3deg);
-  -ms-transform: skewY(-3deg);
-  -o-transform: skewY(-3deg);
-  transform: skewY(-3deg);
-  -webkit-backface-visibility: hidden;
-  border-top: 3px solid #333;
-}
-
-section {
-  padding-bottom: 10px;
-  position: relative;
-
-}
-
-.break {
-  margin-bottom:40px;
-}
 
 .address {
   span {
@@ -226,4 +165,66 @@ section {
 }
 .mp-index-tag.ndp {
   background-color: rgba( $ndpColour, .8 )
+}
+
+.contact-foot {
+  display: flex;
+  flex-direction:row;
+  justify-contents: center;
+  div {
+    width: 50%;
+  }
+  div:first-child {
+    border-right: 1px solid #666;
+  }
+}
+
+.row-container.mp-head {
+  align-items:center;
+  .row-item:last-child {
+    width: 75%;
+  }
+}
+
+.score {
+  text-align: center;
+  color:#333;
+  font-weight:bold;
+  border-bottom: 5px solid #dbdbdb;
+  span {
+    display:block;
+  }
+  .score-num {
+    font-size: 60px;
+  }
+  .score-num.one {
+    color:#EA222D;
+  }
+  .score-num.two {
+    color:#DB2D2C;
+  }
+  .score-num.three {
+    color:#CA382B;
+  }
+  .score-num.four {
+    color:#B9462A;
+  }
+  .score-num.five {
+    color:#A75429;
+  }
+  .score-num.six {
+    color:#995F29;
+  }
+  .score-num.seven {
+    color:#837029;
+  }
+  .score-num.eight {
+    color:#737E29;
+  }
+  .score-num.nine {
+    color:#648A2A;
+  }
+  .score-num.ten {
+    color:#53992B;
+  }
 }
