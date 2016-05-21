@@ -1,16 +1,16 @@
 require 'math'
 class Score_engagmenet
 
-  def self.test(tweets)
+  def self.getParticipationCount(tweets)
     participation_count = 0
     tweets.each do |tweet|
-      if tweet.text == '@' || tweet.text == '.' && tweet.text == '@'
+      if tweet.text[0] == '@' || tweet.text[0] == '.' && tweet.text[1] == '@'
         participation_count += 1
       elsif not tweet.quoted_status.text.nil?
         participation_count += 1
       end
     end
-    participation_count = (participation_count / tweets.length) * 100
+    participation_count = (participation_count / tweets.length)
     return participation_count
   end
 
