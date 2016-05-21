@@ -1,15 +1,20 @@
 import React from 'react';
 
-class SearchButton extends React.Component {
-  render() {
+var SearchButton = React.createClass({
+  _selectSearch: function(event) {
+    this.props.onClick(event.target.value)
+  },
+
+  render: function() {
+
     return (
-
-    <div className="row-item">
-      <button><span className="icon icon-search"></span> Search</button>
-    </div>
-
+      <div className="row-item">
+        <button onClick = {this._selectSearch}><span className="icon icon-search"></span> Search</button>
+      </div>
     )
+
   }
-}
+
+});
 
 export default SearchButton;
