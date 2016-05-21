@@ -1,11 +1,14 @@
 require 'twitter'
 require 'pry'
 require 'json'
-require 'rubygems'
-require 'open-uri'
 require 'rest-client'
 require 'json'
 require 'pry'
+
+
+# require_relative 'score_engagement.rb'
+
+
 
 @client = Twitter::REST::Client.new do |config|
   # config.consumer_key        = "b1HRb0wLGXLT1ZJNSHuhJA5ce"
@@ -20,12 +23,19 @@ end
 
 json_file = File.read('twitter.json')
 json_data = JSON.parse(json_file)
+
+
+
 twitter = []
 data = []
 
-# json_data.each do |i| 
+# json_data.each do |i|
+
 #   twitter.push(i['handle'])
+
+# test = client.user_timeline(i['handle'])
 # end
+
 
 json_data.each do |mp|
   begin
@@ -45,3 +55,10 @@ end
 File.open("tweets.json","w") do |f|
   f.write(data.to_json)
 end
+
+
+
+# if tweet.text[0] == '@' || tweet.text[0] == '.' && tweet.text[1] == '@'
+#   partcipation_count += 1
+# elsif not tweet.quoted_status.text.nil?
+#   partcipation_count += 1
