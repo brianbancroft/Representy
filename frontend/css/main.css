@@ -1,92 +1,4 @@
 @charset "UTF-8";
-@font-face {
-  font-family: 'fontello';
-  src: url("../../fonts/fontello.eot?52168231");
-  src: url("../../fonts/fontello.eot?52168231#iefix") format("embedded-opentype"), url("../../fonts/fontello.woff2?52168231") format("woff2"), url("../../fonts/fontello.woff?52168231") format("woff"), url("../../fonts/fontello.ttf?52168231") format("truetype"), url("../../fonts/fontello.svg?52168231#fontello") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-
-/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
-/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
-/*
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-  @font-face {
-    font-family: 'fontello';
-    src: url('../font/fontello.svg?52168231#fontello') format('svg');
-  }
-}
-*/
-[class^="icon-"]:before, [class*=" icon-"]:before {
-  font-family: "fontello";
-  font-style: normal;
-  font-weight: normal;
-  speak: none;
-  display: inline-block;
-  text-decoration: inherit;
-  width: 1em;
-  margin-right: .2em;
-  text-align: center;
-  /* opacity: .8; */
-  /* For safety - reset parent styles, that can break glyph codes*/
-  font-variant: normal;
-  text-transform: none;
-  /* fix buttons height, for twitter bootstrap */
-  line-height: 1em;
-  /* Animation center compensation - margins should be symmetric */
-  /* remove if not needed */
-  margin-left: .2em;
-  /* you can be more comfortable with increased icons size */
-  /* font-size: 120%; */
-  /* Font smoothing. That was taken from TWBS */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  /* Uncomment for 3D effect */
-  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
-}
-
-.icon-phone:before {
-  content: '\e800';
-}
-
-/* '' */
-.icon-mail:before {
-  content: '\e801';
-}
-
-/* '' */
-.icon-search:before {
-  content: '\e802';
-}
-
-/* '' */
-.icon-globe:before {
-  content: '\e803';
-}
-
-/* '' */
-.icon-location:before {
-  content: '\e804';
-}
-
-/* '' */
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any styles
- * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
- * file per style scope.
-
- *= require_tree .
- *= require_self
- */
-/*@import "bootstrap-sprockets";
-@import "bootstrap";*/
 html {
   box-sizing: border-box;
 }
@@ -116,30 +28,6 @@ h2 {
   margin-top: 0px;
 }
 
-button {
-  border-radius: 0px;
-  padding: 10px;
-  font-size: 20px;
-  text-align: center;
-  width: 250px;
-  background-color: white;
-  border-color: #333;
-  color: #666;
-  text-transform: uppercase;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color .2s ease-in-out, color .2s ease-in-out;
-}
-
-button:hover {
-  background-color: #333;
-  color: white;
-}
-
-button:focus {
-  outline: 0;
-}
-
 .width {
   width: 75%;
 }
@@ -160,6 +48,15 @@ button:focus {
   display: flex;
   justify-content: center;
   padding: 10px 0px;
+}
+
+.logo {
+  cursor: pointer;
+  transition: opacity .2s ease-in-out;
+}
+
+.logo:hover {
+  opacity: .6;
 }
 
 .skew {
@@ -188,61 +85,46 @@ button:focus {
   backface-visibility: initial;
 }
 
-.form-control {
-  border-radius: 0px;
-  font-weight: bold;
-  color: #333;
-  border: 3px solid #666;
-  -webkit-box-shadow: none;
-  box-shadow: none;
+.main {
+  width: 75%;
 }
 
-.form-control:focus {
-  border-color: #dbdbdb;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-
-.btn-default {
-  border-radius: 0px;
-  background-color: #333;
-  border: 1px solid #333;
-  color: white;
-  font-weight: bold;
-  transition: background-color .15s ease-in-out;
-}
-
-.btn-default:hover {
-  background-color: #666;
-  border: 1px solid #333;
-  color: white;
-}
-
-.mp-hover + .mp-index-tag span {
-  display: block;
-}
-
-.mp-hover:hover + .mp-index-tag {
-  max-height: 100px;
-}
-
-.mp-hover:hover + .mp-index-tag span {
-  visibility: visible;
-  display: block;
-}
-
-.contact-foot {
+.body {
+  padding-top: 40px;
   display: flex;
-  flex-direction: row;
-  justify-contents: center;
+  justify-content: center;
 }
 
-.contact-foot div {
-  width: 50%;
+.main-body {
+  position: relative;
+  min-height: 100vh;
+  border-left: 3px solid #333;
+  padding: 0px 40px;
 }
 
-.contact-foot div:first-child {
-  border-right: 1px solid #666;
+.main-body:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -50px;
+  width: 100%;
+  height: 150px;
+  -webkit-transform: skewY(-3deg);
+  -moz-transform: skewY(-3deg);
+  -ms-transform: skewY(-3deg);
+  -o-transform: skewY(-3deg);
+  transform: skewY(-3deg);
+  -webkit-backface-visibility: hidden;
+  border-top: 3px solid #333;
+}
+
+section {
+  padding-bottom: 10px;
+  position: relative;
+}
+
+.break {
+  margin-bottom: 40px;
 }
 
 .row-container {
@@ -268,21 +150,66 @@ button:focus {
   font-size: 20px;
 }
 
-.row-container.mp-head {
-  align-items: center;
+.row-container.no-margin {
+  margin-bottom: 0px;
+  position: relative;
+  z-index: 10;
 }
 
-.row-container.mp-head .row-item:last-child {
-  width: 75%;
+.image-crop {
+  width: 142px;
+  height: 152px;
+  overflow: hidden;
+  border-bottom: 10px solid grey;
+  margin-top: 35px;
 }
 
-.logo {
+.image-crop img {
+  position: relative;
+  top: -15px;
+}
+
+.underline {
+  border-bottom: 3px solid grey;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+button {
+  border-radius: 0px;
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+  width: 250px;
+  background-color: white;
+  border-color: #333;
+  color: #666;
+  text-transform: uppercase;
+  font-weight: bold;
   cursor: pointer;
-  transition: opacity .2s ease-in-out;
+  transition: background-color .2s ease-in-out, color .2s ease-in-out;
 }
 
-.logo:hover {
-  opacity: .6;
+button:hover {
+  background-color: #333;
+  color: white;
+}
+
+button:focus {
+  outline: 0;
+}
+
+.mp-hover + .mp-index-tag span {
+  display: block;
+}
+
+.mp-hover:hover + .mp-index-tag {
+  max-height: 100px;
+}
+
+.mp-hover:hover + .mp-index-tag span {
+  visibility: visible;
+  display: block;
 }
 
 form {
@@ -319,12 +246,6 @@ form button {
   border: 0;
 }
 
-.row-container.no-margin {
-  margin-bottom: 0px;
-  position: relative;
-  z-index: 10;
-}
-
 .filter {
   flex-grow: 3;
   padding: 10px;
@@ -341,74 +262,6 @@ form button {
   flex-grow: 1;
   /*width:120px;*/
   color: #333;
-}
-
-.score {
-  text-align: center;
-  color: #333;
-  font-weight: bold;
-  border-bottom: 5px solid #dbdbdb;
-}
-
-.score span {
-  display: block;
-}
-
-.score .score-num {
-  font-size: 60px;
-}
-
-.score .score-num.one {
-  color: #EA222D;
-}
-
-.score .score-num.two {
-  color: #DB2D2C;
-}
-
-.score .score-num.three {
-  color: #CA382B;
-}
-
-.score .score-num.four {
-  color: #B9462A;
-}
-
-.score .score-num.five {
-  color: #A75429;
-}
-
-.score .score-num.six {
-  color: #995F29;
-}
-
-.score .score-num.seven {
-  color: #837029;
-}
-
-.score .score-num.eight {
-  color: #737E29;
-}
-
-.score .score-num.nine {
-  color: #648A2A;
-}
-
-.score .score-num.ten {
-  color: #53992B;
-}
-
-.image-crop {
-  width: 142px;
-  height: 152px;
-  overflow: hidden;
-  border-bottom: 10px solid grey;
-  margin-top: 35px;
-}
-
-.image-crop img {
-  position: relative;
-  top: -15px;
 }
 
 .icon.lib {
@@ -480,12 +333,6 @@ form button {
   letter-spacing: -1.5px;
 }
 
-.underline {
-  border-bottom: 3px solid grey;
-  font-weight: 900;
-  text-transform: uppercase;
-}
-
 .underline.lib {
   border-bottom: 3px solid #ed2e38;
 }
@@ -532,48 +379,6 @@ form button {
   color: white;
   opacity: .7;
   text-decoration: none;
-}
-
-.main {
-  width: 75%;
-}
-
-.body {
-  padding-top: 40px;
-  display: flex;
-  justify-content: center;
-}
-
-.main-body {
-  position: relative;
-  min-height: 100vh;
-  border-left: 3px solid #333;
-  padding: 0px 40px;
-}
-
-.main-body:before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: -50px;
-  width: 100%;
-  height: 150px;
-  -webkit-transform: skewY(-3deg);
-  -moz-transform: skewY(-3deg);
-  -ms-transform: skewY(-3deg);
-  -o-transform: skewY(-3deg);
-  transform: skewY(-3deg);
-  -webkit-backface-visibility: hidden;
-  border-top: 3px solid #333;
-}
-
-section {
-  padding-bottom: 10px;
-  position: relative;
-}
-
-.break {
-  margin-bottom: 40px;
 }
 
 .address span {
@@ -639,6 +444,154 @@ section {
   background-color: rgba(255, 88, 0, 0.8);
 }
 
+.contact-foot {
+  display: flex;
+  flex-direction: row;
+  justify-contents: center;
+}
+
+.contact-foot div {
+  width: 50%;
+}
+
+.contact-foot div:first-child {
+  border-right: 1px solid #666;
+}
+
+.row-container.mp-head {
+  align-items: center;
+}
+
+.row-container.mp-head .row-item:last-child {
+  width: 75%;
+}
+
+.score {
+  text-align: center;
+  color: #333;
+  font-weight: bold;
+  border-bottom: 5px solid #dbdbdb;
+}
+
+.score span {
+  display: block;
+}
+
+.score .score-num {
+  font-size: 60px;
+}
+
+.score .score-num.one {
+  color: #EA222D;
+}
+
+.score .score-num.two {
+  color: #DB2D2C;
+}
+
+.score .score-num.three {
+  color: #CA382B;
+}
+
+.score .score-num.four {
+  color: #B9462A;
+}
+
+.score .score-num.five {
+  color: #A75429;
+}
+
+.score .score-num.six {
+  color: #995F29;
+}
+
+.score .score-num.seven {
+  color: #837029;
+}
+
+.score .score-num.eight {
+  color: #737E29;
+}
+
+.score .score-num.nine {
+  color: #648A2A;
+}
+
+.score .score-num.ten {
+  color: #53992B;
+}
+
+@font-face {
+  font-family: 'fontello';
+  src: url("../../fonts/fontello.eot?52168231");
+  src: url("../../fonts/fontello.eot?52168231#iefix") format("embedded-opentype"), url("../../fonts/fontello.woff2?52168231") format("woff2"), url("../../fonts/fontello.woff?52168231") format("woff"), url("../../fonts/fontello.ttf?52168231") format("truetype"), url("../../fonts/fontello.svg?52168231#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?52168231#fontello') format('svg');
+  }
+}
+*/
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-phone:before {
+  content: '\e800';
+}
+
+/* '' */
+.icon-mail:before {
+  content: '\e801';
+}
+
+/* '' */
+.icon-search:before {
+  content: '\e802';
+}
+
+/* '' */
+.icon-globe:before {
+  content: '\e803';
+}
+
+/* '' */
+.icon-location:before {
+  content: '\e804';
+}
+
+/* '' */
 @media (max-width: 1100px) {
   #mp-container .mp-index {
     flex-basis: 25%;
