@@ -7,6 +7,9 @@ require 'rest-client'
 require 'json'
 require 'pry'
 
+require_relative 'score_engagement.rb'
+
+
 client = Twitter::REST::Client.new do |config|
   config.consumer_key        = "b1HRb0wLGXLT1ZJNSHuhJA5ce"
   config.consumer_secret     = "2bZAqKlyGhjW6FU3EOLmFIMpo1ajpnrgy0XGv4YhqnNwv2z2Bh"
@@ -15,8 +18,6 @@ client = Twitter::REST::Client.new do |config|
 end
 
 # binding.pry
-
-
 
 json_file = File.read('twitter.json')
 
@@ -70,3 +71,8 @@ puts client.get_all_tweets("#{twitter.first}")
 # end
 
 
+end
+
+# test = client.user_timeline("jkenney",{count:200})
+
+#to get the text, it's tweetvariable[i].text

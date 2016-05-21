@@ -1,7 +1,7 @@
 require 'math'
 class Score_engagmenet
 
-  def self.test(tweets)
+  def self.getParticipationCount(tweets)
     participation_count = 0
     tweets.each do |tweet|
       if tweet.text == '@' || tweet.text == '.' && tweet.text == '@'
