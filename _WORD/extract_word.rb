@@ -11,8 +11,8 @@ members = JSON.parse(file)
 nameArray = []
 #
 inputHash = File.read('openParliamentMpHash.json')
-mp_hash = JSON.parse(file)
-# mp_hash = []
+# mp_hash = JSON.parse(inputHash)
+mp_hash = []
 
 members.each do |member|
   name = member["name"].split(" ")
