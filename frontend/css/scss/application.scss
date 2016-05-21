@@ -261,3 +261,48 @@ form {
   color:#333;
 
 }
+
+
+.score {
+  text-align: center;
+  color:#333;
+  font-weight:bold;
+  border-bottom: 5px solid #dbdbdb;
+  span {
+    display:block;
+  }
+  .score-num {
+    font-size: 60px;
+  }
+  .score-num.one {
+    color:#EA222D;
+  }
+  .score-num.two {
+    color:#DB2D2C;
+  }
+  .score-num.three {
+    color:#CA382B;
+  }
+  .score-num.four {
+    color:#B9462A;
+  }
+  .score-num.five {
+    color:#A75429;
+  }
+  .score-num.six {
+    color:#995F29;
+  }
+  .score-num.seven {
+    color:#837029;
+  }
+  .score-num.eight {
+    color:#737E29;
+  }
+  .score-num.nine {
+    color:#648A2A;
+  }
+  .score-num.ten {
+    color:#53992B;
+  }
+
+}

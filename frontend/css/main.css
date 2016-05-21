@@ -343,6 +343,61 @@ form button {
   color: #333;
 }
 
+.score {
+  text-align: center;
+  color: #333;
+  font-weight: bold;
+  border-bottom: 5px solid #dbdbdb;
+}
+
+.score span {
+  display: block;
+}
+
+.score .score-num {
+  font-size: 60px;
+}
+
+.score .score-num.one {
+  color: #EA222D;
+}
+
+.score .score-num.two {
+  color: #DB2D2C;
+}
+
+.score .score-num.three {
+  color: #CA382B;
+}
+
+.score .score-num.four {
+  color: #B9462A;
+}
+
+.score .score-num.five {
+  color: #A75429;
+}
+
+.score .score-num.six {
+  color: #995F29;
+}
+
+.score .score-num.seven {
+  color: #837029;
+}
+
+.score .score-num.eight {
+  color: #737E29;
+}
+
+.score .score-num.nine {
+  color: #648A2A;
+}
+
+.score .score-num.ten {
+  color: #53992B;
+}
+
 .image-crop {
   width: 142px;
   height: 152px;
@@ -417,6 +472,7 @@ form button {
 }
 
 .mp-lead {
+  line-height: 140%;
   padding-top: 20px;
   font-size: 40px;
   font-weight: 400;
