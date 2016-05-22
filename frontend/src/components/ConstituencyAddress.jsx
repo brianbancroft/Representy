@@ -6,7 +6,7 @@ class ConstituencyAddress extends React.Component {
       <div className="row-item">
         <div className="address">
           <h2>Constituency Office</h2>
-          <span>{this.props.mp.address}</span>
+          <span>{this.props.mp.cons_address}</span>
         </div>
       </div>
     )
