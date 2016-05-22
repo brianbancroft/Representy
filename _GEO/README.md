@@ -13,3 +13,15 @@ The required data exists, but still needs to be consolidated into .geojson and c
 ## Tutorial Bits
 ###Using OGR2OGR:Convert from Shapefile to GeoJSON
 ogr2ogr -f "GEOJSON" output input
+
+Command for Adding New Table:
+```SQL
+findmymp=# CREATE TABLE RIDINGS
+(id INTEGER PRIMARY KEY,
+mp_id INTEGER,
+party TEXT,
+mp_name TEXT,
+riding_name TEXT);
+```
+
+Command For Adding Geometry Field; ```findmymp=# SELECT AddGeometryColumn ('ridings', 'the_geom', 4326, 'MULTIPOLYGON', 2);```
