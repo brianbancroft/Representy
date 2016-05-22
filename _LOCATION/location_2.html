@@ -1,0 +1,76 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title></title>
+    <meta name="description" content="The HTML5 Herald">
+    <meta name="author" content="SitePoint">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+    <style>
+        .ui-button {
+            background: #3887BE;
+            color: #FFF;
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 160px;
+            margin: -20px 0 0 -80px;
+            z-index: 100;
+            text-align: center;
+            padding: 10px;
+            border: 1px solid rgba(0, 0, 0, 0.4);
+            border-radius: 3px;
+        }
+
+        .ui-button:hover {
+            background: #3074a4;
+            color: #fff;
+        }
+    </style>
+    <a href='#' id='geolocate' class='ui-button'>Find me</a>
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#geolocate').click(function(e) {
+                console.log('clicked');
+                if (!navigator.geolocation) {
+                    geolocate.innerHTML = 'Geolocation is not available';
+                } else {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        navigator.geolocation.getCurrentPosition(function(position) {
+                            console.log("Latitude: " + position.coords.latitude + ", Longitude: " + position.coords.longitude)
+
+                            form_submit('http://localhost:3000/location/', {
+                                longitude: position.coords.longitude,
+                                latitude: position.coords.latitude
+                            })
+
+                        });
+
+
+                }
+            })
+        })
+    </script>
+</body>
+
+</html>

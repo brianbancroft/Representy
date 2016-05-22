@@ -28,3 +28,4 @@ Command For Adding Geometry Field; ```findmymp=# SELECT AddGeometryColumn ('ridi
 Command for pulling for Heroku: ```heroku pg:pull DATABASE_URL representy --app findmymp```
 Command for pushing to Heroku:  ```heroku pg:push findmymp DATABASE_URL --app findmymp```
 Command for adding shapefile to psql ```shp2pgsql -c election_boundaries_joined_simp1.shp | psql -d representy```
+Commnad for Renaming table in psql ``` ```

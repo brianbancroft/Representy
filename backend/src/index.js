@@ -15,11 +15,23 @@ var app = koa();
 app.use(cors());
 app.use(koaPg('postgres://dkuuauoezstjor:Lr6qZtm1TlJHJJoellAJd5_Yni@ec2-54-227-245-222.compute-1.amazonaws.com:5432/d2imlo0f5r5jov'));
 
-param('riding',function*(ridingid,next){
+param('riding',function*(ridingid,next) {
   var query = 'SELECT  ST_AsGeoJSON(geom) FROM election_boundaries_joined_simp1 WHERE riding_id=' + ridingid; //analog - seek params[:id] analog with this library
   var riding = yield this.pg.db.client.query_(query)
   this.riding = riding.rows[0].st_asgeojson;
   yield next;
+});
+
+param('coord', function*(coordinate,next) {
+  baseQuery = 'SELECT ( riding_id) FROM election_boundaries_joined_simp1 WHERE ST_WITHIN(ST_GeomFromText(\'POINT('
+  endQuery = ')\'),geom);';
+  var long = coordinate.split('&')[0];
+  var lat = coordinate.split('&')[1];
+  query = baseQuery + long + ' ' + lat + endQuery;
+  var ridingNumber = yield this.pg.db.client.query_(query)
+  this.riding = ridingNumber;
+  yield next;
+
 });
 
 app.use(function*(next) {
@@ -40,6 +52,12 @@ app.use(route.get('/members', function*() {
 app.use(route.get('/riding/:riding', function*() {
   this.body = this.riding;
 }));
+
+app.use(route.post('/location/:long&lat', function*() {
+  ridingNumber = this.riding;
+  router.redirect('/location/:long&lat', '/riding/' + ridingNumber);
+
+}))
 
 // app.use(route.get('/sampleJSON', sampleJSON));
 // app.use(route.get('/riding',riding));
