@@ -8,7 +8,6 @@
     <title></title>
     <meta name="description" content="The HTML5 Herald">
     <meta name="author" content="SitePoint">
-    <link href='https://api.mapbox.com/mapbox-gl-js/v0.18.0/mapbox-gl.css' rel='stylesheet' />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <style>
         body {
@@ -23,22 +22,7 @@
 </head>
 
 <body>
-
     <style>
-        .coordinates {
-            background: rgba(0, 0, 0, 0.5);
-            color: #fff;
-            position: absolute;
-            bottom: 10px;
-            left: 10px;
-            padding: 5px 10px;
-            margin: 0;
-            font-size: 11px;
-            line-height: 18px;
-            border-radius: 3px;
-            display: none;
-        }
-
         .ui-button {
             background: #3887BE;
             color: #FFF;
@@ -60,249 +44,32 @@
             color: #fff;
         }
     </style>
-
-    <div id='map' style='width: 100%; height: 400px;'></div>
-    <pre id='coordinates' class='coordinates'></pre>
-    <pre id='coordinates2' class='coordinates'></pre>
     <a href='#' id='geolocate' class='ui-button'>Find me</a>
-
-
-    <script src='https://api.mapbox.com/mapbox-gl-js/v0.18.0/mapbox-gl.js'></script>
-
     <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script>
-        mapboxgl.accessToken = 'pk.eyJ1IjoiYnJpYW5iYW5jcm9mdCIsImEiOiJsVGVnMXFzIn0.7ldhVh3Ppsgv4lCYs65UdA';
-
-        var isDragging;
-        var whichPoint;
-        var userPosition = [];
-
-        // Is the cursor over a point? if this
-        // flag is active, we listen for a mousedown event.
-        var isCursorOverPoint;
-
-        var coordinates = document.getElementById('coordinates');
-        var map = new mapboxgl.Map({
-            container: 'map',
-            style: 'mapbox://styles/mapbox/streets-v8',
-            center: [0, 0],
-            zoom: 2
-        });
-        var geolocate = document.getElementById('geolocate');
-        var canvas = map.getCanvasContainer();
-
-
-
-
-
-
-        var geojson = {
-            "type": "FeatureCollection",
-            "features": [{
-                "type": "Feature",
-                "geometry": {
-                    "type": "Point",
-                    "coordinates": [-123.1939532, 49.2562176]
-                }
-            }],
-        };
-
-        var geojson2 = {
-            "type": "FeatureCollection",
-            "features": [{
-                "type": "Feature",
-                "geometry": {
-                    "type": "Point",
-                    "coordinates": [-123.393, 49.556]
-                }
-            }],
-        };
-
-
-        function mouseDown(e) {
-            if (!isCursorOverPoint) return;
-
-            isDragging = true;
-
-
-            // Set a cursor indicator
-            canvas.style.cursor = 'grab';
-
-            // Mouse events
-            map.on('mousemove', onMove);
-            map.on('mouseup', onUp);
-        }
-
-        function onMove(e) {
-            if (!isDragging) return;
-
-            var coords = e.lngLat;
-
-            // Set a UI indicator for dragging.
-            canvas.style.cursor = 'grabbing';
-
-            // Update the Point feature in `geojson` coordinates
-            // and call setData to the source layer `point` on it.
-            geojson.features[0].geometry.coordinates = [coords.lng, coords.lat];
-            if (whichPoint === 'point') {
-                map.getSource('point').setData(geojson);
-            } else if (whichPoint === 'point2') {
-                map.getSource('point2').setData(geojson);
-            }
-
-        }
-
-        function form_submit(path, params, method) {
-            // The rest of this code assumes you are not using a library.
-            // It can be made less wordy if you use one.
-            var form = document.createElement("form");
-            form.setAttribute("method", 'post');
-            form.setAttribute("action", path + params.longitude + '&' + params.latitude);
-            document.body.appendChild(form);
-            form.submit();
-        }
-
-        function onUp(e) {
-            if (!isDragging) return;
-            var coords = e.lngLat;
-            // Print the coordinates of where the point had
-            // finished being dragged to on the map.
-            coordinates.style.display = 'block';
-            coordinates.innerHTML = 'Longitude: ' + coords.lng + '<br />Latitude: ' + coords.lat;
-            canvas.style.cursor = '';
-            isDragging = false;
-        }
-
-        map.on('load', function() {
-
-            //Add a single point to the map
-            map.addSource('point', {
-                "type": "geojson",
-                "data": geojson
-            });
-            map.addLayer({
-                "id": "point",
-                "type": "circle",
-                "source": "point",
-                "paint": {
-                    "circle-radius": 10,
-                    "circle-color": "#00ee00"
-                }
-            });
-
-            map.addSource('point2', {
-                "type": "geojson",
-                "data": geojson2
-            });
-
-            map.addLayer({
-                "id": "point2",
-                "type": "circle",
-                "source": "point2",
-                "paint": {
-                    "circle-radius": 10,
-                    "circle-color": "#0000ee"
-                }
-            });
-
-            // If a feature is found on map movement,
-            // set a flag to permit a mousedown events.
-            map.on('mousemove', function(e) {
-                var features = map.queryRenderedFeatures(e.point, {
-                    layers: ['point', 'point2']
-                });
-
-                // Change point and cursor style as a UI indicator
-                // and set a flag to enable other mouse events.
-                if (features.length && features[0].layer.id === 'point') {
-                    map.setPaintProperty('point', 'circle-color', '#00ff00');
-                    canvas.style.cursor = 'move';
-                    isCursorOverPoint = true;
-                    whichPoint = 'point';
-                    map.dragPan.disable();
-                } else if (features.length && features[0].layer.id === 'point2') {
-                    map.setPaintProperty('point2', 'circle-color', '#0000ff');
-                    canvas.style.cursor = 'move';
-                    isCursorOverPoint = true;
-                    whichPoint = 'point2';
-                    map.dragPan.disable();
+        $(document).ready(function() {
+            $('#geolocate').click(function(e) {
+                console.log('clicked');
+                if (!navigator.geolocation) {
+                    geolocate.innerHTML = 'Geolocation is not available';
                 } else {
-                    map.setPaintProperty('point', 'circle-color', '#00ee00');
-                    canvas.style.cursor = '';
-                    isCursorOverPoint = false;
-                    whichPoint = '';
-                    map.dragPan.enable();
+                        e.preventDefault();
+                        e.stopPropagation();
+                        navigator.geolocation.getCurrentPosition(function(position) {
+                            console.log("Latitude: " + position.coords.latitude + ", Longitude: " + position.coords.longitude)
+
+                            form_submit('http://localhost:3000/location/', {
+                                longitude: position.coords.longitude,
+                                latitude: position.coords.latitude
+                            })
+
+                        });
+
+
                 }
-            });
-
-            // Set `true` to dispatch the event before other functions call it. This
-            // is necessary for disabling the default map dragging behaviour.
-            map.on('mousedown', mouseDown, true);
-        });
-        if (!navigator.geolocation) {
-            geolocate.innerHTML = 'Geolocation is not available';
-        } else {
-            geolocate.onclick = function(e) {
-                e.preventDefault();
-                e.stopPropagation();
-                navigator.geolocation.getCurrentPosition(function(position) {
-                    userPosition.push(position.coords.latitude);
-                    userPosition.push(position.coords.longitude);
-                    console.log("Latitude: " + position.coords.latitude + ", Longitude: " + position.coords.longitude)
-                        //myPoint = generateJson(userPosition[1],userPosition[0]);
-
-
-                    map.flyTo({
-                        center: [userPosition[1], userPosition[0]],
-                        zoom: 17
-                    });
-
-                    form_submit('http://localhost:3000/location/',{longitude: position.coords.longitude, latitude: position.coords.latitude})
-
-                });
-
-
-
-            };
-        }
-
-        // Once we've got a position, zoom and center the map
-        // on it, and add a single marker.
-        map.on('locationfound', function(e) {
-            map.figtBounds(e.bounds);
-
-            myLayer.setGeoJSON({
-                type: 'Feature',
-                geometry: {
-                    type: 'Point',
-                    coordinates: [e.latlng.lng, e.latlng.lat]
-                },
-                properties: {
-                    'title': 'Here I am!',
-                    'marker-color': '#ff8888',
-                    'marker-symbol': 'star'
-                }
-            });
-
-            // And hide the geolocation button
-            geolocate.parentNode.removeChild(geolocate);
-        });
-
-        // If the user chooses not to allow their location
-        // to be shared, display an error message.
-        map.on('locationerror', function() {
-            geolocate.innerHTML = 'Position could not be found';
-        });
-
-
-
-        var map = new mapboxgl.Map({
-            container: 'map',
-            center: [-123.1939532, 49.2562176],
-            zoom: 7,
-            style: 'mapbox://styles/mapbox/dark-v8'
-        });
+            })
+        })
     </script>
 </body>
 
