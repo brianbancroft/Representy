@@ -6,7 +6,6 @@ var MpMapSearch = React.createClass({
 
 
     return (
-
         <div id='map'></div>
       
     )
