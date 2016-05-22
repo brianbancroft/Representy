@@ -68,7 +68,7 @@ votes_placed.each do |bills|
      "mp_name": mp_name,
      "vote": mp_vote,
      "bill_vote": bill_vote
-      })
+   })
   
 end
 
