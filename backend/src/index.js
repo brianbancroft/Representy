@@ -18,11 +18,16 @@ app.use(koaPg('postgres://dkuuauoezstjor:Lr6qZtm1TlJHJJoellAJd5_Yni@ec2-54-227-2
 param('riding',function*(ridingid,next) {
   var query = 'SELECT  ST_AsGeoJSON(geom) FROM election_boundaries_joined_simp1 WHERE riding_id=' + ridingid; //analog - seek params[:id] analog with this library
   var riding = yield this.pg.db.client.query_(query)
-  this.riding = riding.rows[0].st_asgeojson;
+  this.geom = riding.rows[0].st_asgeojson;
+  this.ridingName = "riding name";
+  this.mpName = "mp_name";
+  this.mpID= "mp_id";
+  this.partyName = "party_name";
   yield next;
 });
 
 param('coord', function*(coordinate,next) {
+  console.log('Coord Call has been made');
   baseQuery = 'SELECT ( riding_id) FROM election_boundaries_joined_simp1 WHERE ST_WITHIN(ST_GeomFromText(\'POINT('
   endQuery = ')\'),geom);';
   var long = coordinate.split('&')[0];
@@ -30,6 +35,7 @@ param('coord', function*(coordinate,next) {
   query = baseQuery + long + ' ' + lat + endQuery;
   var ridingNumber = yield this.pg.db.client.query_(query)
   this.riding = ridingNumber;
+
   yield next;
 
 });
@@ -50,17 +56,22 @@ app.use(route.get('/members', function*() {
 }));
 
 app.use(route.get('/riding/:riding', function*() {
-  this.body = this.riding;
+  this.body = {
+    ridingName: this.ridingName,
+    mpName: this.mpName,
+    mpID: this.mpID,
+    partyName: this.partyName,
+    ridingGeom: this.geom
+  };
 }));
 
 app.use(route.post('/location/:long&lat', function*() {
+  console.log('post request has been made');
   ridingNumber = this.riding;
   router.redirect('/location/:long&lat', '/riding/' + ridingNumber);
 
 }))
 
-// app.use(route.get('/sampleJSON', sampleJSON));
-// app.use(route.get('/riding',riding));
 app.use(json());
 
 // SQLLOCATION = 'postgres://dkuuauoezstjor:Lr6qZtm1TlJHJJoellAJd5_Yni@ec2-54-227-245-222.compute-1.amazonaws.com:5432/d2imlo0f5r5jov';
@@ -69,20 +80,3 @@ app.use(json());
 
 app.listen(3000);
 console.log('Koa listening on port 3000');
-
-//The asterisk is key, designates a function as a generator.
-// function* index() {
-//     this.body = "<h1>Hello! This is the home page!</h1>";
-//     console.log('whoa');
-// }
-//
-// function* sampleJSON() {
-//     this.body = {
-//         foo: 'bar'
-//     };
-//
-// }
-//
-// function* riding() {
-//     this.body = "<h2>This is the ridings page</h2>";
-// }
