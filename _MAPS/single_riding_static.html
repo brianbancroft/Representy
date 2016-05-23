@@ -35,7 +35,7 @@ var map = new mapboxgl.Map({
 });
 
 map.on('style.load', function(){
-  $.getJSON('http://localhost:3000/riding/631', function(response){
+  $.getJSON('http://localhost:3000/riding/815', function(response){
     var boundingBox = getBoundingBox(response);
     var cityBoundary = new mapboxgl.GeoJSONSource({ data: response } );
 
@@ -101,6 +101,8 @@ function getBoundingBox(data) {
 //     }, 'water');
 //
 // });
+map.scrollZoom.disable();
+map.dragPan.disable();
 </script>
 
 </body>
