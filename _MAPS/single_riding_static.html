@@ -5,6 +5,7 @@ l<!DOCTYPE html>
     <title></title>
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.18.0/mapbox-gl.js'></script>
+    <script   src="https://code.jquery.com/jquery-2.2.4.js"></script>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.18.0/mapbox-gl.css' rel='stylesheet' />
     <style>
         body { margin:0; padding:0; }
@@ -33,28 +34,65 @@ var map = new mapboxgl.Map({
     center: [-91.23046875,45.460130637921]
 });
 
+map.on('style.load', function(){
+  $.getJSON('http://localhost:3000/riding/631', function(response){
+    var boundingBox = getBoundingBox(response);
+    var cityBoundary = new mapboxgl.GeoJSONSource({ data: response } );
 
-
-map.on('load', function () {
-
-    var data =
-    map.addSource('ridings', {
-        'type': 'geojson',
-        'data': 'http://localhost:3000/riding/757'
-    });
-
+    map.addSource('city', cityBoundary);
     map.addLayer({
-        'id': 'riding-areas',
-        'type': 'fill',
-        'source': 'ridings',
-        'layout': {},
-        'paint': {
-            'fill-color': '#f08',
-            'fill-opacity': 0.4
-        }
-    }, 'water');
-
+      'id': 'city',
+      'type': 'line',
+      'source': 'city',
+      'paint': {
+        'fill-color': '#f08',
+        'fill-opacity': 0.4
+      }
+    });
+    map.fitBounds([[boundingBox.xMin, boundingBox.yMin], [boundingBox.xMax, boundingBox.yMax]]);
+  })
 });
+
+function getBoundingBox(data) {
+  var bounds = {}, coords, point, latitude, longitude;
+
+  for (var i = 0; i < data.geometry.coordinates[0].length; i++) {
+    coords = data.geometry.coordinates[0][i];
+
+    for (var j = 0; j < coords.length; j++) {
+      longitude = coords[j][0];
+      latitude = coords[j][1];
+      bounds.xMin = bounds.xMin < longitude ? bounds.xMin : longitude;
+      bounds.xMax = bounds.xMax > longitude ? bounds.xMax : longitude;
+      bounds.yMin = bounds.yMin < latitude ? bounds.yMin : latitude;
+      bounds.yMax = bounds.yMax > latitude ? bounds.yMax : latitude;
+    }
+  }
+
+  return bounds;
+}
+
+
+// map.on('load', function () {
+//
+//     var data =
+//     map.addSource('ridings', {
+//         'type': 'geojson',
+//         'data': 'http://localhost:3000/riding/757'
+//     });
+//
+//     map.addLayer({
+//         'id': 'riding-areas',
+//         'type': 'fill',
+//         'source': 'ridings',
+//         'layout': {},
+//         'paint': {
+//             'fill-color': '#f08',
+//             'fill-opacity': 0.4
+//         }
+//     }, 'water');
+//
+// });
 </script>
 
 </body>
