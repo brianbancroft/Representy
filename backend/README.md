@@ -7,7 +7,7 @@ Sample SQL Query: SELECT ( riding_id) FROM election_boundaries_joined_simp1 WHER
 
 ## TODO: GET RIDINGID FROM CURRENT location
 1. Create get requires from params
-2. execute above with params Latitude:43.6444194&Longitude: -79.3951131
+2. execute above with params latitude:43.6444194&longitude:-79.3951131
 
 
 
