@@ -35,7 +35,7 @@ var map = new mapboxgl.Map({
 });
 
 map.on('style.load', function(){
-  $.getJSON('http://localhost:3000/riding/815', function(response){
+  $.getJSON('http://localhost:3000/riding/865', function(response){
     var boundingBox = getBoundingBox(response);
     var cityBoundary = new mapboxgl.GeoJSONSource({ data: response } );
 
@@ -45,7 +45,16 @@ map.on('style.load', function(){
       'type': 'fill',
       'source': 'city',
       'paint': {
-        'fill-color': '#f08',
+        'fill-color': {
+                property: 'partyName',
+                type: 'categorical',
+                stops: [
+                    ['Liberal', '#f00'],
+                    ['Conservative', '#00f'],
+                    ['NDP', '#e22'],
+                    ['Green', '#00f'],
+                    ['Other', '#ccc']]
+            },
         'fill-opacity': 0.4
       }
     });
