@@ -1,6 +1,8 @@
 import React from 'react';
 import MpHeader from './MpHeader.jsx';
 import MpStats from './MpStats.jsx';
+import MpNews from './MpNews.jsx';
+
 import ConstituencyAddress from './ConstituencyAddress.jsx';
 import SingleRidingMap from './SingleRidingMap.jsx';
 
@@ -18,23 +20,12 @@ getMp() {
   return null
 }
 
-
+  
 
 
   render() {
-    var news = []
 
-    $.ajax({
-      url: 'http://localhost:3000/news/' + this.props.mp.name,
-      dataType: "json",
-      async: false,
-      data: news
-    }).done(function(res) {
-      news = res
-    }).fail(function(res){
-    })
 
-    console.log(news.results.body)
 
     return (
       <div>
@@ -44,6 +35,11 @@ getMp() {
               <section>
                <MpHeader mp = {this.getMp()} />
                <MpStats/>
+               <div className="row-container">
+                <MpNews mp = {this.getMp()} />
+
+               </div>
+
                 <div className="row-container">
                 <SingleRidingMap mp = {this.getMp()} />
                   
