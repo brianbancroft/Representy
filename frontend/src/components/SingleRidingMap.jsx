@@ -4,7 +4,6 @@ var SingleRidingMap = React.createClass({
 
   componentDidMount: function(){
     var riding = this.props.mp.riding_id
-    console.log(riding)
     mapboxgl.accessToken = 'pk.eyJ1IjoiYnJpYW5iYW5jcm9mdCIsImEiOiJsVGVnMXFzIn0.7ldhVh3Ppsgv4lCYs65UdA';
      var map = new mapboxgl.Map({
          container: 'map',

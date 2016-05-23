@@ -1,6 +1,8 @@
 import React from 'react';
 import MpHeader from './MpHeader.jsx';
 import MpStats from './MpStats.jsx';
+import MpNews from './MpNews.jsx';
+
 import ConstituencyAddress from './ConstituencyAddress.jsx';
 import SingleRidingMap from './SingleRidingMap.jsx';
 
@@ -18,7 +20,13 @@ getMp() {
   return null
 }
 
+  
+
+
   render() {
+
+
+
     return (
       <div>
         <div className="body">
@@ -27,13 +35,27 @@ getMp() {
               <section>
                <MpHeader mp = {this.getMp()} />
                <MpStats/>
-                <div className="row-container">
-                <SingleRidingMap mp = {this.getMp()} />
-                  
-                  <ConstituencyAddress mp = {this.getMp()} />
-                  <div className="row-item">another row item</div>
+               <div className="row-container">
+
+
+                 <div className="column-container mp-column">
+                  <MpNews mp = {this.getMp()} />
+
+                 </div>
+
+                  <div className="column-container mp-column">
+                  <SingleRidingMap mp = {this.getMp()} />
+                    
+                    <ConstituencyAddress mp = {this.getMp()} />
+                  </div>
+
+                  <div className="column-container mp-column">
+                    more
+                  </div>
+
 
                 </div>
+                <div style={{height:'50px'}}></div>
               </section>
             </div>
           </main>
