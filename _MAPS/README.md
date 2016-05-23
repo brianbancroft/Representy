@@ -12,3 +12,6 @@ In this folder are all the files used for maps in this app.
 1. Fix the data!!!! Currently, not all the data was able to load into heroku. Attempt to load the app so that all the ridings can be loaded properly into heroku.
 2. Centre the map on the riding
 3. Zoom the map based on the riding
+
+### Information Soruces for Single riding
+Zoom to bounding box: http://stackoverflow.com/questions/35673704/how-do-i-get-the-bounding-box-of-a-mapboxgl-geojsonsource-object
