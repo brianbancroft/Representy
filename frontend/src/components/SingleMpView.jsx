@@ -36,17 +36,26 @@ getMp() {
                <MpHeader mp = {this.getMp()} />
                <MpStats/>
                <div className="row-container">
-                <MpNews mp = {this.getMp()} />
 
-               </div>
 
-                <div className="row-container">
-                <SingleRidingMap mp = {this.getMp()} />
-                  
-                  <ConstituencyAddress mp = {this.getMp()} />
-                  <div className="row-item">another row item</div>
+                 <div className="column-container mp-column">
+                  <MpNews mp = {this.getMp()} />
+
+                 </div>
+
+                  <div className="column-container mp-column">
+                  <SingleRidingMap mp = {this.getMp()} />
+                    
+                    <ConstituencyAddress mp = {this.getMp()} />
+                  </div>
+
+                  <div className="column-container mp-column">
+                    more
+                  </div>
+
 
                 </div>
+                <div style={{height:'50px'}}></div>
               </section>
             </div>
           </main>

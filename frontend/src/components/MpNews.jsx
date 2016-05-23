@@ -25,7 +25,7 @@ var MpNews = React.createClass({
               return (
                 <div key={story.ID}>
                 <h4>{story.Title}</h4>
-                {story.Description}<b> <a target="_blank" href={story.Url}>{story.Source}</a></b>
+                <p>{story.Description}<b> <a target="_blank" href={story.Url}>{story.Source}</a></b></p>
                 </div>
                 )
             }, this)}

@@ -18,6 +18,10 @@ a {
   cursor: pointer;
 }
 
+p {
+  line-height: 120%;
+}
+
 h1 {
   font-size: 45px;
   text-align: center;
@@ -131,6 +135,18 @@ section {
   display: flex;
   margin-bottom: 20px;
   justify-content: space-between;
+}
+
+.column-container {
+  display: flex;
+  margin-bottom: 20px;
+  flex-direction: column;
+}
+
+.column-container .row-item {
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  border-bottom: 3px solid #dbdbdb;
 }
 
 .column-container-center {
@@ -262,26 +278,6 @@ form button {
   flex-grow: 1;
   /*width:120px;*/
   color: #333;
-}
-
-.icon.lib {
-  color: #ed2e38;
-}
-
-.icon.con {
-  color: #002395;
-}
-
-.icon.ndp {
-  color: #FF5800;
-}
-
-.icon.green {
-  color: #427730;
-}
-
-.icon.bloc {
-  color: #0088CE;
 }
 
 .filter.lib {
@@ -519,6 +515,10 @@ form button {
 
 .score .score-num.ten {
   color: #53992B;
+}
+
+.mp-column {
+  width: 30%;
 }
 
 @font-face {
