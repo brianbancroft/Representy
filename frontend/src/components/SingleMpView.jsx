@@ -28,8 +28,9 @@ getMp() {
                <MpHeader mp = {this.getMp()} />
                <MpStats/>
                 <div className="row-container">
+                <SingleRidingMap mp = {this.getMp()} />
+                  
                   <ConstituencyAddress mp = {this.getMp()} />
-                  <SingleRidingMap />
                   <div className="row-item">another row item</div>
 
                 </div>

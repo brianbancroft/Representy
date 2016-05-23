@@ -1,18 +1,5 @@
-.icon.lib {
-  color:$libColour;
-}
-.icon.con {
-  color:$conColour;
-}
-.icon.ndp {
-  color:$ndpColour;
-}
-.icon.green {
-  color:$greenColour;
-}
-.icon.bloc {
-  color:$blocColour;
-}
+@import 'variables.scss';
+
 
 .filter.lib {
   background-color:$libColour;
@@ -45,7 +32,6 @@
 .image-crop.bloc {
   border-bottom: 10px solid $blocColour;
 }
-
 
 .mp-lead {
   line-height: 140%;
@@ -228,3 +214,4 @@
     color:#53992B;
   }
 }
+

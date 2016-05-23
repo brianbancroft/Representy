@@ -22,21 +22,6 @@ button:focus {
   outline: 0;
 }
 
-#map {
-  position: absolute;
-  height: 300px;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-}
-
-#menu {
-  position: absolute;
-  background: #fff;
-  padding: 10px;
-  font-family: 'Open Sans', sans-serif;
-}
-
 .mp-hover + .mp-index-tag span {
   display: block;
 }
