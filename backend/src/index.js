@@ -15,11 +15,37 @@ var app = koa();
 app.use(cors());
 app.use(koaPg('postgres://dkuuauoezstjor:Lr6qZtm1TlJHJJoellAJd5_Yni@ec2-54-227-245-222.compute-1.amazonaws.com:5432/d2imlo0f5r5jov'));
 
-param('riding',function*(ridingid,next){
-  var query = 'SELECT  ST_AsGeoJSON(geom) FROM election_boundaries_joined_simp1 WHERE riding_id=' + ridingid; //analog - seek params[:id] analog with this library
-  var riding = yield this.pg.db.client.query_(query)
-  this.riding = riding.rows[0].st_asgeojson;
+param('riding',function*(ridingid,next) {
+
+  var query0 = 'SELECT  (ST_AsGeoJSON(geom)) FROM election_boundaries_joined_simp1 WHERE riding_id=' + ridingid; //analog - seek params[:id] analog with this library
+  var result = yield this.pg.db.client.query_(query0)
+
+  var query2 = 'SELECT  (riding_nam) FROM election_boundaries_joined_simp1 WHERE riding_id=' + ridingid;
+  var ridingNameQuery = yield this.pg.db.client.query_(query2)
+
+  var query3 = 'SELECT (party) FROM election_boundaries_joined_simp1 WHERE riding_id=' + ridingid;
+  var partyNameQuery = yield this.pg.db.client.query_(query3)
+
+
+  this.ridingName = ridingNameQuery.rows[0].riding_nam;
+  this.geom = result.rows[0].st_asgeojson;
+  this.partyName = partyNameQuery.rows[0].party;
+
   yield next;
+});
+
+param('coord', function*(coordinate,next) {
+  console.log('Coord Call has been made');
+  baseQuery = 'SELECT ( riding_id) FROM election_boundaries_joined_simp1 WHERE ST_WITHIN(ST_GeomFromText(\'POINT('
+  endQuery = ')\'),geom);';
+  var long = coordinate.split('&')[0];
+  var lat = coordinate.split('&')[1];
+  query = baseQuery + long + ' ' + lat + endQuery;
+  var ridingNumber = yield this.pg.db.client.query_(query)
+  this.riding = ridingNumber;
+
+  yield next;
+
 });
 
 app.use(function*(next) {
@@ -38,33 +64,24 @@ app.use(route.get('/members', function*() {
 }));
 
 app.use(route.get('/riding/:riding', function*() {
-  this.body = this.riding;
+  this.body = {
+    type: "Feature",
+    properties: {
+      ridingName: this.ridingName,
+      partyName: this.partyName,
+    },
+    geometry: JSON.parse(this.geom)
+  };
 }));
 
-// app.use(route.get('/sampleJSON', sampleJSON));
-// app.use(route.get('/riding',riding));
+app.use(route.post('/location/:long&lat', function*() {
+  console.log('post request has been made');
+  ridingNumber = this.riding;
+  router.redirect('/location/:long&lat', '/riding/' + ridingNumber);
+
+}))
+
 app.use(json());
-
-// SQLLOCATION = 'postgres://dkuuauoezstjor:Lr6qZtm1TlJHJJoellAJd5_Yni@ec2-54-227-245-222.compute-1.amazonaws.com:5432/d2imlo0f5r5jov';
-// app.use(koaPg(SQLLOCATION));
-
 
 app.listen(3000);
 console.log('Koa listening on port 3000');
-
-//The asterisk is key, designates a function as a generator.
-// function* index() {
-//     this.body = "<h1>Hello! This is the home page!</h1>";
-//     console.log('whoa');
-// }
-//
-// function* sampleJSON() {
-//     this.body = {
-//         foo: 'bar'
-//     };
-//
-// }
-//
-// function* riding() {
-//     this.body = "<h2>This is the ridings page</h2>";
-// }
