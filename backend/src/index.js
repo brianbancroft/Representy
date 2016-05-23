@@ -102,11 +102,11 @@ app.use(route.get('/members', function*() {
 app.use(route.get('/riding/:riding', function*() {
     this.body = {
         type: "Feature",
+        geometry: JSON.parse(this.geom),
         properties: {
             ridingName: this.ridingName,
             partyName: this.partyName,
         },
-        geometry: JSON.parse(this.geom)
     };
 }));
 
