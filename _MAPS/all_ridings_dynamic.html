@@ -45,9 +45,19 @@
                 "source": "ridings-canada",
                 "source-layer": "ridings",
                 'paint': {
-                  'fill-color': '#334455',
-                  'fill-opacity': 0.5,
-                  'fill-outline-color': 'rgba(200,100,240,1)',
+                    'fill-color': {
+                        property: 'partyName',
+                        type: 'categorical',
+                        stops: [
+                            ['Liberal', '#f00'],
+                            ['Conservative', '#00f'],
+                            ['NDP', '#e22'],
+                            ['Green', '#00f'],
+                            ['Other', '#ccc']
+                        ]
+                    },
+                    'fill-opacity': 0.5,
+                    'fill-outline-color': 'rgba(200,100,240,1)',
                 }
 
             });

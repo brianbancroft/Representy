@@ -35,29 +35,62 @@ var map = new mapboxgl.Map({
 });
 
 map.on('style.load', function(){
-  $.getJSON('http://localhost:3000/riding/865', function(response){
+  $.getJSON('http://localhost:3000/riding/700', function(response){
     var boundingBox = getBoundingBox(response);
-    var cityBoundary = new mapboxgl.GeoJSONSource({ data: response } );
+    var ridingBoundary = new mapboxgl.GeoJSONSource({ data: response } );
 
-    map.addSource('city', cityBoundary);
+    map.addSource('riding', ridingBoundary);
     map.addLayer({
-      'id': 'city',
+      'id': 'whig-riding',
       'type': 'fill',
-      'source': 'city',
+      'source': 'riding',
       'paint': {
-        'fill-color': {
-                property: 'partyName',
-                type: 'categorical',
-                stops: [
-                    ['Liberal', '#f00'],
-                    ['Conservative', '#00f'],
-                    ['NDP', '#e22'],
-                    ['Green', '#00f'],
-                    ['Other', '#ccc']]
-            },
+        'fill-color': '#f00',
         'fill-opacity': 0.4
-      }
+      },
+      filter: ['==', 'partyName', 'Liberal']
     });
+    map.addLayer({
+      'id': 'tory-riding',
+      'type': 'fill',
+      'source': 'riding',
+      'paint': {
+        'fill-color': '#00F',
+        'fill-opacity': 0.4
+      },
+      filter: ['==', 'partyName', 'Conservative']
+    });
+    map.addLayer({
+      'id': 'dipper-riding',
+      'type': 'fill',
+      'source': 'riding',
+      'paint': {
+        'fill-color': '#ffa500',
+        'fill-opacity': 0.4
+      },
+      filter: ['==', 'partyName', 'NDP']
+    });
+    map.addLayer({
+      'id': 'green-riding',
+      'type': 'fill',
+      'source': 'riding',
+      'paint': {
+        'fill-color': '#0F0',
+        'fill-opacity': 0.4
+      },
+      filter: ['==', 'partyName', 'Green Party']
+    });
+    map.addLayer({
+      'id': 'bloc-riding',
+      'type': 'fill',
+      'source': 'riding',
+      'paint': {
+        'fill-color': '#88F',
+        'fill-opacity': 0.4
+      },
+      filter: ['==', 'partyName', 'Bloc Quebecois']
+    });
+
     map.fitBounds([[boundingBox.xMin, boundingBox.yMin], [boundingBox.xMax, boundingBox.yMax]]);
   })
 
