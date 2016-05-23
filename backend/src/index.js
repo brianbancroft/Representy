@@ -38,7 +38,6 @@ param('riding', function*(ridingid, next) {
     var query3 = 'SELECT (party) FROM election_boundaries_joined_simp1 WHERE riding_id=' + ridingid;
     var partyNameQuery = yield this.pg.db.client.query_(query3)
 
-
     this.ridingName = ridingNameQuery.rows[0].riding_nam;
     this.geom = result.rows[0].st_asgeojson;
     this.partyName = partyNameQuery.rows[0].party;
@@ -61,7 +60,6 @@ param('coord', function*(coordinate, next) {
 });
 
 param('name', function*(name, next) {
-
     console.log("okay, we're starting this here!")
     // 1. Here, we promisfied the Bing Library (see the includes), and it
     // has a suffix of "Async". this means that every single method in that bing library has a second
@@ -77,10 +75,11 @@ param('name', function*(name, next) {
         newsSortBy: "Date", //Choices are: Date, Relevance
         newsCategory: "rt_Politics" // Choices are:
     });
-
     yield next;
-
 })
+
+//=======================      API CALLS     =================================//
+
 
 app.use(function*(next) {
     yield next;
@@ -96,11 +95,9 @@ app.use(route.get('/', function*() {
 
 app.use(route.get('/news/:name', function*() {
     this.body = {
-        results: this.name
-    }
+        results: JSON.parse(this.name.body).d.results
+    };
 }));
-
-
 
 app.use(route.get('/members', function*() {
     var result = yield this.pg.db.client.query_('SELECT * FROM members')
