@@ -106,7 +106,6 @@ app.use(route.get('/riding/:riding', function*() {
         properties: {
             ridingName: this.ridingName,
             partyName: this.partyName,
-            PARTY: this.partyName
         },
     };
 }));
