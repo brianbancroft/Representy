@@ -8,4 +8,8 @@ Sample SQL Query: SELECT ( riding_id) FROM election_boundaries_joined_simp1 WHER
 ## STATUS: POST REQUEST
 1. A sample page that makes the post request can be found at _LOCATION/index.html. This is a simple page that gets the location, then creates a call with params.
 
-2.
+## troubleshooting
+
+node debug src/index.js
+use ```c``` to continue,
+Once it stops at a breakpoint, writing repl. 
