@@ -67,7 +67,7 @@ param('name', function*(name, next) {
     // 4. This.name refers to the param to the left of "next". Here, we assign the value
 
     this.name =  yield Bing.newsAsync(name, {
-        top: 10, // Number of results (max 15)
+        top: 3, // Number of results (max 15)
         skip: 0, // Skip first 3 results
         newsSortBy: "Relevance", //Choices are: Date, Relevance
         newsCategory: "rt_Politics" // Choices are:
