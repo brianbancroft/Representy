@@ -2,7 +2,7 @@ import React from 'react';
 import MpHeader from './MpHeader.jsx';
 import MpStats from './MpStats.jsx';
 import MpNews from './MpNews.jsx';
-
+import MpBio from './MpBio.jsx';
 import ConstituencyAddress from './ConstituencyAddress.jsx';
 import SingleRidingMap from './SingleRidingMap.jsx';
 
@@ -38,10 +38,7 @@ getMp() {
                <div className="row-container">
 
 
-                 <div className="column-container mp-column">
-                  <MpNews mp = {this.getMp()} />
 
-                 </div>
 
                   <div className="column-container mp-column">
                   <SingleRidingMap mp = {this.getMp()} />
@@ -50,7 +47,13 @@ getMp() {
                   </div>
 
                   <div className="column-container mp-column">
-                    more
+                   <MpNews mp = {this.getMp()} />
+
+                  </div>
+
+                  <div className="column-container mp-column">
+                  <MpBio />
+
                   </div>
 
 
