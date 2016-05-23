@@ -18,7 +18,24 @@ getMp() {
   return null
 }
 
+
+
+
   render() {
+    var news = []
+
+    $.ajax({
+      url: 'http://localhost:3000/news/' + this.props.mp.name,
+      dataType: "json",
+      async: false,
+      data: news
+    }).done(function(res) {
+      news = res
+    }).fail(function(res){
+    })
+
+    console.log(news.results.body)
+
     return (
       <div>
         <div className="body">
