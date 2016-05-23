@@ -5,9 +5,17 @@ var koaPg = require('koa-pg');
 var pg = require('pg'); // .native;
 var cors = require('koa-cors');
 var paramify = require('koa-params');
-var Bing = require('node-bing-api')({
-    accKey: 'n5VJI9nk5QVMHDADXJwQTLY5eOS/lWgsuztVLWyIOTc'
+var Promise = require('bluebird').Promise;
+// var Bing = require('node-bing-api')({
+//     accKey: 'n5VJI9nk5QVMHDADXJwQTLY5eOS/lWgsuztVLWyIOTc'
+// });
+var Bing = Promise.promisifyAll(require('node-bing-api')({
+    'accKey': 'n5VJI9nk5QVMHDADXJwQTLY5eOS/lWgsuztVLWyIOTc'
+}),{
+  suffix: 'Async'
 });
+
+
 
 pg.defaults.ssl = true;
 
@@ -53,36 +61,24 @@ param('coord', function*(coordinate, next) {
 });
 
 param('name', function*(name, next) {
-    console.log('news call has been made')
-    memberName = name.split('_')[0] + ' ' + name.split('_')[1]
-    var results = ''
 
-    Bing.news(name, {
+    console.log("okay, we're starting this here!")
+    // 1. Here, we promisfied the Bing Library (see the includes), and it
+    // has a suffix of "Async". this means that every single method in that bing library has a second
+    // Async Method (capital A), which then returns a promise. This helps us nail down the flow control.
+    // 2. When we yield to a promise, it returns a value instead of the promise. It's no longer holding the value
+    // inside the promise. The yield returns the value - ~This is kinda a big deal.
+    // 3. Because we're using yield, we halt the execution of the function until the yield returns. This is the real value of yields.
+    // 4. This.name refers to the param to the left of "next". Here, we assign the value
+
+    this.name =  yield Bing.newsAsync(name, {
         top: 10, // Number of results (max 15)
         skip: 0, // Skip first 3 results
         newsSortBy: "Date", //Choices are: Date, Relevance
         newsCategory: "rt_Politics" // Choices are:
-            //   rt_Business
-            //   rt_Entertainment
-            //   rt_Health
-            //   rt_Politics
-            //   rt_Sports
-            //   rt_US
-            //   rt_World
-            //   rt_ScienceAndTechnology
-            //newsLocationOverride: "US.WA" // Only for en-US market
-    }, function(error, res, body) {
+    });
 
-        console.log(body.d);
-        this.result = body.d
-    })
-
-
-
-    this.body = {
-        message: results
-    }
-
+    yield next;
 
 })
 
@@ -100,7 +96,7 @@ app.use(route.get('/', function*() {
 
 app.use(route.get('/news/:name', function*() {
     this.body = {
-      results: this.results
+        results: this.name
     }
 }));
 
