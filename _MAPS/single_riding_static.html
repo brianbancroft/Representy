@@ -51,22 +51,30 @@ map.on('style.load', function(){
     });
     map.fitBounds([[boundingBox.xMin, boundingBox.yMin], [boundingBox.xMax, boundingBox.yMax]]);
   })
+
+
+
 });
 
 function getBoundingBox(data) {
   var bounds = {}, coords, point, latitude, longitude;
+  for (var i = 0; i < data.geometry.coordinates.length; i++) {
+    polygons = data.geometry.coordinates[i];
 
-  for (var i = 0; i < data.geometry.coordinates[0].length; i++) {
-    coords = data.geometry.coordinates[0][i];
+    for (var j = 0; j < polygons.length; j++) {
+      coords = polygons[j];
 
-    for (var j = 0; j < coords.length; j++) {
-      longitude = coords[j][0];
-      latitude = coords[j][1];
-      bounds.xMin = bounds.xMin < longitude ? bounds.xMin : longitude;
-      bounds.xMax = bounds.xMax > longitude ? bounds.xMax : longitude;
-      bounds.yMin = bounds.yMin < latitude ? bounds.yMin : latitude;
-      bounds.yMax = bounds.yMax > latitude ? bounds.yMax : latitude;
+      for (var k = 0; k < coords.length; k++) {
+        longitude = coords[k][0];
+        latitude = coords[k][1];
+        bounds.xMin = bounds.xMin < longitude ? bounds.xMin : longitude;
+        bounds.xMax = bounds.xMax > longitude ? bounds.xMax : longitude;
+        bounds.yMin = bounds.yMin < latitude ? bounds.yMin : latitude;
+        bounds.yMax = bounds.yMax > latitude ? bounds.yMax : latitude;
+      }
     }
+
+
   }
 
   return bounds;
