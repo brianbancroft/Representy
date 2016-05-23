@@ -52,20 +52,12 @@ param('coord', function*(coordinate, next) {
 
 });
 
-app.use(function*(next) {
-    yield next;
-});
-
-app.use(route.get('/', function*() {
-    this.body = {
-        message: 'hello world'
-    }
-}));
-
-app.use(route.get('/samplenews', function*() {
+param('name', function*(name, next) {
+    console.log('news call has been made')
+    memberName = name.split('_')[0] + ' ' + name.split('_')[1]
     var results = ''
 
-    Bing.news("Maxime Bernier", {
+    Bing.news(name, {
         top: 10, // Number of results (max 15)
         skip: 0, // Skip first 3 results
         newsSortBy: "Date", //Choices are: Date, Relevance
@@ -80,14 +72,35 @@ app.use(route.get('/samplenews', function*() {
             //   rt_ScienceAndTechnology
             //newsLocationOverride: "US.WA" // Only for en-US market
     }, function(error, res, body) {
+
         console.log(body.d);
-        results = body
+        this.result = body.d
     })
 
 
 
     this.body = {
         message: results
+    }
+
+
+})
+
+app.use(function*(next) {
+    yield next;
+});
+
+app.use(route.get('/', function*() {
+    debugger;
+    console.log('hello world page')
+    this.body = {
+        message: 'hello world'
+    }
+}));
+
+app.use(route.get('/news/:name', function*() {
+    this.body = {
+      results: this.results
     }
 }));
 
