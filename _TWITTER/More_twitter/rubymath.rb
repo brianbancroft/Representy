@@ -17,7 +17,7 @@ class Stuff
   include Math
 
   def self.getParticipationCount(tweets)
-    puts tweets.class
+    # puts tweets.class
     participation_count = 0
     tweets.each do |tweet|
       puts tweet
@@ -28,10 +28,6 @@ class Stuff
         participation_count += 1
       end
       puts participation_count
-    end
-    counts = Hash.new 0
-    json_data.each do |word|
-    counts[word['mp_id']] += 1 
     end
     participation_count = (participation_count / tweets.length)
     puts participation_count
@@ -74,7 +70,11 @@ class Stuff
 end
 
 
-# sum Stuff.getParticipationCount(json_data)
+# [{mpid: 12412, score: 0.53},{mpid: 43113,score: 0.9}…]
+
+[
+
+Stuff.getParticipationCount(json_data)
 =begin
 
 
@@ -84,12 +84,12 @@ puts h
 
 =end
 
-counts = Hash.new 0
+# counts = Hash.new 0
 
-json_data.each do |word|
-  counts[word['mp_id']] += 1 
-end
-puts counts.values
+# json_data.each do |word|
+#   counts[word['mp_id']] += 1 
+# end
+# puts counts.values
 
   # Stuff.getParticipationCount(json_data)
 
@@ -97,3 +97,18 @@ puts counts.values
 # .map look for properties inside of each tweet that matches the id 
 
 # array.length or array.size
+
+
+
+  counts = Hash.new(0)
+    json_data.each do |word|
+    counts[word['mp_id']] += 1 
+    end
+
+puts counts
+
+
+
+[{mpid: 12412, score: 0.53},{mpid: 43113,score: 0.9}…]
+
+[
