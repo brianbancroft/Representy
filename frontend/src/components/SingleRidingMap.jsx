@@ -19,55 +19,55 @@ var SingleRidingMap = React.createClass({
 
         map.addSource('riding', ridingBoundary);
         map.addLayer({
-          'id': 'whig-riding',
+          'id': 'lib-riding',
           'type': 'fill',
           'source': 'riding',
           'paint': {
-            'fill-color': '#f00',
-            'fill-opacity': 0.4
+        'fill-color': '#ed2e38',
+            'fill-opacity': 0.8
           },
           filter: ['==', 'partyName', 'Liberal']
-        });
+        },'water');
         map.addLayer({
-          'id': 'tory-riding',
+          'id': 'con-riding',
           'type': 'fill',
           'source': 'riding',
           'paint': {
-            'fill-color': '#00F',
-            'fill-opacity': 0.4
+            'fill-color': '#002395',
+            'fill-opacity': 0.8
           },
           filter: ['==', 'partyName', 'Conservative']
-        });
+        },'water');
         map.addLayer({
-          'id': 'dipper-riding',
+          'id': 'ndp-riding',
           'type': 'fill',
           'source': 'riding',
           'paint': {
-            'fill-color': '#ffa500',
-            'fill-opacity': 0.4
+            'fill-color': '#FF5800',
+            'fill-opacity': 0.8
           },
           filter: ['==', 'partyName', 'NDP']
-        });
+        },'water');
         map.addLayer({
           'id': 'green-riding',
           'type': 'fill',
           'source': 'riding',
           'paint': {
-            'fill-color': '#0F0',
-            'fill-opacity': 0.4
+            'fill-color': '#427730',
+            'fill-opacity': 0.8
           },
           filter: ['==', 'partyName', 'Green Party']
-        });
+        },'water');
         map.addLayer({
           'id': 'bloc-riding',
           'type': 'fill',
           'source': 'riding',
           'paint': {
-            'fill-color': '#88F',
-            'fill-opacity': 0.4
+            'fill-color': '#0088CE',
+            'fill-opacity': 0.8
           },
           filter: ['==', 'partyName', 'Bloc Quebecois']
-        });
+        },'water');
 
         map.fitBounds([[boundingBox.xMin, boundingBox.yMin], [boundingBox.xMax, boundingBox.yMax]]);
       })
@@ -94,36 +94,18 @@ var SingleRidingMap = React.createClass({
           }
         }
 
+        // bounds.xMin -= (Math.abs(bounds.xMin-bounds.xMax) / 5.5);
+        // bounds.xMax += (Math.abs(bounds.xMin-bounds.xMax) / 5.5);
+        // bounds.yMin -= (Math.abs(bounds.yMin-bounds.yMax) / 5.5);
+        // bounds.yMax += (Math.abs(bounds.yMin-bounds.yMax) / 5.5);
 
       }
 
       return bounds;
     }
 
-
-    // map.on('load', function () {
-    //
-    //     var data =
-    //     map.addSource('ridings', {
-    //         'type': 'geojson',
-    //         'data': 'http://localhost:3000/riding/757'
-    //     });
-    //
-    //     map.addLayer({
-    //         'id': 'riding-areas',
-    //         'type': 'fill',
-    //         'source': 'ridings',
-    //         'layout': {},
-    //         'paint': {
-    //             'fill-color': '#f08',
-    //             'fill-opacity': 0.4
-    //         }
-    //     }, 'water');
-    //
-    // });
     map.scrollZoom.disable();
     map.dragPan.disable();
-
    
   },
  
