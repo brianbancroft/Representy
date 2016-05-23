@@ -6,8 +6,6 @@ Create a POST Request that redirects to the riding call
 Sample SQL Query: SELECT ( riding_id) FROM election_boundaries_joined_simp1 WHERE ST_WITHIN(ST_GeomFromText('POINT( -79.395 43.644)'),geom);
 
 ## TODO: GET RIDINGID FROM CURRENT location
-1. Create get requires from params
-2. execute above with params latitude:43.6444194&longitude:-79.3951131
 
 
 
