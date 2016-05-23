@@ -15,8 +15,6 @@ var Bing = Promise.promisifyAll(require('node-bing-api')({
   suffix: 'Async'
 });
 
-
-
 pg.defaults.ssl = true;
 
 route = paramify(route);
@@ -72,7 +70,7 @@ param('name', function*(name, next) {
     this.name =  yield Bing.newsAsync(name, {
         top: 10, // Number of results (max 15)
         skip: 0, // Skip first 3 results
-        newsSortBy: "Date", //Choices are: Date, Relevance
+        newsSortBy: "Relevance", //Choices are: Date, Relevance
         newsCategory: "rt_Politics" // Choices are:
     });
     yield next;
@@ -86,8 +84,6 @@ app.use(function*(next) {
 });
 
 app.use(route.get('/', function*() {
-    debugger;
-    console.log('hello world page')
     this.body = {
         message: 'hello world'
     }
@@ -115,12 +111,13 @@ app.use(route.get('/riding/:riding', function*() {
     };
 }));
 
-app.use(route.post('/location/', function*() {
-    console.log('post request has been made');
-    // ridingNumber = this.riding;
-    router.redirect('/location/', '/riding/673');
+app.use(route.get('/location', function*() {
+    this.body = {
+        message: 'Riding Get'
+    }
+}));
 
-}))
+
 
 app.use(json());
 
