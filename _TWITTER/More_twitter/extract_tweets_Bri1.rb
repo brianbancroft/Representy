@@ -10,6 +10,7 @@ require 'pry'
 
 
 
+
 @client = Twitter::REST::Client.new do |config|
   config.consumer_key        = "b1HRb0wLGXLT1ZJNSHuhJA5ce"
   config.consumer_secret     = "2bZAqKlyGhjW6FU3EOLmFIMpo1ajpnrgy0XGv4YhqnNwv2z2Bh"
@@ -19,12 +20,14 @@ require 'pry'
   # config.consumer_secret     = "vvt9JY7B3tyf8PwE2vChADKW0sT553hiL9Z5gHTqbClp13MOd8"
   # config.access_token        = "1571155201-DGxRsqhbE43Y0NSTSgJv4ljL3mEorIMB12xDHit"
   # config.access_token_secret = "lRFb792fOQB8ERT9ND0xLruqL0nKPKsFGXoaXQ3l9inDJ"
+  # config.consumer_key  =    "hTAv1i5Yz9W1QH2MA4KXGuVs9"
+  # config.consumer_secret = "ohFl10cFfsXUL5Au9DC5wg5sjLH44vH8XIfyf1VhbsjEHOZ5RO"
+  # config.access_token  =  "19713502-McmNigLbzV3PIqe1zR49pMx0thlFk7ylOIrGNytDh"
+  # config.access_token_secret = "hPSfEsSiWcu6snCUxUZcf05ZxgPZmonZcRVbgmKSVN0tU"
 end
 
-json_file = File.read('open_parliament.json')
+json_file = File.read('open_parliament1.json')
 json_data = JSON.parse(json_file)
-
-
 
 twitter = []
 data = []
@@ -39,32 +42,52 @@ data = []
 
 json_data.each do |mp|
   begin
-  # binding.pry
-  # if mp['twitter_handle'].length > 0
-    @client.user_timeline(mp['twitter_handle'], {count: 25}).each do |tweet|
+    puts mp
+  if mp['twitter_handle'] != nil
+    @client.user_timeline(mp['twitter_handle'], {count: 50}).each do |tweet|
+     puts (mp['twitter_handle'])
+     puts tweet
+     if tweet.text.length > 0 
+        twitter_tweet = tweet.text
+      else
+        twitter_tweet = "N/A"
+      end
+      if tweet.quoted_status.text.length > 0
+         twitter_quote = tweet.quoted_status.text
+      else
+         twitter_quote = "N/A"
+      end
+      mp_id = mp["mp_id"]
       data.push({
-        "text": tweet.text,
-        "quoted_status": {text: tweet.quoted_status.text}  
+        "mp_id": mp_id,
+        "text": twitter_tweet,
+        "quoted_status": twitter_quote  
       })
     end
+  end
   rescue Twitter::Error::TooManyRequests => error
   # rescue Twitter::Error::NotFound => error
+    puts "TooManyRequests"
     sleep error.rate_limit.reset_in + 1
+  rescue Twitter::Error::NotFound => error
+    binding.pry
   rescue => e
-      puts "Rescue : #{e}"
+    puts "Rescue : #{e}"
+    # binding.pry
   rescue Timeout::Error => te
-     puts "Rescued from timeout : #{te}"
+   puts "Rescued from timeout : #{te}"
+   binding.pry
   end
+
+  File.open("tweets1.json","w") do |f|
+    f.write(data.to_json)
+  end
+
 end
 
-File.open("tweets.json","w") do |f|
-  f.write(data.to_json)
-end
+# File.open("tweets4.json","w") do |f|
+#   f.write(data.to_json)
+# end
 
 
-
-# if tweet.text[0] == '@' || tweet.text[0] == '.' && tweet.text[1] == '@'
-#   partcipation_count += 1
-# elsif not tweet.quoted_status.text.nil?
-#   partcipation_count += 1
 

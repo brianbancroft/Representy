@@ -1,22 +1,11 @@
-
-require 'twitter'
-require 'pry'
-require 'json'
-require 'rest-client'
-require 'json'
-require 'pry'
-require 'rubygems'
+require 'math'
 
 
-json_file = File.read('twitter.json')
-json_data = JSON.parse(json_file) 
-
-
-class Score_engage
+class Score_engagmenet
   def self.getParticipationCount(tweets)
-       participation_count = 0
+    participation_count = 0
     tweets.each do |tweet|
-      if tweet.text[0] == '@' || tweet.text[0] == '.' && tweet.text[1] == '@'
+      if tweet['text'][0] == '@' || tweet['text'][0] == '.' && tweet['text'][1] == '@'
         participation_count += 1
       elsif not tweet.quoted_status.text.nil?
         participation_count += 1
@@ -25,8 +14,6 @@ class Score_engage
     participation_count = (participation_count / tweets.length)
     return participation_count
   end
-
-
 
   #Supporter Math Functions - taken from http://stackoverflow.com/questions/7749568/how-can-i-do-standard-deviation-in-ruby.
   def self.sum
@@ -60,5 +47,3 @@ class Score_engage
     return normalized_scores
   end
 end
-
-Score_engage.getParticipationCount(json_data)

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<!-- saved from url=(0076)https://s0.2mdn.net/4598221/1459539437531/300x250_Q1_Alta_ROS_CAN/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript">
+    
+      (function() {
+        var relegateNavigation = '';
+        var handleClickTagMessage = function(e) {
+          try {
+            var eventData = JSON.parse(e.data);
+          } catch (err) {
+            return;
+          }
+          if (eventData.isInitClickTag) {
+            if (eventData.clickTags) {
+              for (var i = 0; i < eventData.clickTags.length; i++) {
+                var clkTag = eventData.clickTags[i];
+                window[clkTag.name] = clkTag.url;
+              }
+            } else if (eventData.clickTag) {
+              window.clickTag = eventData.clickTag;
+            }
+            relegateNavigation = eventData.relegateNavigation;
+          }
+        };
+
+        if (open.call) {
+          window.open = function(open) {
+            return function(url, name, features) {
+              if (relegateNavigation === 'parent') {
+                var message = {'clickTag': url, 'isPostClickTag': true};
+                parent.postMessage(JSON.stringify(message), '*');
+              } else {
+                var args = [url, name];
+                if (features) {
+                  args.push(features);
+                }
+                open.apply(window, args);
+              }
+            };
+          }(window.open);
+        }
+
+        if (window.addEventListener) {
+          window.addEventListener(
+              'message', handleClickTagMessage, false);
+        } else {
+          window.attachEvent('onmessage', handleClickTagMessage);
+        }
+      })();
+    
+  </script>
+		
+		<meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="./style.css">
+		<meta name="ad.size" content="width=300,height=250">
+		<script type="text/javascript">
+			var clickTag = "https://www.google.com";
+			sw = 300;
+			sh = 250;
+			var sizeType = sw + "x" + sh;
+			var sw = parseInt(sw);
+			var sh = parseInt(sh);
+		</script>
+		<title></title>
+		<style>
+		html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+		body {
+			color: white;
+			font-family: arial, sans-serif;
+		}
+		a {
+			color: white;
+		}
+		.banner {
+			position: relative;
+			width: 298px;
+			height: 248px;
+			overflow: hidden;
+			border: 1px #000 solid;	
+			margin: 0;
+			top: 0px;
+			left: 0px;
+		}
+		#banner-container {
+			position: absolute;
+			width: 300px;
+			height: 250px;
+			opacity: 0;
+		}
+		#bg {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 300px;
+			height: 250px;
+			background: #FFF;
+			opacity: 0;
+		}
+		.hide {
+			display: none;
+		}
+		</style>
+	</head>
+	<body>
+		<div class="banner">
+			<a href="javascript:window.open(window.clickTag)">
+				<div id="banner-container" style="visibility: inherit; opacity: 1;">
+					<div id="bg" style="visibility: inherit; opacity: 1;"></div>	
+					<div class="device" id="device1" style="visibility: inherit; opacity: 1; background-color: rgb(194, 209, 224);"></div>
+					<div class="device" id="device2" style="visibility: hidden; opacity: 0; background-color: rgb(180, 182, 181);"></div>
+					<div class="device" id="device3" style="visibility: hidden; opacity: 0; background-color: rgb(203, 189, 200);"></div>
+					<div class="device" id="device4" style="visibility: hidden; opacity: 0; background-color: rgb(116, 116, 116);"></div>
+					<div class="device" id="device5" style="visibility: inherit; opacity: 1; background-color: rgb(243, 212, 209);"></div>
+					<div class="device" id="device6" style="visibility: inherit; opacity: 1; background-color: rgb(158, 213, 206);"></div>
+					<div class="device" id="device7" style="visibility: inherit; opacity: 1; background-color: rgb(116, 116, 116);"></div>
+					<div id="headline1-hold" class="svg-hold" style="visibility: hidden; opacity: 0; transform: translate3d(-80px, 0px, 0px);"><div id="headline1" class="strip"></div></div>
+					<div id="headline2-hold" class="svg-hold" style="visibility: hidden; opacity: 0; transform: translate3d(-80px, 0px, 0px);"><div id="headline2" class="strip"></div></div>
+					<div id="headline3-hold" class="svg-hold" style="visibility: hidden; opacity: 0; transform: translate3d(-80px, 0px, 0px);"><div id="headline3" class="strip"></div></div>
+					<div id="headline4-hold" class="svg-hold" style="visibility: hidden; opacity: 0; transform: translate3d(-80px, 0px, 0px);"><div id="headline4" class="strip"></div></div>
+					<div id="headline5-hold" class="svg-hold" style="visibility: inherit; opacity: 1; transform: translate3d(0px, 0px, 0px);"><div id="headline5" class="strip"></div></div>
+					<div id="bottom-bar"></div>
+					<div id="price-hold" class="svg-hold" style="visibility: inherit; opacity: 1; transform: translate3d(0px, 0px, 0px);"><div id="price" class="strip"></div></div>
+					<div id="newflag-hold" class="svg-hold" style="transform-origin: 85% 22% 0px; visibility: inherit; opacity: 1; transform: translate3d(0px, 0px, 0px);"><div id="newflag" class="strip"></div></div>
+					<div id="logo-hold" class="svg-hold" style="visibility: inherit; opacity: 1;"><div id="logo" class="strip"></div></div>
+					<div id="cta-backing-hold-300x250" class="svg-hold hide" style="display: block; visibility: inherit; opacity: 1;">
+						<svg version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 300 250" style="enable-background:new 0 0 300 250;" xml:space="preserve">
+						<path id="cta-backing-300x250" style="fill: rgb(238, 61, 111); display: block; visibility: inherit; opacity: 1;" d="M278.668,239.5H195.5c-6.6,0-12-5.4-12-12v0c0-6.6,5.4-12,12-12h83.168c6.6,0,12,5.4,12,12v0
+							C290.668,234.1,285.268,239.5,278.668,239.5z"></path>
+						</svg>
+					</div>
+					<div id="cta-backing-hold-300x600" class="svg-hold hide">
+						<svg version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 300 600" style="enable-background:new 0 0 300 600;" xml:space="preserve">
+						<path id="cta-backing-300x600" style="fill:#EE3D6F;" d="M268.918,576.316H170.5c-6.6,0-12-5.4-12-12V559.5c0-6.6,5.4-12,12-12h98.418c6.6,0,12,5.4,12,12
+							v4.816C280.918,570.916,275.518,576.316,268.918,576.316z"></path>
+						</svg>
+					</div>
+					<div id="cta-backing-hold-728x90" class="svg-hold hide">
+						<svg version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 728 90" style="enable-background:new 0 0 728 90;" xml:space="preserve">
+						<path id="cta-backing-728x90" style="fill:#EE3D6F;" d="M701.373,81.318H605.25c-7.15,0-13-5.85-13-13V65.75c0-7.15,5.85-13,13-13h96.123
+							c7.15,0,13,5.85,13,13v2.568C714.373,75.468,708.523,81.318,701.373,81.318z"></path>
+						</svg>
+					</div>
+					<div id="cta-backing-hold-970x250" class="svg-hold hide">
+						<svg version="1.1" id="Layer_1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 970 250" style="enable-background:new 0 0 970 250;" xml:space="preserve">
+							<path id="cta-backing-970x250" style="fill:#EE3D6F;" d="M941.041,199.568H830.75c-8.25,0-15-6.75-15-15v-2.818c0-8.25,6.75-15,15-15h110.291
+							c8.25,0,15,6.75,15,15v2.818C956.041,192.818,949.291,199.568,941.041,199.568z"></path>
+						</svg>
+					</div>
+					<div id="cta-text-hold" class="svg-hold" style="display: block; visibility: inherit; opacity: 1;"><div id="cta-text" class="strip"></div></div>
+				</div>
+			</a>
+		</div>
+	
+	<script src="./CSSPlugin.min.js"></script>
+	<script src="./EasePack.min.js"></script>
+	<script src="./TweenLite.min.js"></script>
+	<script src="./main.js"></script>
+</body></html>
