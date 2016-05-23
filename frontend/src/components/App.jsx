@@ -16,6 +16,17 @@ class App extends React.Component {
 
   render() {
 
+    var shuffleArray = function(array) {
+        for (var i = array.length - 1; i > 0; i--) {
+            var j = Math.floor(Math.random() * (i + 1));
+            var temp = array[i];
+            array[i] = array[j];
+            array[j] = temp;
+        }
+        return array;
+    }
+
+
     var mps = []
 
     $.ajax({
@@ -29,13 +40,15 @@ class App extends React.Component {
     })
 
 
+
+
     const componentToRender = this.state.selectedMP
     ? <SingleMpView
         mp = {this.state.selectedMP}
         data = { mps}
       /> 
     : <AllMpView 
-        data = { mps }
+        data = { shuffleArray(mps) }
         onChange = { this._changeSelectedMp }
     />
 
