@@ -63,19 +63,19 @@
         $(document).ready(function() {
             $('#geolocate').click(function(e) {
                 console.log('clicked');
+                var lat;
+                var long;
                 if (!navigator.geolocation) {
                     geolocate.innerHTML = 'Geolocation is not available';
                 } else {
                     e.preventDefault();
                     e.stopPropagation();
                     navigator.geolocation.getCurrentPosition(function(position) {
-                        console.log("Latitude: " + position.coords.latitude + ", Longitude: " + position.coords.longitude)
-                        form_submit('http://localhost:3000/location/', {
-                            longitude: position.coords.longitude,
-                            latitude: position.coords.latitude
-                        })
-
+                        lat = position.coords.latitude;
+                        long = position.coords.longitude;
+                        window.location = 'http://localhost:3000/location/latitude:'+ lat +'&longitude:'+ long;
                     });
+
 
 
                 }

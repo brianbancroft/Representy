@@ -15,8 +15,6 @@ var Bing = Promise.promisifyAll(require('node-bing-api')({
   suffix: 'Async'
 });
 
-
-
 pg.defaults.ssl = true;
 
 route = paramify(route);
@@ -45,15 +43,14 @@ param('riding', function*(ridingid, next) {
     yield next;
 });
 
-param('coord', function*(coordinate, next) {
-    console.log('Coord Call has been made');
-    baseQuery = 'SELECT ( riding_id) FROM election_boundaries_joined_simp1 WHERE ST_WITHIN(ST_GeomFromText(\'POINT('
-    endQuery = ')\'),geom);';
-    var long = coordinate.split('&')[0];
-    var lat = coordinate.split('&')[1];
-    query = baseQuery + long + ' ' + lat + endQuery;
-    var ridingNumber = yield this.pg.db.client.query_(query)
-    this.riding = ridingNumber;
+param('coordinates', function*(coordinates, next) {
+  //USAGE: http://localhost:3000/location/latitude:43.6444194&longitude:-79.3951131
+    console.log("coord call has been made: " + coordinates)
+    var latitude = coordinates.split('&')[0].replace("latitude:","");
+    var longitude = coordinates.split('&')[1].replace("longitude:","");
+    console.log("latitude: " + latitude + ", longitude: " + longitude)
+    var query = 'SELECT ( riding_id) FROM election_boundaries_joined_simp1 WHERE ST_WITHIN(ST_GeomFromText(\'POINT('+ longitude + ' ' + latitude +')\'),geom);'
+    this.riding = yield this.pg.db.client.query_(query)
 
     yield next;
 
@@ -70,9 +67,9 @@ param('name', function*(name, next) {
     // 4. This.name refers to the param to the left of "next". Here, we assign the value
 
     this.name =  yield Bing.newsAsync(name, {
-        top: 10, // Number of results (max 15)
+        top: 3, // Number of results (max 15)
         skip: 0, // Skip first 3 results
-        newsSortBy: "Date", //Choices are: Date, Relevance
+        newsSortBy: "Relevance", //Choices are: Date, Relevance
         newsCategory: "rt_Politics" // Choices are:
     });
     yield next;
@@ -86,8 +83,6 @@ app.use(function*(next) {
 });
 
 app.use(route.get('/', function*() {
-    debugger;
-    console.log('hello world page')
     this.body = {
         message: 'hello world'
     }
@@ -115,12 +110,13 @@ app.use(route.get('/riding/:riding', function*() {
     };
 }));
 
-app.use(route.post('/location/', function*() {
-    console.log('post request has been made');
-    // ridingNumber = this.riding;
-    router.redirect('/location/', '/riding/673');
+app.use(route.get('/location/:coordinates', function*() {
+    this.body = {
+        riding: this.riding.rows[0].riding_id
+    }
+}));
 
-}))
+
 
 app.use(json());
 
