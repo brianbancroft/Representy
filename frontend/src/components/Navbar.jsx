@@ -11,7 +11,7 @@ class Navbar extends React.Component {
               <div className="logo" 
                 onClick={ () => this.props.onChange() } 
               >
-                <span className="light">MY</span><span className="bold">MP</span>
+                <span className="light">GETMY</span><span className="bold">MP</span>
               </div>
             </div>
         </div>

@@ -11,8 +11,7 @@ class MpIntro extends React.Component {
       <div>
       <div className="column-container-center">
       
-        <h1>FIND YOUR MP</h1>
-        <p>Sed lobortis <span className="underline">lacus in turpis</span> luctus, vitae finibus enim tincidunt. <span className="underline">Nulla facilisi</span>. Proin vel suscipit tortor. Suspendisse potenti. Duis scelerisque urna nisi, nec <span className="underline">sagittis sem</span> aliquam ut. Donec mollis ornare pretium. In hac habitasse platea dictumst.</p>
+        <h1>GET YOUR MP</h1>
 
       </div>
 
