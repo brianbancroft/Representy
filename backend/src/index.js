@@ -80,7 +80,7 @@ app.use(function*(next) {
     yield next;
 });
 
-app.use(route.get('/test', function*() {
+app.use(route.get('/', function*() {
     this.body = {
         message: 'System is working'
     }
