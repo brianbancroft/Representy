@@ -45,10 +45,8 @@ param('riding', function*(ridingid, next) {
 
 param('coordinates', function*(coordinates, next) {
   //USAGE: http://localhost:3000/location/latitude:43.6444194&longitude:-79.3951131
-    console.log("coord call has been made: " + coordinates)
     var latitude = coordinates.split('&')[0].replace("latitude:","");
     var longitude = coordinates.split('&')[1].replace("longitude:","");
-    console.log("latitude: " + latitude + ", longitude: " + longitude)
     var query = 'SELECT ( riding_id) FROM election_boundaries_joined_simp1 WHERE ST_WITHIN(ST_GeomFromText(\'POINT('+ longitude + ' ' + latitude +')\'),geom);'
     this.riding = yield this.pg.db.client.query_(query)
 
@@ -82,9 +80,9 @@ app.use(function*(next) {
     yield next;
 });
 
-app.use(route.get('/', function*() {
+app.use(route.get('/test', function*() {
     this.body = {
-        message: 'hello world'
+        message: 'System is working'
     }
 }));
 
