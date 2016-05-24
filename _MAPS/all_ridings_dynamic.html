@@ -130,9 +130,10 @@
         map.on('click', function(e) {
 
             var features = map.queryRenderedFeatures(e.point, {
-                layers: ['ridings-canada']
+                layers: ['whig-riding','tory-riding','dipper-riding','bloc-riding','green-riding']
 
             });
+            console.log(features);
 
             if (!features.length) {
                 return;
