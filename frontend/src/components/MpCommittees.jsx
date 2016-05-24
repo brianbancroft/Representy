@@ -1,7 +1,8 @@
 import React from 'react';
 
 var MpCommittees = React.createClass({
- 
+
+
   render: function() {
     var committees = this.props.mp.committees
     console.log(this.props.mp.committees)
@@ -19,6 +20,7 @@ var MpCommittees = React.createClass({
           
         </ul>
       </div> : ''}
+
   </div>
     )
   }
