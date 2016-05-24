@@ -642,6 +642,19 @@ circle {
   /* offset of arc from start point (1/2 arc length + 1/4 circumference (71) ) */
 }
 
+.spons-bill .line:nth-child(1) {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.spons-bill .line:nth-child(2) {
+  font-size: 12px;
+}
+
+.spons-bill .line:last-child {
+  padding-top: 10px;
+}
+
 @font-face {
   font-family: 'fontello';
   src: url("../../fonts/fontello.eot?52168231");

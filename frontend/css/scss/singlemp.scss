@@ -334,3 +334,14 @@ circle {
   stroke-dasharray: 284, 284; /* length of arc, circumference of circle */
   stroke-dashoffset: 0; /* offset of arc from start point (1/2 arc length + 1/4 circumference (71) ) */
 }
+
+.spons-bill .line:nth-child(1) {
+  font-weight:bold;
+  font-size:20px;
+}
+.spons-bill .line:nth-child(2) {
+  font-size:12px;
+}
+.spons-bill .line:last-child {
+  padding-top:10px;
+}

@@ -4,42 +4,133 @@ var MpMapSearch = React.createClass({
 
   componentDidMount: function(){
 
-    mapboxgl.accessToken = 'pk.eyJ1IjoiYnJpYW5iYW5jcm9mdCIsImEiOiJsVGVnMXFzIn0.7ldhVh3Ppsgv4lCYs65UdA';
-     var map = new mapboxgl.Map({
-         container: 'map',
-         style: 'mapbox://styles/brianbancroft/cio5y4bf10001afnmjjdelbzf',
-         zoom: 2,
-         center: [-91.23046875,45.460130637921]
-     });
+      mapboxgl.accessToken = 'pk.eyJ1IjoiYnJpYW5iYW5jcm9mdCIsImEiOiJsVGVnMXFzIn0.7ldhVh3Ppsgv4lCYs65UdA';
+        var map = new mapboxgl.Map({
+            container: 'map',
+            
+            maxBounds: [
+                [-141.8521455, 41.68392799015035], // Southwest coordinates
+                [-52.0792153, 83.7630545]  // Northeast coordinates
+            ],
+            style: 'mapbox://styles/brianbancroft/cio5y4bf10001afnmjjdelbzf',
+            zoom: 6,
+            center: [-73.8574963,46.363789],
+        });
 
-     map.on('load', function () {
-         var data =
-         map.addSource('urban-areas', {
-             'type': 'geojson',
-             //'data': {"type":"Polygon","coordinates":[[[-91.23046875,45.460130637921],[-79.8046875,49.837982453085],[-69.08203125,43.452918893555],[-88.2421875,32.694865977875],[-91.23046875,45.460130637921]]]}
-             //compare: {"type":"Polygon","coordinates":[[[-91.23046875,45.460130637921],[-79.8046875,49.837982453085],[-69.08203125,43.452918893555],[-88.2421875,32.694865977875],[-91.23046875,45.460130637921]]]}
-             'data': 'http://localhost:3000/riding/638'
-             //'data': 'https://d2ad6b4ur7yvpq.cloudfront.net/naturalearth-3.3.0/ne_50m_urban_areas.geojson'
-         });
+        map.on('load', function() {
+            map.addSource('ridings-canada', {
+                type: 'vector',
+                url: 'mapbox://brianbancroft.1sf4w5x6'
 
-         map.addLayer({
-             'id': 'urban-areas-fill',
-             'type': 'fill',
-             'source': 'urban-areas',
-             'layout': {},
-             'paint': {
-                 'fill-color': '#f08',
-                 'fill-opacity': 0.4
-             }
-         // This is the important part of this example: the addLayer
-         // method takes 2 arguments: the layer as an object, and a string
-         // representing another layer's name. if the other layer
-         // exists in the stylesheet already, the new layer will be positioned
-         // right before that layer in the stack, making it possible to put
-         // 'overlays' anywhere in the layer stack.
-         }, 'water');
-     });
+            },'water');
+            map.addLayer({
+                "id": "ridings-canada",
+                "type": "fill",
+                "source": "ridings-canada",
+                "source-layer": "electboundaries1",
+                'paint': {
+                  'fill-color': '#334455',
+                  'fill-opacity': 0.5,
+                  'fill-outline-color': 'rgba(200,100,240,1)',
+                }
 
+            },'water');
+            map.addLayer({
+              'id': 'whig-riding',
+              'type': 'fill',
+              "source": "ridings-canada",
+              "source-layer": "electboundaries1",
+              'paint': {
+                'fill-color': '#f00',
+                'fill-opacity': 0.4
+              },
+              filter: ['==', 'Party', 'Liberal']
+            },'water');
+            map.addLayer({
+              'id': 'tory-riding',
+              'type': 'fill',
+              "source": "ridings-canada",
+              "source-layer": "electboundaries1",
+              'paint': {
+                'fill-color': '#00F',
+                'fill-opacity': 0.4
+              },
+              filter: ['==', 'Party', 'Conservative']
+            },'water');
+            map.addLayer({
+              'id': 'dipper-riding',
+              'type': 'fill',
+              "source": "ridings-canada",
+              "source-layer": "electboundaries1",
+              'paint': {
+                'fill-color': '#ffa500',
+                'fill-opacity': 0.4
+              },
+              filter: ['==', 'Party', 'NDP']
+            },'water');
+            map.addLayer({
+              'id': 'green-riding',
+              'type': 'fill',
+              "source": "ridings-canada",
+              "source-layer": "electboundaries1",
+              'paint': {
+                'fill-color': '#0F0',
+                'fill-opacity': 0.4
+              },
+              filter: ['==', 'Party', 'Green Party']
+            });
+            map.addLayer({
+              'id': 'bloc-riding',
+              'type': 'fill',
+              "source": "ridings-canada",
+              "source-layer": "electboundaries1",
+              'paint': {
+                'fill-color': '#88F',
+                'fill-opacity': 0.4
+              },
+              filter: ['==', 'Party', 'Bloc Quebecois']
+            },'water');
+
+            map.addLayer({
+                "id": "ridings-canada",
+                "type": "line",
+                "source": "ridings-canada",
+                "source-layer": "electboundaries1",
+                'paint': {
+                  "line-color": "#330033",
+                  "line-width": 8
+                }
+
+            },'water');
+
+        });
+
+
+        map.on('click', function(e) {
+
+            var features = map.queryRenderedFeatures(e.point, {
+                layers: ['whig-riding','tory-riding','dipper-riding','bloc-riding','green-riding']
+
+            });
+
+            if (!features.length) {
+                return;
+            }
+
+            var feature = features[0];
+            console.log("constit id: " + feature.properties.constit_id);
+
+
+            // Populate the popup and set its coordinates
+            // based on the feature found.
+            var popup = new mapboxgl.Popup()
+                .setLngLat(e.lngLat)
+                .setHTML("<p> " + feature.properties.ENNAME + " </p>")
+                .addTo(map);
+        });
+
+        map.dragRotate.disable();
+        map.touchZoomRotate.disableRotation();
    
   },
  
