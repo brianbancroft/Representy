@@ -30,7 +30,7 @@ class App extends React.Component {
     var mps = []
 
     $.ajax({
-      url: 'http://localhost:3000/members',
+      url: 'http://findmymp.herokuapp.com/members',
       dataType: "json",
       async: false,
       data: mps
