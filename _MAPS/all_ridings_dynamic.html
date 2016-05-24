@@ -29,6 +29,10 @@
         mapboxgl.accessToken = 'pk.eyJ1IjoiYnJpYW5iYW5jcm9mdCIsImEiOiJsVGVnMXFzIn0.7ldhVh3Ppsgv4lCYs65UdA';
         var map = new mapboxgl.Map({
             container: 'map',
+            maxBounds: [
+                [-141.8521455, 41.68392799015035], // Southwest coordinates
+                [-52.0792153, 83.7630545]  // Northeast coordinates
+            ],
             style: 'mapbox://styles/mapbox/light-v8',
             zoom: 6,
             center: [-73.8574963,46.363789],
@@ -37,76 +41,88 @@
         map.on('load', function() {
             map.addSource('ridings-canada', {
                 type: 'vector',
-                url: 'mapbox://brianbancroft.dnu63ftm'
-            });
+                url: 'mapbox://brianbancroft.1sf4w5x6'
+
+            },'water');
             map.addLayer({
                 "id": "ridings-canada",
                 "type": "fill",
                 "source": "ridings-canada",
-                "source-layer": "ridings",
+                "source-layer": "electboundaries1",
                 'paint': {
                   'fill-color': '#334455',
                   'fill-opacity': 0.5,
                   'fill-outline-color': 'rgba(200,100,240,1)',
-                  'fill-outline-width': 2
                 }
 
-            });
+            },'water');
             map.addLayer({
               'id': 'whig-riding',
               'type': 'fill',
               "source": "ridings-canada",
-              "source-layer": "ridings",
+              "source-layer": "electboundaries1",
               'paint': {
                 'fill-color': '#f00',
                 'fill-opacity': 0.4
               },
-              filter: ['==', 'partyName', 'Liberal']
-            });
+              filter: ['==', 'Party', 'Liberal']
+            },'water');
             map.addLayer({
               'id': 'tory-riding',
               'type': 'fill',
               "source": "ridings-canada",
-              "source-layer": "ridings",
+              "source-layer": "electboundaries1",
               'paint': {
                 'fill-color': '#00F',
                 'fill-opacity': 0.4
               },
-              filter: ['==', 'partyName', 'Conservative']
-            });
+              filter: ['==', 'Party', 'Conservative']
+            },'water');
             map.addLayer({
               'id': 'dipper-riding',
               'type': 'fill',
               "source": "ridings-canada",
-              "source-layer": "ridings",
+              "source-layer": "electboundaries1",
               'paint': {
                 'fill-color': '#ffa500',
                 'fill-opacity': 0.4
               },
-              filter: ['==', 'partyName', 'NDP']
-            });
+              filter: ['==', 'Party', 'NDP']
+            },'water');
             map.addLayer({
               'id': 'green-riding',
               'type': 'fill',
               "source": "ridings-canada",
-              "source-layer": "ridings",
+              "source-layer": "electboundaries1",
               'paint': {
                 'fill-color': '#0F0',
                 'fill-opacity': 0.4
               },
-              filter: ['==', 'partyName', 'Green Party']
+              filter: ['==', 'Party', 'Green Party']
             });
             map.addLayer({
               'id': 'bloc-riding',
               'type': 'fill',
               "source": "ridings-canada",
-              "source-layer": "ridings",
+              "source-layer": "electboundaries1",
               'paint': {
                 'fill-color': '#88F',
                 'fill-opacity': 0.4
               },
-              filter: ['==', 'partyName', 'Bloc Quebecois']
-            });
+              filter: ['==', 'Party', 'Bloc Quebecois']
+            },'water');
+
+            map.addLayer({
+                "id": "ridings-canada",
+                "type": "line",
+                "source": "ridings-canada",
+                "source-layer": "electboundaries1",
+                'paint': {
+                  "line-color": "#330033",
+                  "line-width": 8
+                }
+
+            },'water');
 
         });
 
@@ -118,14 +134,13 @@
 
             });
 
-
             if (!features.length) {
                 return;
             }
 
             var feature = features[0];
             console.log("constit id: " + feature.properties.constit_id);
-            console.log("Constit Name: " + feature.properties.ENNAME);
+
 
             // Populate the popup and set its coordinates
             // based on the feature found.
@@ -134,6 +149,9 @@
                 .setHTML("<p> " + feature.properties.ENNAME + " </p>")
                 .addTo(map);
         });
+
+        map.dragRotate.disable();
+        map.touchZoomRotate.disableRotation();
     </script>
 
 </body>
