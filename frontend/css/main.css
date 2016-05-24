@@ -193,6 +193,10 @@ section {
   text-transform: uppercase;
 }
 
+.border-bottom {
+  border-bottom: 3px solid #dbdbdb;
+}
+
 button {
   border-radius: 0px;
   padding: 10px;
@@ -464,6 +468,10 @@ form button {
   width: 75%;
 }
 
+.score-circle {
+  margin: auto;
+}
+
 .score {
   text-align: center;
   color: #333;
@@ -472,6 +480,7 @@ form button {
   justify-content: center;
   align-content: center;
   flex-direction: column;
+  position: relative;
 }
 
 .score span {
@@ -479,57 +488,50 @@ form button {
 }
 
 .score .score-num {
-  margin: 10px auto;
+  position: absolute;
+  top: 40%;
+  left: 38%;
+  font-size: 40px;
 }
 
 .score .score-num.one {
   color: #EA222D;
-  border: 3px solid #EA222D;
 }
 
 .score .score-num.two {
-  color: #DB2D2C;
-  border: 3px solid #DB2D2C;
+  color: #EA222D;
 }
 
 .score .score-num.three {
   color: #CA382B;
-  border: 3px solid #CA382B;
 }
 
 .score .score-num.four {
   color: #B9462A;
-  border: 3px solid #B9462A;
 }
 
 .score .score-num.five {
   color: #A75429;
-  border: 3px solid #A75429;
 }
 
 .score .score-num.six {
   color: #995F29;
-  border: 3px solid #995F29;
 }
 
 .score .score-num.seven {
   color: #837029;
-  border: 3px solid #837029;
 }
 
 .score .score-num.eight {
   color: #737E29;
-  border: 3px solid #737E29;
 }
 
 .score .score-num.nine {
   color: #648A2A;
-  border: 3px solid #648A2A;
 }
 
 .score .score-num.ten {
   color: #53992B;
-  border: 3px solid #53992B;
 }
 
 .mp-column {

@@ -35,7 +35,7 @@ window.scrollTo(0, 100)
             <div className="main-body">
               <section>
                <MpHeader mp = {this.getMp()} />
-               <MpStats/>
+               <MpStats mp = {this.getMp()} />
                <div className="row-container">
 
 
