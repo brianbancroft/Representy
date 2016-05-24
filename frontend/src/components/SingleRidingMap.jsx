@@ -7,6 +7,7 @@ var SingleRidingMap = React.createClass({
         mapboxgl.accessToken = 'pk.eyJ1IjoiYnJpYW5iYW5jcm9mdCIsImEiOiJsVGVnMXFzIn0.7ldhVh3Ppsgv4lCYs65UdA';
     var map = new mapboxgl.Map({
         container: 'map',
+        attributionControl: false,
         style: 'mapbox://styles/brianbancroft/cio5y4bf10001afnmjjdelbzf',
         zoom: 2,
         center: [-91.23046875,45.460130637921]

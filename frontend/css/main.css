@@ -468,7 +468,10 @@ form button {
   text-align: center;
   color: #333;
   font-weight: bold;
-  border-bottom: 5px solid #dbdbdb;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
 }
 
 .score span {
@@ -476,51 +479,165 @@ form button {
 }
 
 .score .score-num {
-  font-size: 60px;
+  margin: 10px auto;
 }
 
 .score .score-num.one {
   color: #EA222D;
+  border: 3px solid #EA222D;
 }
 
 .score .score-num.two {
   color: #DB2D2C;
+  border: 3px solid #DB2D2C;
 }
 
 .score .score-num.three {
   color: #CA382B;
+  border: 3px solid #CA382B;
 }
 
 .score .score-num.four {
   color: #B9462A;
+  border: 3px solid #B9462A;
 }
 
 .score .score-num.five {
   color: #A75429;
+  border: 3px solid #A75429;
 }
 
 .score .score-num.six {
   color: #995F29;
+  border: 3px solid #995F29;
 }
 
 .score .score-num.seven {
   color: #837029;
+  border: 3px solid #837029;
 }
 
 .score .score-num.eight {
   color: #737E29;
+  border: 3px solid #737E29;
 }
 
 .score .score-num.nine {
   color: #648A2A;
+  border: 3px solid #648A2A;
 }
 
 .score .score-num.ten {
   color: #53992B;
+  border: 3px solid #53992B;
 }
 
 .mp-column {
   width: 30%;
+}
+
+svg {
+  height: 120px;
+  width: 120px;
+}
+
+circle {
+  stroke-width: 4px;
+  fill: transparent;
+}
+
+#gray {
+  stroke: #AAA;
+}
+
+#one {
+  stroke: #EA222D;
+  fill: #eeeeed;
+  stroke-dasharray: 284, 284;
+  /* length of arc, circumference of circle */
+  stroke-dashoffset: 240;
+  /* offset of arc from start point (1/2 arc length + 1/4 circumference (71) ) */
+}
+
+#two {
+  stroke: #EA222D;
+  fill: #eeeeed;
+  stroke-dasharray: 284, 284;
+  /* length of arc, circumference of circle */
+  stroke-dashoffset: 192;
+  /* offset of arc from start point (1/2 arc length + 1/4 circumference (71) ) */
+}
+
+#three {
+  stroke: #CA382B;
+  fill: #eeeeed;
+  stroke-dasharray: 284, 284;
+  /* length of arc, circumference of circle */
+  stroke-dashoffset: 168;
+  /* offset of arc from start point (1/2 arc length + 1/4 circumference (71) ) */
+}
+
+#four {
+  stroke: #B9462A;
+  fill: #eeeeed;
+  stroke-dasharray: 284, 284;
+  /* length of arc, circumference of circle */
+  stroke-dashoffset: 144;
+  /* offset of arc from start point (1/2 arc length + 1/4 circumference (71) ) */
+}
+
+#five {
+  stroke: #A75429;
+  fill: #eeeeed;
+  stroke-dasharray: 284, 284;
+  /* length of arc, circumference of circle */
+  stroke-dashoffset: 120;
+  /* offset of arc from start point (1/2 arc length + 1/4 circumference (71) ) */
+}
+
+#six {
+  stroke: #995F29;
+  fill: #eeeeed;
+  stroke-dasharray: 284, 284;
+  /* length of arc, circumference of circle */
+  stroke-dashoffset: 96;
+  /* offset of arc from start point (1/2 arc length + 1/4 circumference (71) ) */
+}
+
+#seven {
+  stroke: #837029;
+  fill: #eeeeed;
+  stroke-dasharray: 284, 284;
+  /* length of arc, circumference of circle */
+  stroke-dashoffset: 72;
+  /* offset of arc from start point (1/2 arc length + 1/4 circumference (71) ) */
+}
+
+#eight {
+  stroke: #737E29;
+  fill: #eeeeed;
+  stroke-dasharray: 284, 284;
+  /* length of arc, circumference of circle */
+  stroke-dashoffset: 48;
+  /* offset of arc from start point (1/2 arc length + 1/4 circumference (71) ) */
+}
+
+#nine {
+  stroke: #648A2A;
+  fill: #eeeeed;
+  stroke-dasharray: 284, 284;
+  /* length of arc, circumference of circle */
+  stroke-dashoffset: 24;
+  /* offset of arc from start point (1/2 arc length + 1/4 circumference (71) ) */
+}
+
+#ten {
+  stroke: #53992B;
+  fill: #eeeeed;
+  stroke-dasharray: 284, 284;
+  /* length of arc, circumference of circle */
+  stroke-dashoffset: 0;
+  /* offset of arc from start point (1/2 arc length + 1/4 circumference (71) ) */
 }
 
 @font-face {
