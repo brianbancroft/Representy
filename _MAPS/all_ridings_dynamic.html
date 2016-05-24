@@ -112,6 +112,18 @@
               filter: ['==', 'Party', 'Bloc Quebecois']
             },'water');
 
+            map.addLayer({
+                "id": "ridings-canada",
+                "type": "line",
+                "source": "ridings-canada",
+                "source-layer": "electboundaries1",
+                'paint': {
+                  "line-color": "#330033",
+                  "line-width": 8
+                }
+
+            },'water');
+
         });
 
 
@@ -121,7 +133,6 @@
                 layers: ['ridings-canada']
 
             });
-
 
             if (!features.length) {
                 return;
