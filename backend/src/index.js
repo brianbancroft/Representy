@@ -22,6 +22,8 @@ var param = route.param;
 var get = route.get;
 
 var app = koa();
+var appPort = (process.env.PORT || 3000) ;
+
 app.use(cors());
 app.use(koaPg('postgres://dkuuauoezstjor:Lr6qZtm1TlJHJJoellAJd5_Yni@ec2-54-227-245-222.compute-1.amazonaws.com:5432/d2imlo0f5r5jov'));
 
@@ -118,5 +120,5 @@ app.use(route.get('/location/:coordinates', function*() {
 
 app.use(json());
 
-app.listen(3000);
-console.log('Koa listening on port 3000');
+app.listen(appPort);
+console.log('--- Listening at port ' + appPort);
