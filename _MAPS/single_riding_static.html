@@ -35,7 +35,7 @@ var map = new mapboxgl.Map({
 });
 
 map.on('style.load', function(){
-  $.getJSON('http://localhost:3000/riding/700', function(response){
+  $.getJSON('http://localhost:3000/riding/832', function(response){
     var boundingBox = getBoundingBox(response);
     var ridingBoundary = new mapboxgl.GeoJSONSource({ data: response } );
 
