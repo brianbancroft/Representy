@@ -30,8 +30,8 @@
         var map = new mapboxgl.Map({
             container: 'map',
             maxBounds: [
-                [-139.8521455, 41.68392799015035], // Southwest coordinates
-                [-48.0792153, 82.7630545]  // Northeast coordinates
+                [-141.8521455, 41.68392799015035], // Southwest coordinates
+                [-52.0792153, 83.7630545]  // Northeast coordinates
             ],
             style: 'mapbox://styles/mapbox/light-v8',
             zoom: 6,
@@ -129,7 +129,7 @@
 
             var feature = features[0];
             console.log("constit id: " + feature.properties.constit_id);
-            console.log("Constit Name: " + feature.properties.ENNAME);
+
 
             // Populate the popup and set its coordinates
             // based on the feature found.
