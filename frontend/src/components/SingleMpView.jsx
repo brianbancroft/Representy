@@ -3,6 +3,8 @@ import MpHeader from './MpHeader.jsx';
 import MpStats from './MpStats.jsx';
 import MpNews from './MpNews.jsx';
 import MpBio from './MpBio.jsx';
+import MpCommittees from './MpCommittees.jsx';
+
 import ConstituencyAddress from './ConstituencyAddress.jsx';
 import SingleRidingMap from './SingleRidingMap.jsx';
 
@@ -38,28 +40,25 @@ window.scrollTo(0, 100)
                <MpStats mp = {this.getMp()} />
                <div className="row-container">
 
-
-
-
                   <div className="column-container mp-column">
-                  <SingleRidingMap mp = {this.getMp()} />
-                    
+                    <SingleRidingMap mp = {this.getMp()} /> 
                     <ConstituencyAddress mp = {this.getMp()} />
                   </div>
 
                   <div className="column-container mp-column">
-                   <MpNews mp = {this.getMp()} />
-
+                    <MpNews mp = {this.getMp()} />
                   </div>
 
                   <div className="column-container mp-column">
-                  <MpBio />
-
+                    <MpBio mp = {this.getMp()} />
+                    <MpCommittees mp = {this.getMp()} />
                   </div>
 
 
                 </div>
+               
                 <div style={{height:'50px'}}></div>
+              
               </section>
             </div>
           </main>

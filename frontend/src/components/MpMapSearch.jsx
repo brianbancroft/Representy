@@ -45,7 +45,7 @@ var MpMapSearch = React.createClass({
  
   render: function() {
     return (
-        <div id='map'></div>
+        <div id='map' className="big-map"></div>
     )
   }
 });
