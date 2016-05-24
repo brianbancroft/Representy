@@ -14,7 +14,7 @@ var SingleRidingMap = React.createClass({
     });
 
     map.on('style.load', function(){
-      $.getJSON('http://localhost:3000/riding/' + riding, function(response){
+      $.getJSON('http://findmymp.herokuapp.com/riding/' + riding, function(response){
         var boundingBox = getBoundingBox(response);
         var ridingBoundary = new mapboxgl.GeoJSONSource({ data: response } );
 
