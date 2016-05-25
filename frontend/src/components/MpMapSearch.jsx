@@ -1,6 +1,12 @@
 import React from 'react';
 
 var MpMapSearch = React.createClass({
+  
+  _selectMp: function() {
+    console.log('hi')
+    // this.props.onChange(mpId)
+  },
+
 
   componentDidMount: function(){
 
@@ -36,35 +42,35 @@ var MpMapSearch = React.createClass({
 
             },'water');
             map.addLayer({
-              'id': 'whig-riding',
+              'id': 'lib-riding',
               'type': 'fill',
               "source": "ridings-canada",
               "source-layer": "electboundaries1",
               'paint': {
-                'fill-color': '#f00',
-                'fill-opacity': 0.4
+                'fill-color': '#ed2e38',
+                'fill-opacity': 0.8
               },
               filter: ['==', 'Party', 'Liberal']
             },'water');
             map.addLayer({
-              'id': 'tory-riding',
+              'id': 'con-riding',
               'type': 'fill',
               "source": "ridings-canada",
               "source-layer": "electboundaries1",
               'paint': {
-                'fill-color': '#00F',
-                'fill-opacity': 0.4
+                'fill-color': '#002395',
+                'fill-opacity': 0.8
               },
               filter: ['==', 'Party', 'Conservative']
             },'water');
             map.addLayer({
-              'id': 'dipper-riding',
+              'id': 'ndp-riding',
               'type': 'fill',
               "source": "ridings-canada",
               "source-layer": "electboundaries1",
               'paint': {
-                'fill-color': '#ffa500',
-                'fill-opacity': 0.4
+                'fill-color': '#FF5800',
+                'fill-opacity': 0.8
               },
               filter: ['==', 'Party', 'NDP']
             },'water');
@@ -74,8 +80,8 @@ var MpMapSearch = React.createClass({
               "source": "ridings-canada",
               "source-layer": "electboundaries1",
               'paint': {
-                'fill-color': '#0F0',
-                'fill-opacity': 0.4
+                'fill-color': '#427730',
+                'fill-opacity': 0.8
               },
               filter: ['==', 'Party', 'Green Party']
             });
@@ -85,8 +91,8 @@ var MpMapSearch = React.createClass({
               "source": "ridings-canada",
               "source-layer": "electboundaries1",
               'paint': {
-                'fill-color': '#88F',
-                'fill-opacity': 0.4
+                'fill-color': '#0088CE',
+                'fill-opacity': 0.8
               },
               filter: ['==', 'Party', 'Bloc Quebecois']
             },'water');
@@ -107,9 +113,8 @@ var MpMapSearch = React.createClass({
 
 
         map.on('click', function(e) {
-
             var features = map.queryRenderedFeatures(e.point, {
-                layers: ['whig-riding','tory-riding','dipper-riding','bloc-riding','green-riding']
+                layers: ['lib-riding','con-riding','ndp-riding','bloc-riding','green-riding']
 
             });
 
@@ -119,13 +124,15 @@ var MpMapSearch = React.createClass({
 
             var feature = features[0];
             console.log("constit id: " + feature.properties.constit_id);
-
+            var mpId = feature.properties.MP_ID
+            console.log("mp id: " + mpId);
 
             // Populate the popup and set its coordinates
             // based on the feature found.
+
             var popup = new mapboxgl.Popup()
                 .setLngLat(e.lngLat)
-                .setHTML("<p><a href=\"#\"> " + feature.properties.MP_ID + " " + feature.properties.ENNAME + " </a></p>")
+                .setHTML("<center>" + "<b>" + mpId + "</b>" + "<br>" + feature.properties.ENNAME + "</center><br><button onClick={console.log(" + mpId + ")} >See Profile</button>")
                 .addTo(map);
         });
 
