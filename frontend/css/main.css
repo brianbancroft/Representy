@@ -286,6 +286,10 @@ form button {
   color: #333;
 }
 
+.mapboxgl-popup-close-button {
+  visibility: hidden;
+}
+
 .filter.lib {
   background-color: #ed2e38;
 }
