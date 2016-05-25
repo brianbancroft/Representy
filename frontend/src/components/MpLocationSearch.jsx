@@ -44,7 +44,7 @@ const self = this
           var mps = []
 
           $.ajax({
-            url: 'http://localhost:3000/members',
+            url: 'http://findmymp.heroku.com/members',
             dataType: "json",
             async: false,
             data: mps

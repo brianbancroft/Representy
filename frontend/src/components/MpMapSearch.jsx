@@ -107,7 +107,7 @@ class MpMapSearch extends React.Component{
                 "source-layer": "electboundaries1",
                 'paint': {
                   "line-color": "#330033",
-                  "line-width": 8
+                  "line-width": 3
                 }
 
             },'water');

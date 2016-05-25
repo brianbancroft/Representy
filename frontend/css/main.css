@@ -557,14 +557,16 @@ form button {
   margin: auto;
 }
 
+.score-desc {
+  display: block;
+  font-weight: normal;
+}
+
 .score {
   text-align: center;
   color: #333;
   font-weight: bold;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  flex-direction: column;
+  width: 205px;
   position: relative;
 }
 
