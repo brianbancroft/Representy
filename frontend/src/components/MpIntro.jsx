@@ -1,12 +1,14 @@
 import React from 'react';
 import SearchButton from './SearchButton.jsx';
 import MapButton from './MapButton.jsx';
+import MpLocationSearch from './MpLocationSearch.jsx';
 
 class MpIntro extends React.Component {
 
 
   render() {
 
+      
     return (
       <div>
       <div className="column-container-center">
@@ -16,9 +18,7 @@ class MpIntro extends React.Component {
       </div>
 
       <div className="row-container">
-        <div className="row-item">
-          <button><span className="icon icon-location"></span> Your Location</button>
-        </div>
+        <MpLocationSearch onChange={ this.props.onChange } />
         <MapButton onClick = {this.props.selectMapBox}/>
         <SearchButton onClick = {this.props.selectSearchBox} />
       </div>

@@ -125,7 +125,7 @@ var MpMapSearch = React.createClass({
             // based on the feature found.
             var popup = new mapboxgl.Popup()
                 .setLngLat(e.lngLat)
-                .setHTML("<p> " + feature.properties.ENNAME + " </p>")
+                .setHTML("<p><a href=\"#\"> " + feature.properties.MP_ID + " " + feature.properties.ENNAME + " </a></p>")
                 .addTo(map);
         });
 

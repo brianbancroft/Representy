@@ -11,7 +11,8 @@ var MpSponsoredBill = React.createClass({
       <div>
       <ReactTooltip data-multiline='true'/>
 
-      {this.props.mp.sponsored_bills ? 
+      {(this.props.mp.sponsored_bills) ?
+
       <div className="row-item">
         <h2>Sponsored Bills <span data-multiline='true' data-tip="Bills introduced by this MP." className="icon icon-help-circled"></span> </h2>
           <div className='spons-bill'>
