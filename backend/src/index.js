@@ -97,6 +97,7 @@ app.use(route.get('/news/:name', function*() {
 app.use(route.get('/members', function*() {
     var result = yield this.pg.db.client.query_('SELECT * FROM members')
     this.body = result.rows;
+    // TODO - Array.map on the rows to ensure normalization. Specifically look at the analysis. 
 }));
 
 app.use(route.get('/riding/:riding', function*() {
