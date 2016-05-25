@@ -14,7 +14,6 @@ import MpFooter from './MpFooter.jsx';
 
 class SingleMpView extends React.Component {
 
-
 getMp() {
   for (var index in this.props.data){
     if (this.props.data[index].id == this.props.mp)
@@ -27,6 +26,7 @@ getMp() {
 
 
   render() {
+
 
 window.scrollTo(0, 100)
 
@@ -47,17 +47,15 @@ window.scrollTo(0, 100)
                   </div>
 
                   <div className="column-container mp-column">
-                    <MpNews mp = {this.getMp()} />
-                  </div>
-
-                  <div className="column-container mp-column">
                     <MpBio mp = {this.getMp()} />
                     <MpCommittees mp = {this.getMp()} />
                     <MpSponsoredBill mp = {this.getMp()} />
-
                   </div>
 
-
+                  <div className="column-container mp-column">
+                    <MpNews mp = {this.getMp()} />
+                  </div>
+                  
                 </div>
                
                 <div style={{height:'50px'}}></div>
