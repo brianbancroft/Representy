@@ -29,7 +29,7 @@ class AllMpView extends React.Component {
               <section>   
 
 
-              <MpIntro selectSearchBox = { this._selectSearchBox } selectMapBox = {this._selectMapBox}/> 
+              <MpIntro selectSearchBox = { this._selectSearchBox } selectMapBox = {this._selectMapBox} onChange={ this.props.onChange }/> 
               
 
               {this.state.mapBox ?  <MpMapSearch /> : ''}

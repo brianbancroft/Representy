@@ -54,6 +54,7 @@ var tweetScore = parseFloat(this.props.mp.twitter_participation_score).toFixed(1
         </svg>
         <span data-multiline='true' data-tip="Does the MP use Twitter to engage with citizens, or just use a staffer to broadcast his platform? <br>A higher score means that this user is quite likely to engage in debates, or chat with people around the world! 
 <br/>0-3: Not much engagement. 4-7: Some cross-talk 8-10: Loves to talk amongst the tweeple!" className={"score-num " + tweetTag}>{tweetScore}</span>
+      <span><a target="_blank" href={"http://twitter.com/"+ this.props.mp.twitter}> <span className='icon icon-twitter-bird'></span> {this.props.mp.twitter}</a></span>
       </div>
 
 

@@ -184,14 +184,10 @@
   align-content:center;
   flex-direction:column;
   position: relative;
-
-  span {
-    display:block;
-  }
   .score-num {
     position: absolute;
-    top: 40%;
-    left: 38%;
+    top: 35%;
+    left: 35%;
     font-size: 40px;
   }
   .score-num.one{
