@@ -8,13 +8,13 @@ class MpFooter extends React.Component {
         <div>
           <a href={"tel:" + this.props.mp.phone}>
           <span className="icon icon-phone"></span>
-          <span className="mobile-hide">{this.props.mp.cons_phone}</span>
+          <span className="mobile-hide"> {this.props.mp.cons_phone}</span>
           </a>
         </div>
         <div>
           <a href={"mailto:" + this.props.mp.email}>
             <span className="icon icon-mail"></span>
-            <span className="mobile-hide">{this.props.mp.email}</span>
+            <span className="mobile-hide"> {this.props.mp.email}</span>
           </a>
         </div>      
       </div>
