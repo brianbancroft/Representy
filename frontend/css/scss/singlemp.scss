@@ -161,16 +161,17 @@
 .score-circle {
   margin:auto
 }
+
+.score-desc {
+  display:block;
+  font-weight:normal;
+}
 .score {
   text-align: center;
   color:#333;
   font-weight:bold;
-
-  display: flex;
-  justify-content:center;
-  align-content:center;
-  flex-direction:column;
-  position: relative;
+  width:205px;
+position:relative;
   .score-num {
     position: absolute;
     top: 35%;

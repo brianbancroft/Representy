@@ -6,7 +6,7 @@ class MpFooter extends React.Component {
     return (
       <div className="contact-foot">
         <div>
-          <a href={"tel:" + this.props.mp.phone}>
+          <a href={"tel:" + this.props.mp.cons_phone}>
           <span className="icon icon-phone"></span>
           <span className="mobile-hide"> {this.props.mp.cons_phone}</span>
           </a>
