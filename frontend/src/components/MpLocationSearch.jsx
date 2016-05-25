@@ -1,6 +1,10 @@
 import React from 'react';
 
 class MpLocationSearch extends React.Component {
+  state = {
+    clicked: false
+  }
+
 
 
   _selectMp(mpId) {
@@ -9,7 +13,8 @@ class MpLocationSearch extends React.Component {
 
 
  _getMp() {
-  
+  this.setState({clicked:true})
+
   var lat
   var long
 const self = this
@@ -63,10 +68,22 @@ const self = this
     
   }
 
+
+
   render() {
+
+
+  var useIcon = "icon-location"
+    if (this.state.clicked === true) {
+        useIcon = "icon icon-spin5"
+      }
+    else {
+      useIcon = "icon icon-location"
+    }
+
     return (
         <div className="row-item">
-          <button onClick = {this._getMp.bind(this)}><span className="icon icon-location"></span>Your Location</button>
+          <button id="icons" onClick = {this._getMp.bind(this)}><span className={useIcon}></span> Your Location</button>
         </div>
     )
   }
