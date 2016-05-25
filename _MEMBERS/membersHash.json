@@ -7,7 +7,7 @@
 	"languages": "English",
 	"photo": "http://www.parl.gc.ca/Parliamentarians/Images/OfficialMPPhotos/42/FastEd_CPC.jpg",
 	"phone": "604-557-7888",
-	"address": ["2825 Clearbrook Road\r\n ", "Suite 205", "Abbotsford, British Columbia", "V2T 6S3"],
+	"address": ["2825 Clearbrook Road ", "Suite 205", "Abbotsford, British Columbia", "V2T 6S3"],
 	"email": "ed.fast@parl.gc.ca"
 }, {
 	"name": "Romeo Saganash",
@@ -18,7 +18,7 @@
 	"languages": "French",
 	"photo": "http://www.parl.gc.ca/Parliamentarians/Images/OfficialMPPhotos/42/SaganashRomeo_NDP.jpg",
 	"phone": "418-748-7870",
-	"address": ["888 3rd Avenue ", "Suite 204", "Val-d'Or, Quebec", "J9P 5E6"],
+	"address": ["888 3rd Avenue ", "Suite 204", "Val-d`Or, Quebec", "J9P 5E6"],
 	"email": "Romeo.Saganash@parl.gc.ca"
 }, {
 	"name": "Christine Moore",
@@ -139,7 +139,7 @@
 	"languages": "English",
 	"photo": "http://www.parl.gc.ca/Parliamentarians/Images/OfficialMPPhotos/42/RichardsBlake_CPC.jpg",
 	"phone": "403-948-5103",
-	"address": ["620 - 1st Avenue NW\r\n ", "Suite 16", "Airdrie, Alberta", "T4B 2R3"],
+	"address": ["620 - 1st Avenue NW ", "Suite 16", "Airdrie, Alberta", "T4B 2R3"],
 	"email": "blake.richards@parl.gc.ca"
 }, {
 	"name": "John Brassard",
@@ -172,7 +172,7 @@
 	"languages": "English",
 	"photo": "http://www.parl.gc.ca/Parliamentarians/Images/OfficialMPPhotos/42/SorensonKevin_CPC.jpg",
 	"phone": "780-608-4600",
-	"address": ["4945 - 50th Street\r\n ", "Camrose, Alberta", "T4V 1P9"],
+	"address": ["4945 - 50th Street ", "Camrose, Alberta", "T4V 1P9"],
 	"email": "kevin.sorenson@parl.gc.ca"
 }, {
 	"name": "The Honourable Gerry Ritz",
@@ -222,7 +222,7 @@
 	"name": "Sylvie Boucher",
 	"id": "35320",
 	"party": "Conservative",
-	"riding": "Beauport—Côte-de-Beaupré—Île d'Orléans—Charlevoix",
+	"riding": "Beauport—Côte-de-Beaupré—Île d`Orléans—Charlevoix",
 	"riding_id": "656",
 	"languages": "French / English",
 	"photo": "http://www.parl.gc.ca/Parliamentarians/Images/OfficialMPPhotos/42/BoucherSylvie_CPC.jpg",
@@ -502,7 +502,7 @@
 	"languages": "English",
 	"photo": "http://www.parl.gc.ca/Parliamentarians/Images/OfficialMPPhotos/42/ObhraiDeepak_CPC.jpg",
 	"phone": "403-207-3030",
-	"address": ["525 - 28th Street SE\r\n ", "Suite 225", "Calgary, Alberta", "T2A 6W9"],
+	"address": ["525 - 28th Street SE ", "Suite 225", "Calgary, Alberta", "T2A 6W9"],
 	"email": "deepak.obhrai@parl.gc.ca"
 }, {
 	"name": "The Right Honourable Stephen Harper",
@@ -513,7 +513,7 @@
 	"languages": "English / French",
 	"photo": "http://www.parl.gc.ca/Parliamentarians/Images/OfficialMPPhotos/42/HarperStephen_CPC.jpg",
 	"phone": "403-253-7990",
-	"address": ["1600 - 90th Avenue SW\r\nSuite A-203\r\n ", "Calgary, Alberta", "T2V 5A8"],
+	"address": ["1600 - 90th Avenue SWSuite A-203 ", "Calgary, Alberta", "T2V 5A8"],
 	"email": "stephen.harper@parl.gc.ca"
 }, {
 	"name": "The Honourable Jason Kenney",
@@ -711,7 +711,7 @@
 	"languages": "English / French",
 	"photo": "http://www.parl.gc.ca/Parliamentarians/Images/OfficialMPPhotos/42/ShanahanBrenda_Lib.jpg",
 	"phone": "450-691-7044",
-	"address": ["253 D'Anjou Blvd ", "Châteauguay, Quebec", "J6J 2R4"],
+	"address": ["253 D`Anjou Blvd ", "Châteauguay, Quebec", "J6J 2R4"],
 	"email": "Brenda.Shanahan@parl.gc.ca"
 }, {
 	"name": "Dave Van Kesteren",
@@ -967,7 +967,7 @@
 	"address": ["229 Broadway ", "Suite 2", "Orangeville, Ontario", "L9W 1K4"],
 	"email": "david.tilson@parl.gc.ca"
 }, {
-	"name": "The Honourable Erin O'Toole",
+	"name": "The Honourable Erin O`Toole",
 	"id": "72773",
 	"party": "Conservative",
 	"riding": "Durham",
@@ -1250,7 +1250,7 @@
 	"languages": "French / English",
 	"photo": "http://www.parl.gc.ca/Parliamentarians/Images/OfficialMPPhotos/42/MacKinnonSteven_Lib.jpg",
 	"phone": "819-561-5555",
-	"address": ["160 de l'Hôpital Blvd ", "Suite 204", "Gatineau, Quebec", "J8T 8J1"],
+	"address": ["160 de l`Hôpital Blvd ", "Suite 204", "Gatineau, Quebec", "J8T 8J1"],
 	"email": "Steven.MacKinnon@parl.gc.ca"
 }, {
 	"name": "Francis Drouin",
@@ -1327,7 +1327,7 @@
 	"languages": "English",
 	"photo": "http://www.parl.gc.ca/Parliamentarians/Images/OfficialMPPhotos/42/ReganGeoff_Lib.jpg",
 	"phone": "902-426-2217",
-	"address": ["1496 Bedford Highway\r\n ", "Suite 222", "Bedford, Nova Scotia", "B4A 1E5"],
+	"address": ["1496 Bedford Highway ", "Suite 222", "Bedford, Nova Scotia", "B4A 1E5"],
 	"email": "geoff.regan@parl.gc.ca"
 }, {
 	"name": "David Christopherson",
@@ -1470,7 +1470,7 @@
 	"languages": "English",
 	"photo": "http://www.parl.gc.ca/Parliamentarians/Images/OfficialMPPhotos/42/McLeodCathy_CPC.jpg",
 	"phone": "250-851-4991",
-	"address": ["275 Seymour Street\r\n ", "Suite 6", "Kamloops, British Columbia", "V2C 2E7"],
+	"address": ["275 Seymour Street ", "Suite 6", "Kamloops, British Columbia", "V2C 2E7"],
 	"email": "cathy.mcleod@parl.gc.ca"
 }, {
 	"name": "Karen McCrimmon",
@@ -1525,7 +1525,7 @@
 	"languages": "English",
 	"photo": "http://www.parl.gc.ca/Parliamentarians/Images/OfficialMPPhotos/42/BrisonScott_Lib.jpg",
 	"phone": "902-542-4010",
-	"address": ["24 Harbourside Drive\r\n ", "Suite 101A", "Wolfville, Nova Scotia", "B4P 2C1"],
+	"address": ["24 Harbourside Drive ", "Suite 101A", "Wolfville, Nova Scotia", "B4P 2C1"],
 	"email": "scott.brison@parl.gc.ca"
 }, {
 	"name": "Mark Gerretsen",
@@ -1855,7 +1855,7 @@
 	"languages": "French",
 	"photo": "http://www.parl.gc.ca/Parliamentarians/Images/OfficialMPPhotos/42/DeltellGérard_CPC.jpg",
 	"phone": "418-842-5552",
-	"address": ["9195 de L'Ormière Blvd. ", "Suite 200", "Québec, Quebec", "G2B 3K2"],
+	"address": ["9195 de L`Ormière Blvd. ", "Suite 200", "Québec, Quebec", "G2B 3K2"],
 	"email": "Gerard.Deltell@parl.gc.ca"
 }, {
 	"name": "René Arseneault",
@@ -2092,7 +2092,7 @@
 	"name": "Bernard Généreux",
 	"id": "63908",
 	"party": "Conservative",
-	"riding": "Montmagny—L'Islet—Kamouraska—Rivière-du-Loup",
+	"riding": "Montmagny—L`Islet—Kamouraska—Rivière-du-Loup",
 	"riding_id": "687",
 	"languages": "French",
 	"photo": "http://www.parl.gc.ca/Parliamentarians/Images/OfficialMPPhotos/42/GénéreuxBernard_CPC.jpg",
@@ -2485,7 +2485,7 @@
 	"address": ["417 Bethune Street ", "Suite 4", "Peterborough, Ontario", "K9H 3Z1"],
 	"email": "Maryam.Monsef@parl.gc.ca"
 }, {
-	"name": "Jennifer O'Connell",
+	"name": "Jennifer O`Connell",
 	"id": "88925",
 	"party": "Liberal",
 	"riding": "Pickering—Uxbridge",
@@ -2548,7 +2548,7 @@
 	"languages": "English",
 	"photo": "http://www.parl.gc.ca/Parliamentarians/Images/OfficialMPPhotos/42/DonnellyFin_NDP.jpg",
 	"phone": "604-664-9229",
-	"address": ["1116 Austin Avenue\r\n ", "Coquitlam, British Columbia", "V3K 3P5"],
+	"address": ["1116 Austin Avenue ", "Coquitlam, British Columbia", "V3K 3P5"],
 	"email": "fin.donnelly@parl.gc.ca"
 }, {
 	"name": "The Honourable Candice Bergen",
@@ -2653,12 +2653,12 @@
 	"name": "Andrew Scheer",
 	"id": "25454",
 	"party": "Conservative",
-	"riding": "Regina—Qu'Appelle",
+	"riding": "Regina—Qu`Appelle",
 	"riding_id": "857",
 	"languages": "English",
 	"photo": "http://www.parl.gc.ca/Parliamentarians/Images/OfficialMPPhotos/42/ScheerAndrew_CPC.jpg",
 	"phone": "306-790-4727",
-	"address": ["160 C Broadway Avenue West ", "Fort Qu'appelle, Saskatchewan", "S0G 1S0"],
+	"address": ["160 C Broadway Avenue West ", "Fort Qu`appelle, Saskatchewan", "S0G 1S0"],
 	"email": "andrew.scheer@parl.gc.ca"
 }, {
 	"name": "The Honourable Ralph Goodale",
@@ -2702,7 +2702,7 @@
 	"languages": "English",
 	"photo": "http://www.parl.gc.ca/Parliamentarians/Images/OfficialMPPhotos/42/WongAlice_CPC.jpg",
 	"phone": "604-775-5790",
-	"address": ["5951 Number 3 Road\r\n ", "Suite 360", "Richmond, British Columbia", "V6X 2E3"],
+	"address": ["5951 Number 3 Road ", "Suite 360", "Richmond, British Columbia", "V6X 2E3"],
 	"email": "alice.wong@parl.gc.ca"
 }, {
 	"name": "Majid Jowhari",
@@ -2779,7 +2779,7 @@
 	"languages": "English",
 	"photo": "http://www.parl.gc.ca/Parliamentarians/Images/OfficialMPPhotos/42/MayElizabeth_GP.jpg",
 	"phone": "250-657-2000",
-	"address": ["9711 Fourth Street\r\n ", "Suite 1", "Sidney, British Columbia", "V8L 2Y8"],
+	"address": ["9711 Fourth Street ", "Suite 1", "Sidney, British Columbia", "V8L 2Y8"],
 	"email": "Elizabeth.May@parl.gc.ca"
 }, {
 	"name": "Darrell Samson",
@@ -2801,7 +2801,7 @@
 	"languages": "French / English",
 	"photo": "http://www.parl.gc.ca/Parliamentarians/Images/OfficialMPPhotos/42/VandalDaniel_Lib.jpg",
 	"phone": "204-983-3183",
-	"address": ["213 St.Mary's Road ", "Suite 4", "Winnipeg, Manitoba", "R2H 1J2"],
+	"address": ["213 St.Mary`s Road ", "Suite 4", "Winnipeg, Manitoba", "R2H 1J2"],
 	"email": "Dan.Vandal@parl.gc.ca"
 }, {
 	"name": "Wayne Long",
@@ -3159,23 +3159,23 @@
 	"name": "Nick Whalen",
 	"id": "88296",
 	"party": "Liberal",
-	"riding": "St. John's East",
+	"riding": "St. John`s East",
 	"riding_id": "610",
 	"languages": "English / French",
 	"photo": "http://www.parl.gc.ca/Parliamentarians/Images/OfficialMPPhotos/42/WhalenNick_Lib.jpg",
 	"phone": "709-772-7171",
-	"address": ["120 Torbay Road ", "Suite E130", "St. John's, Newfoundland and Labrador", "A1A 2G8"],
+	"address": ["120 Torbay Road ", "Suite E130", "St. John`s, Newfoundland and Labrador", "A1A 2G8"],
 	"email": "Nick.Whalen@parl.gc.ca"
 }, {
-	"name": "Seamus O'Regan",
+	"name": "Seamus O`Regan",
 	"id": "88299",
 	"party": "Liberal",
-	"riding": "St. John's South—Mount Pearl",
+	"riding": "St. John`s South—Mount Pearl",
 	"riding_id": "611",
 	"languages": "English / French",
 	"photo": "http://www.parl.gc.ca/Parliamentarians/Images/OfficialMPPhotos/42/OReganSeamus_Lib.jpg",
 	"phone": "709-772-4608",
-	"address": ["689 Topsail Road ", "2nd Floor", "St. John's, Newfoundland and Labrador", "A1E 2E3"],
+	"address": ["689 Topsail Road ", "2nd Floor", "St. John`s, Newfoundland and Labrador", "A1E 2E3"],
 	"email": "Seamus.ORegan@parl.gc.ca"
 }, {
 	"name": "Joe Peschisolido",
@@ -3357,7 +3357,7 @@
 	"name": "The Honourable Carolyn Bennett",
 	"id": "992",
 	"party": "Liberal",
-	"riding": "Toronto—St. Paul's",
+	"riding": "Toronto—St. Paul`s",
 	"riding_id": "804",
 	"languages": "English",
 	"photo": "http://www.parl.gc.ca/Parliamentarians/Images/OfficialMPPhotos/42/BennettCarolyn_Lib.jpg",
@@ -3395,7 +3395,7 @@
 	"languages": "English",
 	"photo": "http://www.parl.gc.ca/Parliamentarians/Images/OfficialMPPhotos/42/FryHedy_Lib.jpg",
 	"phone": "604-666-0135",
-	"address": ["1030 Denman Street\r\n ", "Suite 106", "Vancouver, British Columbia", "V6G 2M6"],
+	"address": ["1030 Denman Street ", "Suite 106", "Vancouver, British Columbia", "V6G 2M6"],
 	"email": "hedy.fry@parl.gc.ca"
 }, {
 	"name": "Jenny Kwan",
@@ -3428,7 +3428,7 @@
 	"languages": "English",
 	"photo": "http://www.parl.gc.ca/Parliamentarians/Images/OfficialMPPhotos/42/DaviesDon_NDP.jpg",
 	"phone": "604-775-6263",
-	"address": ["2951 Kingsway\r\n ", "Vancouver, British Columbia", "V5R 5J4"],
+	"address": ["2951 Kingsway ", "Vancouver, British Columbia", "V5R 5J4"],
 	"email": "don.davies@parl.gc.ca"
 }, {
 	"name": "Joyce Murray",
@@ -3439,7 +3439,7 @@
 	"languages": "English",
 	"photo": "http://www.parl.gc.ca/Parliamentarians/Images/OfficialMPPhotos/42/MurrayJoyce_Lib.jpg",
 	"phone": "604-664-9220",
-	"address": ["2112, West Broadway\r\n ", "Suite 206", "Vancouver, British Columbia", "V6K 2C8"],
+	"address": ["2112, West Broadway ", "Suite 206", "Vancouver, British Columbia", "V6K 2C8"],
 	"email": "joyce.murray@parl.gc.ca"
 }, {
 	"name": "The Honourable Harjit S. Sajjan",
@@ -3483,7 +3483,7 @@
 	"languages": "English / French",
 	"photo": "http://www.parl.gc.ca/Parliamentarians/Images/OfficialMPPhotos/42/RankinMurray_NDP.jpg",
 	"phone": "250-363-3600",
-	"address": ["1057 Fort Street\r\n ", "Victoria, British Columbia", "V8V 3K5"],
+	"address": ["1057 Fort Street ", "Victoria, British Columbia", "V8V 3K5"],
 	"email": "Murray.Rankin@parl.gc.ca"
 }, {
 	"name": "Marc Miller",
