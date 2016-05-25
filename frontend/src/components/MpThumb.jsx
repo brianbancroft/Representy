@@ -33,7 +33,7 @@ var MpThumb = React.createClass({
               </a>
               <div className={mpTag}>
                 <span>{this.props.data.name}</span>
-                <span>{this.props.data.riding}</span>
+                <span>{this.props.data.riding_name}</span>
               </div> 
             </div>
           )

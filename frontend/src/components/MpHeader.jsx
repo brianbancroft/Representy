@@ -27,7 +27,7 @@ class MpHeader extends React.Component {
         <p className="mp-lead">
           <span className={"underline" + ' ' + partyTag}>{this.props.mp.name}</span> is the&nbsp;
           <span className={"underline" + ' ' + partyTag}>{this.props.mp.party}</span> MP for the riding of&nbsp;
-          <span className={"underline" + ' ' + partyTag}>{this.props.mp.riding}</span>
+          <span className={"underline" + ' ' + partyTag}>{this.props.mp.riding_name}</span>
         </p>
         </div>
       </div>
