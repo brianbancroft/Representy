@@ -23,6 +23,68 @@ button {
 
 
 
+#mp-container {
+  display: flex;
+  justify-content: flex-start;
+
+  flex-wrap: wrap;
+
+  .mp-index {
+    padding-left: 3px;
+    position: relative;
+    top: -20px;
+  }
+  .image-crop {
+    border-bottom: 0;
+  }
+}
+
+.mp-index-tag {
+  position: absolute;
+  bottom: 0px;
+  width: 142px;
+  padding: 5px;
+  background-color: grey;
+  color: white;
+  font-size: 12px;
+  max-height: 0;
+  overflow: hidden;
+  cursor: pointer;
+  transition: max-height .2s ease-in-out;
+}
+
+.mp-index-tag span:first-child {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.mp-index-tag span {
+  transition: visibility .2s ease-in-out;
+  visibility: hidden;
+}
+
+.mp-index-tag.lib {
+  background-color: rgba(237, 46, 56, 0.8);
+}
+
+.mp-index-tag.con {
+  background-color: rgba(0, 35, 149, 0.8);
+}
+
+.mp-index-tag.bloc {
+  background-color: rgba(0, 136, 206, 0.8);
+}
+
+.mp-index-tag.green {
+  background-color: rgba(66, 119, 48, 0.8);
+}
+
+.mp-index-tag.ndp {
+  background-color: rgba(255, 88, 0, 0.8);
+}
+
+
+
 .mp-hover + .mp-index-tag {
     span {
       display: block;
