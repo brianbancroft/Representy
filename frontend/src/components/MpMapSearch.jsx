@@ -31,7 +31,7 @@ class MpMapSearch extends React.Component{
                 type: 'vector',
                 url: 'mapbox://brianbancroft.1sf4w5x6'
 
-            },'water');
+            },'Bridges');
             map.addLayer({
                 "id": "ridings-canada",
                 "type": "fill",
@@ -43,7 +43,7 @@ class MpMapSearch extends React.Component{
                   'fill-outline-color': 'rgba(200,100,240,1)',
                 }
 
-            },'water');
+            },'Bridges');
             map.addLayer({
               'id': 'lib-riding',
               'type': 'fill',
@@ -54,7 +54,7 @@ class MpMapSearch extends React.Component{
                 'fill-opacity': 0.8
               },
               filter: ['==', 'Party', 'Liberal']
-            },'water');
+            },'Bridges');
             map.addLayer({
               'id': 'con-riding',
               'type': 'fill',
@@ -65,7 +65,7 @@ class MpMapSearch extends React.Component{
                 'fill-opacity': 0.8
               },
               filter: ['==', 'Party', 'Conservative']
-            },'water');
+            },'Bridges');
             map.addLayer({
               'id': 'ndp-riding',
               'type': 'fill',
@@ -76,7 +76,7 @@ class MpMapSearch extends React.Component{
                 'fill-opacity': 0.8
               },
               filter: ['==', 'Party', 'NDP']
-            },'water');
+            },'Bridges');
             map.addLayer({
               'id': 'green-riding',
               'type': 'fill',
@@ -98,7 +98,7 @@ class MpMapSearch extends React.Component{
                 'fill-opacity': 0.8
               },
               filter: ['==', 'Party', 'Bloc Quebecois']
-            },'water');
+            },'Bridges');
 
             map.addLayer({
                 "id": "ridings-canada",
@@ -110,7 +110,7 @@ class MpMapSearch extends React.Component{
                   "line-width": 3
                 }
 
-            },'water');
+            },'Bridges');
 
         });
 
