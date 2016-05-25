@@ -31,8 +31,8 @@ class AllMpView extends React.Component {
 
               <MpIntro selectSearchBox = { this._selectSearchBox } selectMapBox = {this._selectMapBox} onChange={ this.props.onChange }/> 
               
-
-              {this.state.mapBox ?  <MpMapSearch /> : ''}
+             
+              {this.state.mapBox ?  <MpMapSearch onChange={ this.props.onChange } /> : ''}
               {this.state.searchBox ? <MpTextSearch updateSearchText = { this._updateSearchText }/> : ''}
               <MpPartyFilter updateSearchText = { this._updateSearchText }/>
               <div id="mp-container">

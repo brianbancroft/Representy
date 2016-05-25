@@ -1,14 +1,17 @@
 import React from 'react';
 
-var MpMapSearch = React.createClass({
-  
-  _selectMp: function() {
-    console.log('hi')
-    // this.props.onChange(mpId)
-  },
+class MpMapSearch extends React.Component{
+  constructor(props) {
+    super(props)
+    window.mapClick = this._selectMp 
+  }
+
+  _selectMp = (mpId) => {
+    this.props.onChange(mpId)
+  };
 
 
-  componentDidMount: function(){
+  componentDidMount(){
 
       mapboxgl.accessToken = 'pk.eyJ1IjoiYnJpYW5iYW5jcm9mdCIsImEiOiJsVGVnMXFzIn0.7ldhVh3Ppsgv4lCYs65UdA';
         var map = new mapboxgl.Map({
@@ -132,21 +135,23 @@ var MpMapSearch = React.createClass({
 
             var popup = new mapboxgl.Popup()
                 .setLngLat(e.lngLat)
-                .setHTML("<center>" + "<b>" + mpId + "</b>" + "<br>" + feature.properties.ENNAME + "</center><br><button onClick={console.log(" + mpId + ")} >See Profile</button>")
+                .setHTML("<center>" + "<b>" + mpId + "</b>" + "<br>" + feature.properties.ENNAME + "</center><br><button onClick=window.mapClick(" + mpId + ") >See Profile</button>")
                 .addTo(map);
         });
 
         map.dragRotate.disable();
         map.touchZoomRotate.disableRotation();
    
-  },
+  };
  
-  render: function() {
+  render() {
     return (
+      <div>
         <div id='map' className="big-map"></div>
+      </div>
     )
   }
-});
+}
 
 
 

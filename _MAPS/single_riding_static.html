@@ -35,7 +35,8 @@ var map = new mapboxgl.Map({
 });
 
 map.on('style.load', function(){
-  $.getJSON('http://localhost:3000/riding/800', function(response){
+  //CHANGE THE DIGITS IN THE BELOW LINK. They all match up to http://www.parl.gc.ca/Parliamentarians/en/constituencies/ IE 898 for Abbotsford or 715 for Ajax
+  $.getJSON('http://findmymp.herokuapp.com/riding/800', function(response){
     var boundingBox = getBoundingBox(response);
     var ridingBoundary = new mapboxgl.GeoJSONSource({ data: response } );
 
@@ -133,28 +134,6 @@ function getBoundingBox(data) {
 }
 
 
-// map.on('load', function () {
-//
-//     var data =
-//     map.addSource('ridings', {
-//         'type': 'geojson',
-//         'data': 'http://localhost:3000/riding/757'
-//     });
-//
-//     map.addLayer({
-//         'id': 'riding-areas',
-//         'type': 'fill',
-//         'source': 'ridings',
-//         'layout': {},
-//         'paint': {
-//             'fill-color': '#f08',
-//             'fill-opacity': 0.4
-//         }
-//     }, 'water');
-//
-// });
-// map.scrollZoom.disable();
-// map.dragPan.disable();
 </script>
 
 </body>
