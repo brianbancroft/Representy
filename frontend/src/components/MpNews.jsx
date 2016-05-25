@@ -8,7 +8,7 @@ var MpNews = React.createClass({
 
 
     $.ajax({
-      url: 'http://localhost:3000/news/' + this.props.mp.name,
+      url: 'http://findmymp.heroku.com/news/' + this.props.mp.name,
       dataType: "json",
       async: false,
       data: news
