@@ -33,6 +33,13 @@
     "webpack-dev-server": "^1.14.1"
   },
   "dependencies": {
-    "react-map-gl": "^0.6.9"
+    "browserify": "^13.0.1",
+    "cross-spawn-async": "^2.2.4",
+    "graceful-fs": "^4.1.4",
+    "immutable": "^3.8.1",
+    "lodash": "^4.13.1",
+    "r-dom": "^2.2.2",
+    "react-map-gl": "^0.6.9",
+    "react-tooltip": "^2.0.2"
   }
 }
