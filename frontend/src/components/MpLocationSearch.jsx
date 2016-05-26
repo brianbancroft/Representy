@@ -26,7 +26,7 @@ const self = this
           lat = position.coords.latitude;
           long = position.coords.longitude;
           // window.location = 'http://localhost:3000/location/latitude:'+ lat +'&longitude:'+ long;
-          var url =  'http://findmymp.heroku.com/location/latitude:'+ lat +'&longitude:'+ long;
+          var url =  'http://localhost:3000/location/latitude:'+ lat +'&longitude:'+ long;
           console.log(url)
           var riding = ''
 
@@ -44,7 +44,7 @@ const self = this
           var mps = []
 
           $.ajax({
-            url: 'http://findmymp.heroku.com/members',
+            url: 'http://localhost:3000/members',
             dataType: "json",
             async: false,
             data: mps

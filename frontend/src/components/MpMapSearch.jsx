@@ -135,7 +135,7 @@ class MpMapSearch extends React.Component{
 
             var popup = new mapboxgl.Popup()
                 .setLngLat(e.lngLat)
-                .setHTML("<center>" + "<b>" + mpId + "</b>" + "<br>" + feature.properties.ENNAME + "</center><br><button onClick=window.mapClick(" + mpId + ") >See Profile</button>")
+                .setHTML("<center>" + "<br>" + "<h2>" + feature.properties.ENNAME + "</h2>" + "</center><br><button onClick=window.mapClick(" + mpId + ") >GET MY MP</button>")
                 .addTo(map);
         });
 

@@ -89,7 +89,7 @@ var attendanceScore = parseFloat(this.props.mp.did_not_vote_score).toFixed(1)
         </g>
         </svg>
         <span data-multiline='true' data-tip="" className={"score-num " + attendanceTag}>{attendanceScore}</span>
-        <span className="score-desc"><b>{this.props.mp.votes_missed_tally}</b> missed votes this session</span>
+        <span className="score-desc"><b>{this.props.mp.votes_missed_tally}</b> missed vote{(this.props.mp.votes_missed_tally !== 1) ? 's' : ''} this session</span>
       </div>
 
 
