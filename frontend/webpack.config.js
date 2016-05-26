@@ -37,7 +37,7 @@ var config = {
          config: path.join(__dirname, 'config', process.env.NODE_ENV),
        },
       extensions: ['', '.js'],
-    },w
+    },
 };
 
 module.exports = config;
