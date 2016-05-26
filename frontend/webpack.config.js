@@ -15,7 +15,7 @@ var config = {
     path: path.resolve(__dirname, 'build'),
     filename: 'bundle.js'
   },
-  
+
   module: {
     loaders: [
       { test: /\.css$/, loader: "style-loader!css-loader" },
@@ -27,10 +27,17 @@ var config = {
       }
     ]
   },
-  
+
   plugins: [
     new webpack.HotModuleReplacementPlugin()
-  ]
+  ],
+  resolve: {
+      root: path.resolve(__dirname),
+      alias: {
+         config: path.join(__dirname, 'config', process.env.NODE_ENV),
+       },
+      extensions: ['', '.js'],
+    },
 };
 
 module.exports = config;
