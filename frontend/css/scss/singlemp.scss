@@ -230,6 +230,22 @@ position:relative;
     left: 31%;
 
   }
+
+  .score-num.ten{
+    color: #53992B;
+    left: 31%;
+
+  }
+
+  .score-num.cross{
+    color: #EA222D;
+    left: 35%;
+  }
+
+  .score-num.check{
+    color: #53992B;
+    left: 35%;
+  }
 }
 
 
@@ -249,12 +265,29 @@ circle {
 #gray{
   stroke: #AAA;
 }
+
+#cross {
+  stroke: #EA222D;
+  fill:#eeeeed;
+  stroke-dasharray: 284, 284; /* length of arc, circumference of circle */
+  stroke-dashoffset: 240; /* offset of arc from start point (1/2 arc length + 1/4 circumference (71) ) */  
+}
+
+#check {
+  stroke: #53992B;
+  fill:#eeeeed;
+  stroke-dasharray: 284, 284; /* length of arc, circumference of circle */
+  stroke-dashoffset: 0; /* offset of arc from start point (1/2 arc length + 1/4 circumference (71) ) */
+}
+
 #one{
   stroke: #EA222D;
   fill:#eeeeed;
   stroke-dasharray: 284, 284; /* length of arc, circumference of circle */
   stroke-dashoffset: 240; /* offset of arc from start point (1/2 arc length + 1/4 circumference (71) ) */
 }
+
+
 
 #two{
   stroke: #EA222D;
