@@ -16,13 +16,12 @@ class MpFooter extends React.Component {
             <span className="icon icon-mail"></span>
             <span className="mobile-hide">{this.props.mp.email}</span>
           </a>
-        </div>      
+        </div>
       </div>
-
 
     )
   }
-  
+
 }
 
 export default MpFooter;

@@ -3,7 +3,7 @@ import React from 'react';
 class MpMapSearch extends React.Component{
   constructor(props) {
     super(props)
-    window.mapClick = this._selectMp 
+    window.mapClick = this._selectMp
   }
 
   _selectMp = (mpId) => {
@@ -16,7 +16,7 @@ class MpMapSearch extends React.Component{
       mapboxgl.accessToken = 'pk.eyJ1IjoiYnJpYW5iYW5jcm9mdCIsImEiOiJsVGVnMXFzIn0.7ldhVh3Ppsgv4lCYs65UdA';
         var map = new mapboxgl.Map({
             container: 'map',
-            
+
             maxBounds: [
                 [-141.8521455, 41.68392799015035], // Southwest coordinates
                 [-52.0792153, 83.7630545]  // Northeast coordinates
@@ -107,7 +107,7 @@ class MpMapSearch extends React.Component{
                 "source-layer": "electboundaries1",
                 'paint': {
                   "line-color": "#330033",
-                  "line-width": 8
+                  "line-width": 3
                 }
 
             },'water');
@@ -141,9 +141,9 @@ class MpMapSearch extends React.Component{
 
         map.dragRotate.disable();
         map.touchZoomRotate.disableRotation();
-   
+
   };
- 
+
   render() {
     return (
       <div>
