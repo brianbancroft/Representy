@@ -14,7 +14,7 @@ var MpSponsoredBill = React.createClass({
       {(this.props.mp.sponsored_bill_tally >= 1) ?
 
       <div className="row-item">
-        <h2>Sponsored Bills <span data-multiline='true' data-tip="Bills introduced by this MP." className="icon icon-help-circled"></span> </h2>
+        <h2>Sponsored Bills <span data-multiline='true' data-tip="Here are the bills this member has brought into Parliament. If passed, they could become law!" className="icon icon-help-circled"></span> </h2>
           
           {sponsored_bills.map(function(bill){
           

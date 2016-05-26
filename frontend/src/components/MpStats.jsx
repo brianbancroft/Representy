@@ -13,6 +13,11 @@ var MpStars = React.createClass({
 ////////// 8-10 above average
 var tweetScore = parseFloat(this.props.mp.twitter_participation_score).toFixed(1)
 var attendanceScore = parseFloat(this.props.mp.did_not_vote_score).toFixed(1)
+var independenceScore = this.props.mp.independence_vote
+
+           if (this.props.mp.name === "Charlie Angus") {
+            console.log(this.props)
+           }
 
   if (tweetScore === "NaN") {
     tweetScore = "0.0"
@@ -64,6 +69,19 @@ var attendanceScore = parseFloat(this.props.mp.did_not_vote_score).toFixed(1)
               attendanceTag = "ten"
             }
 
+            var independenceTag
+            var independenceIcon
+            if (independenceScore === 1) {
+                independenceScore = "y"
+                independenceIcon = "icon icon-ok"
+                independenceTag = "check"
+              } else if (independenceScore === 0) {
+                independenceScore = "n"
+                independenceIcon = "icon icon-cancel"
+                independenceTag = "cross"
+              } 
+
+
     return (
       <div className="row-container">
       <ReactTooltip data-multiline='true'/>
@@ -81,6 +99,17 @@ var attendanceScore = parseFloat(this.props.mp.did_not_vote_score).toFixed(1)
       <span className="score-desc">{(this.props.mp.twitter !== '') ? <a target="_blank" href={'http://twitter.com/' + this.props.mp.twitter}> <span className='icon icon-twitter-bird'></span> {this.props.mp.twitter}</a> : ''}</span>
       </div>
 
+            <div className="score">
+              <span>Independent Thought</span>
+              <svg viewBox='0 0 100 100' className="score-circle">
+              <g>
+                <circle cx='50' cy='50' r='45' id={independenceTag} transform="rotate(-90 50 50)"/>
+              </g>
+              </svg>
+              <span data-multiline='true' data-tip="Does this member ever vote against their party? Or do they always toe the party line?" className={"score-num " + independenceTag}><span className={independenceIcon}></span></span>
+            </div>
+
+
         <div className="score">
         <span>Attendance Score</span>
         <svg viewBox='0 0 100 100' className="score-circle">
@@ -91,6 +120,11 @@ var attendanceScore = parseFloat(this.props.mp.did_not_vote_score).toFixed(1)
         <span data-multiline='true' data-tip="" className={"score-num " + attendanceTag}>{attendanceScore}</span>
         <span className="score-desc"><b>{this.props.mp.votes_missed_tally}</b> missed vote{(this.props.mp.votes_missed_tally !== 1) ? 's' : ''} this session</span>
       </div>
+
+
+
+
+
 
 
 

@@ -618,6 +618,21 @@ form button {
   left: 31%;
 }
 
+.score .score-num.ten {
+  color: #53992B;
+  left: 31%;
+}
+
+.score .score-num.cross {
+  color: #EA222D;
+  left: 35%;
+}
+
+.score .score-num.check {
+  color: #53992B;
+  left: 35%;
+}
+
 .mp-column {
   width: 30%;
 }
@@ -634,6 +649,24 @@ circle {
 
 #gray {
   stroke: #AAA;
+}
+
+#cross {
+  stroke: #EA222D;
+  fill: #eeeeed;
+  stroke-dasharray: 284, 284;
+  /* length of arc, circumference of circle */
+  stroke-dashoffset: 240;
+  /* offset of arc from start point (1/2 arc length + 1/4 circumference (71) ) */
+}
+
+#check {
+  stroke: #53992B;
+  fill: #eeeeed;
+  stroke-dasharray: 284, 284;
+  /* length of arc, circumference of circle */
+  stroke-dashoffset: 0;
+  /* offset of arc from start point (1/2 arc length + 1/4 circumference (71) ) */
 }
 
 #one {
@@ -741,8 +774,8 @@ circle {
 
 @font-face {
   font-family: 'fontello';
-  src: url("../../fonts/fontello.eot?26630629");
-  src: url("../../fonts/fontello.eot?26630629#iefix") format("embedded-opentype"), url("../../fonts/fontello.woff2?26630629") format("woff2"), url("../../fonts/fontello.woff?26630629") format("woff"), url("../../fonts/fontello.ttf?26630629") format("truetype"), url("../../fonts/fontello.svg?26630629#fontello") format("svg");
+  src: url("../../fonts/fontello.eot?70834502");
+  src: url("../../fonts/fontello.eot?70834502#iefix") format("embedded-opentype"), url("../../fonts/fontello.woff2?70834502") format("woff2"), url("../../fonts/fontello.woff?70834502") format("woff"), url("../../fonts/fontello.ttf?70834502") format("truetype"), url("../../fonts/fontello.svg?70834502#fontello") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -753,7 +786,7 @@ circle {
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'fontello';
-    src: url('../font/fontello.svg?26630629#fontello') format('svg');
+    src: url('../font/fontello.svg?70834502#fontello') format('svg');
   }
 }
 */
@@ -765,6 +798,7 @@ circle {
   display: inline-block;
   text-decoration: inherit;
   width: 1em;
+  margin-right: .2em;
   text-align: center;
   /* opacity: .8; */
   /* For safety - reset parent styles, that can break glyph codes*/
@@ -774,6 +808,7 @@ circle {
   line-height: 1em;
   /* Animation center compensation - margins should be symmetric */
   /* remove if not needed */
+  margin-left: .2em;
   /* you can be more comfortable with increased icons size */
   /* font-size: 120%; */
   /* Font smoothing. That was taken from TWBS */
@@ -823,6 +858,16 @@ circle {
 }
 
 /* '' */
+.icon-ok:before {
+  content: '\e808';
+}
+
+/* '' */
+.icon-cancel:before {
+  content: '\e809';
+}
+
+/* '' */
 @media (max-width: 1100px) {
   #mp-container .mp-index {
     flex-basis: 25%;
