@@ -117,7 +117,7 @@ var independenceScore = this.props.mp.independence_vote
           <circle cx='50' cy='50' r='45' id={attendanceTag} transform="rotate(-90 50 50)"/>
         </g>
         </svg>
-        <span data-multiline='true' data-tip="" className={"score-num " + attendanceTag}>{attendanceScore}</span>
+        <span data-multiline='true' data-tip="Does this MP show up for every vote, or do they prefer to spend their<br> time working on other business elsewhere while the big decisions get made?" className={"score-num " + attendanceTag}>{attendanceScore}</span>
         <span className="score-desc"><b>{this.props.mp.votes_missed_tally}</b> missed vote{(this.props.mp.votes_missed_tally !== 1) ? 's' : ''} this session</span>
       </div>
 

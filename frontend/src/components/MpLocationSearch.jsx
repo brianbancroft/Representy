@@ -74,16 +74,19 @@ const self = this
 
 
   var useIcon = "icon-location"
+  var useText = "Your Location"
     if (this.state.clicked === true) {
         useIcon = "icon icon-spin5"
+        useText = "Loading..."
       }
     else {
       useIcon = "icon icon-location"
+      useText = "Your Location"
     }
 
     return (
         <div className="row-item">
-          <button id="icons" onClick = {this._getMp.bind(this)}><span className={useIcon}></span> Your Location</button>
+          <button id="icons" onClick = {this._getMp.bind(this)}><span className={useIcon}></span> {useText}</button>
         </div>
     )
   }
