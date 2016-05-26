@@ -3,7 +3,7 @@ import React from 'react';
 class MpMapSearch extends React.Component{
   constructor(props) {
     super(props)
-    window.mapClick = this._selectMp 
+    window.mapClick = this._selectMp
   }
 
   _selectMp = (mpId) => {
@@ -16,7 +16,7 @@ class MpMapSearch extends React.Component{
       mapboxgl.accessToken = 'pk.eyJ1IjoiYnJpYW5iYW5jcm9mdCIsImEiOiJsVGVnMXFzIn0.7ldhVh3Ppsgv4lCYs65UdA';
         var map = new mapboxgl.Map({
             container: 'map',
-            
+
             maxBounds: [
                 [-141.8521455, 41.68392799015035], // Southwest coordinates
                 [-52.0792153, 83.7630545]  // Northeast coordinates
@@ -54,7 +54,7 @@ class MpMapSearch extends React.Component{
                 'fill-opacity': 0.8
               },
               filter: ['==', 'Party', 'Liberal']
-            },'Bridges');
+            },'water');
             map.addLayer({
               'id': 'con-riding',
               'type': 'fill',
@@ -65,7 +65,7 @@ class MpMapSearch extends React.Component{
                 'fill-opacity': 0.8
               },
               filter: ['==', 'Party', 'Conservative']
-            },'Bridges');
+            },'water');
             map.addLayer({
               'id': 'ndp-riding',
               'type': 'fill',
@@ -76,7 +76,7 @@ class MpMapSearch extends React.Component{
                 'fill-opacity': 0.8
               },
               filter: ['==', 'Party', 'NDP']
-            },'Bridges');
+            },'water');
             map.addLayer({
               'id': 'green-riding',
               'type': 'fill',
@@ -98,7 +98,7 @@ class MpMapSearch extends React.Component{
                 'fill-opacity': 0.8
               },
               filter: ['==', 'Party', 'Bloc Quebecois']
-            },'Bridges');
+            },'water');
 
             map.addLayer({
                 "id": "ridings-canada",
@@ -110,7 +110,7 @@ class MpMapSearch extends React.Component{
                   "line-width": 3
                 }
 
-            },'Bridges');
+            },'water');
 
         });
 
@@ -141,9 +141,9 @@ class MpMapSearch extends React.Component{
 
         map.dragRotate.disable();
         map.touchZoomRotate.disableRotation();
-   
+
   };
- 
+
   render() {
     return (
       <div>

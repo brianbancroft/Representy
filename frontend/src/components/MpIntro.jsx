@@ -8,12 +8,12 @@ class MpIntro extends React.Component {
 
   render() {
 
-      
+
     return (
       <div>
       <div className="column-container-center">
-      
-        <h1>GET YOUR MP</h1>
+
+        <h1>GET MY MP</h1>
 
       </div>
 
