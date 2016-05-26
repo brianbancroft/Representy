@@ -625,12 +625,12 @@ form button {
 
 .score .score-num.cross {
   color: #EA222D;
-  left: 35%;
+  left: 40%;
 }
 
 .score .score-num.check {
   color: #53992B;
-  left: 35%;
+  left: 40%;
 }
 
 .mp-column {
@@ -798,7 +798,6 @@ circle {
   display: inline-block;
   text-decoration: inherit;
   width: 1em;
-  margin-right: .2em;
   text-align: center;
   /* opacity: .8; */
   /* For safety - reset parent styles, that can break glyph codes*/
@@ -808,7 +807,6 @@ circle {
   line-height: 1em;
   /* Animation center compensation - margins should be symmetric */
   /* remove if not needed */
-  margin-left: .2em;
   /* you can be more comfortable with increased icons size */
   /* font-size: 120%; */
   /* Font smoothing. That was taken from TWBS */

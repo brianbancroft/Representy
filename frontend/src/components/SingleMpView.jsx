@@ -48,13 +48,15 @@ window.scrollTo(0, 100)
 
                   <div className="column-container mp-column">
                     <MpBio mp = {this.getMp()} />
+                    <MpNews mp = {this.getMp()} />
+                  </div>
+
+                  <div className="column-container mp-column">
                     <MpCommittees mp = {this.getMp()} />
                     <MpSponsoredBill mp = {this.getMp()} />
                   </div>
 
-                  <div className="column-container mp-column">
-                    <MpNews mp = {this.getMp()} />
-                  </div>
+
                   
                 </div>
                
