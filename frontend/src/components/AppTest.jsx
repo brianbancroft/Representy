@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from './Navbar.jsx';
 import MpFooter from './MpFooter.jsx';
-
+import apiUrl from 'config';
 import SingleMpView from './SingleMpView.jsx';
 
 import AllMpView from './AllMpView.jsx';
@@ -16,7 +16,7 @@ class AppTest extends React.Component {
       var mps = []
 
       $.ajax({
-        url: 'http://localhost:3000/members',
+        url: url: ``${apiUrl}/members`,
         dataType: "json",
         async: false,
         data: mps
