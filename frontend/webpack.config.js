@@ -6,9 +6,13 @@ var config = {
   devtool: 'cheap-eval-source-map',
 
   entry: [
-    'webpack-dev-server/client?http://0.0.0.0:8080', // WebpackDevServer host and port
-    'webpack/hot/only-dev-server', // "only" prevents reload on syntax errors
-    path.resolve(__dirname, 'src', 'index.js'),
+    'webpack-dev-server/client?http://localhost:8080', // WebpackDevServer host and port
+     'webpack/hot/only-dev-server', // "only" prevents reload on syntax errors
+     'src/index.js' // Your appʼs entry point
+  ],
+
+  plugins: [
+      new webpack.HotModuleReplacementPlugin()
   ],
 
   output: {
