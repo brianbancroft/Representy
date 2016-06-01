@@ -18,7 +18,8 @@ class AllMpView extends React.Component {
     var filterData = this.props.data.filter((data) => {
       var text = this.state.searchText
       return data.name.toUpperCase().includes(text.toUpperCase()) ||  
-      data.party.toUpperCase().includes(text.toUpperCase())
+      data.party.toUpperCase().includes(text.toUpperCase()) || 
+      data.riding_name.toUpperCase().includes(text.toUpperCase())
     })
 
     return (
