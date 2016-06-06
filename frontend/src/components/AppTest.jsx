@@ -16,7 +16,7 @@ class AppTest extends React.Component {
       var mps = []
 
       $.ajax({
-        url: 'http://localhost:3000/members',
+        url: '//findmymp.herokuapp.com/members',
         dataType: "json",
         async: false,
         data: mps
