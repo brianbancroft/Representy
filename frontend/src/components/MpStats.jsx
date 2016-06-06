@@ -96,7 +96,7 @@ var independenceScore = this.props.mp.independence_vote
         </svg>
         <span data-multiline='true' data-tip="Does the MP use Twitter to engage with citizens, or just use a staffer to broadcast his platform? <br>A higher score means that this user is quite likely to engage in debates, or chat with people around the world!
 <br/>0-3: Not much engagement. 4-7: Some cross-talk 8-10: Loves to talk amongst the tweeple!" className={"score-num " + tweetTag}>{tweetScore}</span>
-      <span className="score-desc">{(this.props.mp.twitter !== '') ? <a target="_blank" href={'//twitter.com/' + this.props.mp.twitter}> <span className='icon icon-twitter-bird'></span> {this.props.mp.twitter}</a> : ''}</span>
+      <span className="score-desc">{(this.props.mp.twitter !== '') ? <a target="_blank" href={'m//twitter.com/' + this.props.mp.twitter}> <span className='icon icon-twitter-bird'></span> {this.props.mp.twitter}</a> : ''}</span>
       </div>
 
             <div className="score">
