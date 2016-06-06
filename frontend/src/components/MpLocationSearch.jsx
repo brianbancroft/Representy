@@ -26,7 +26,7 @@ const self = this
           lat = position.coords.latitude;
           long = position.coords.longitude;
           // window.location = '//findmymp.herokuapp.com/location/latitude:'+ lat +'&longitude:'+ long;
-          var url =  '//findmymp.herokuapp.com.location/latitude:'+ lat +'&longitude:'+ long;
+          var url =  '//findmymp.herokuapp.com/location/latitude:'+ lat +'&longitude:'+ long;
           console.log(url)
           var riding = ''
 
