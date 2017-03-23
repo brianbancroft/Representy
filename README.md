@@ -1,3 +1,3 @@
-# Get My MP
+# Get My MP Data Storage
 
-This is a project that helps individual connect with their members of parliament in Canada
+This is a store of all the data used for this project, as well as the scraping
